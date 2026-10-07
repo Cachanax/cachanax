@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cachanax — Bijoux et créations en perles et micro-macramé, faits main. Ateliers créatifs à Lentilly (69).">
+  <title>Cachanax — Bijoux & micro-macramé</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="img/logo-cachanax.png" alt="Cachanax"></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Accueil</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="ateliers.html">Ateliers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">S'inscrire à un atelier</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-photo" aria-hidden="true">
+      <img src="img/accueil-creations.jpg" alt="">
+    </div>
+    <div class="hero-inner">
+      <span class="hero-tag fade-up">Bijoux & micro-macramé · Fait main</span>
+      <h1 class="fade-up-2">De fil en <em>perles…</em></h1>
+      <p class="hero-desc fade-up-3">
+        Entrez dans mon univers perlistique tout en couleur. Du micro-macramé aux perles diverses et variées, des créations uniques faites main, pour vous ou pour offrir.
+      </p>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;" class="fade-up-3">
+        <a href="#agenda" class="btn-primary">Voir l'agenda →</a>
+        <a href="contact.html" class="btn-outline">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Présentation -->
+  <section class="presentation">
+    <div class="presentation-texte">
+
+      <!-- ↓↓↓ MODIFIEZ ICI votre texte de présentation ↓↓↓ -->
+      <span class="section-label">Bienvenue</span>
+      <h2 class="section-title"> Qui suis-je ?</h2>
+      <p>Je suis Catherine Papin, et je suis très fière de vous présenter ici mes créations en perles et en fil.</p>
+      <p>Je crée depuis le début des années 2000, tout d'abord avec des toupies Swarovski, puis le micro-macramé pour glisser vers les perles de petites tailles très calibrées, ce qui me permet des créations différentes.</p>
+      <p>J'anime des ateliers pour vous permettre de réaliser vous même votre bijou, ou découvrir une technique de tissage, aussi bien en perles qu'en macramé.</p>
+	  <!-- ↑↑↑ FIN DU TEXTE ↑↑↑ -->
+
+    </div>
+    <div class="presentation-portrait">
+      <img src="img/portrait-catherine.jpg" alt="Catherine Papin, créatrice de Cachanax, sur son stand">
+    </div>
+  </section>
+
+  <!-- Agenda : expositions + ateliers (les dates se modifient dans js/agenda.js) -->
+  <section class="agenda" id="agenda">
+    <div class="section-header agenda-entete">
+      <span class="section-label">Agenda</span>
+      <h2 class="section-title">Où me retrouver ?</h2>
+    </div>
+    <div class="agenda-colonnes">
+      <div class="agenda-col">
+        <h3 class="agenda-titre">Prochaines expositions</h3>
+        <div class="agenda-liste" id="listeExpositions"></div>
+      </div>
+      <div class="agenda-col">
+        <h3 class="agenda-titre">Prochains ateliers</h3>
+        <div class="agenda-liste" id="listeAteliers"></div>
+        <a href="ateliers.html" class="btn-outline agenda-lien">Découvrir les ateliers →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bandeau contact -->
+  <div class="contact-band">
+    <div class="contact-band-text">
+      <h2>Envie de participer à un atelier ?</h2>
+    </div>
+    <a href="contact.html" class="btn-white">✉ Écrire un message</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <span class="footer-logo">✦ Cachanax</span>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/cachanax.bijoux" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/cachanax" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <span class="footer-copy">© 2025 Cachanax</span>
+  </footer>
+
+  <script src="js/agenda.js"></script>
+  <script src="js/agenda-affichage.js"></script>
+  <script>afficherExpositions('listeExpositions'); afficherAteliers('listeAteliers');</script>
+
+</body>
+</html>

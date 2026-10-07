@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez Cachanax pour s'inscrire à un atelier ou en savoir plus sur les créations en perles et micro-macramé.">
+  <title>Contact — Cachanax</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="img/logo-cachanax.png" alt="Cachanax"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="galerie.html">Galerie</a></li>
+      <li><a href="ateliers.html">Ateliers</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">S'inscrire à un atelier</a>
+  </nav>
+
+  <!-- Hero contact -->
+  <section class="hero">
+    <div class="hero-photo" aria-hidden="true">
+      <img src="img/contact-decorations.jpg" alt="">
+    </div>
+    <div class="hero-inner">
+      <span class="hero-tag fade-up">Contact</span>
+      <h1 class="fade-up-2">Me contacter</h1>
+      <p class="hero-desc fade-up-3">Pour s'inscrire à un atelier, en savoir plus sur une création, ou simplement dire bonjour !</p>
+    </div>
+  </section>
+
+  <!-- Grille contact -->
+  <div class="contact-grid">
+
+    <!-- Formulaire -->
+    <div>
+      <h2 style="font-family:'Playfair Display',serif; font-size:1.3rem; font-weight:400; color:var(--rose-darker); margin-bottom:1.5rem;">
+        Envoyez-moi un message
+      </h2>
+      <!--
+        Ce formulaire utilise Formspree (gratuit jusqu'à 50 messages/mois).
+        Remplacez YOUR_FORM_ID par votre identifiant après inscription sur formspree.io
+      -->
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="prenom">Votre prénom *</label>
+          <input type="text" id="prenom" name="prenom" required placeholder="Marie">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Votre email *</label>
+          <input type="email" id="email" name="email" required placeholder="marie@exemple.fr">
+        </div>
+
+        <div class="form-group">
+          <label for="sujet">Sujet</label>
+          <select id="sujet" name="sujet">
+            <option value="">Choisir…</option>
+            <option value="atelier">S'inscrire à un atelier</option>
+            <option value="creation">En savoir plus sur une création</option>
+            <option value="dates">Recevoir les prochaines dates</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required placeholder="Bonjour, je souhaite…"></textarea>
+        </div>
+
+        <button type="submit" class="form-submit">Envoyer le message →</button>
+      </form>
+    </div>
+
+    <!-- Infos de contact -->
+    <div class="contact-infos">
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">✉</div>
+        <div>
+          <div class="contact-info-label">Email</div>
+          <div class="contact-info-value">
+            <a href="mailto:bijoux.cachanax@gmail.com">bijoux.cachanax@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📷</div>
+        <div>
+          <div class="contact-info-label">Instagram</div>
+          <div class="contact-info-value">
+            <a href="https://www.instagram.com/cachanax.bijoux" target="_blank" rel="noopener">@cachanax.bijoux</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📘</div>
+        <div>
+          <div class="contact-info-label">Facebook</div>
+          <div class="contact-info-value">
+            <a href="https://www.facebook.com/cachanax" target="_blank" rel="noopener">facebook.com/cachanax</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="contact-info-icon">📍</div>
+        <div>
+          <div class="contact-info-label">Ateliers</div>
+          <div class="contact-info-value">À domicile, Lentilly (69)</div>
+        </div>
+      </div>
+
+      <div class="newsletter-box">
+        <p>
+          💌 <strong>Recevoir les dates d'atelier par email ?</strong><br>
+          Mentionnez-le dans votre message, je vous ajouterai à ma liste de diffusion.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <span class="footer-logo">✦ Cachanax</span>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/cachanax.bijoux" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/cachanax" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <span class="footer-copy">© 2025 Cachanax</span>
+  </footer>
+
+  <script>
+  // Pré-remplit le formulaire quand on vient d'une fiche bijou (bouton « Cette pièce m'intéresse »)
+  const params = new URLSearchParams(location.search);
+  const atelier = params.get('atelier');
+  if (atelier) {
+    document.getElementById('sujet').value = 'atelier';
+    document.getElementById('message').value = "Bonjour, je souhaite m'inscrire à l'atelier du " + atelier.charAt(0).toLowerCase() + atelier.slice(1) + '.';
+  }
+  const creation = params.get('creation');
+  if (creation) {
+    document.getElementById('sujet').value = 'creation';
+    document.getElementById('message').value = 'Bonjour, je souhaite en savoir plus sur « ' + creation + ' ».';
+  }
+  </script>
+
+</body>
+</html>

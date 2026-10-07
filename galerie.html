@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Galerie des créations Cachanax — bijoux et objets en perles et micro-macramé, faits main.">
+  <title>Galerie — Cachanax</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+
+    /* ── Page hero ── */
+    .galerie-hero {
+      background: var(--rose-pale);
+      padding: 4rem 2.5rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .galerie-hero::before {
+      content: '';
+      position: absolute;
+      top: -100px; right: -100px;
+      width: 350px; height: 350px;
+      border-radius: 50%;
+      background: var(--rose-light);
+      opacity: 0.3;
+    }
+    .galerie-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 400;
+      color: var(--rose-darker);
+      margin: 0.5rem 0 1rem;
+      position: relative;
+    }
+    .galerie-hero p {
+      font-size: 1rem;
+      color: var(--text-muted);
+      max-width: 500px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    /* ── Carrousel wrapper ── */
+    .carousel-section {
+      padding: 3.5rem 0 4rem;
+      overflow: hidden;
+      position: relative;
+    }
+    .carousel-track-wrapper {
+      overflow: hidden;
+      position: relative;
+      padding: 1rem 0;
+      /* masque les bords gauche/droite avec un fondu */
+      mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 8%, black 92%, transparent 100%);
+    }
+    .carousel-track {
+      display: flex;
+      gap: 1.5rem;
+      width: max-content;
+      animation: scrollCarousel 35s linear infinite;
+      cursor: pointer;
+    }
+    .carousel-track:hover {
+      animation-play-state: paused;
+    }
+    @keyframes scrollCarousel {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* ── Carte carrousel ── */
+    .carousel-card {
+      flex-shrink: 0;
+      width: clamp(220px, 28vw, 320px);
+      aspect-ratio: 3/4;
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      background: var(--rose-pale);
+      border: 1px solid var(--rose-light);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .carousel-card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 20px 48px rgba(212, 83, 126, 0.2);
+    }
+    .carousel-card img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .carousel-card-placeholder {
+      width: 100%; height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: linear-gradient(135deg, var(--rose-pale), var(--rose-light));
+    }
+    .carousel-card-placeholder svg {
+      width: 48px; height: 48px;
+      color: var(--rose);
+      opacity: 0.5;
+    }
+    .carousel-card-placeholder span {
+      font-size: 0.8rem;
+      color: var(--rose-dark);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    /* overlay titre au survol */
+    .carousel-card-overlay {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 1.5rem 1.25rem 1.25rem;
+      background: linear-gradient(to top, rgba(75,21,40,0.85) 0%, transparent 100%);
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+      pointer-events: none;
+    }
+    .carousel-card:hover .carousel-card-overlay {
+      transform: translateY(0);
+    }
+    .carousel-card-overlay h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #fff;
+      margin-bottom: 3px;
+    }
+    .carousel-card-overlay p {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.75);
+    }
+
+    /* ── Modale bijou ── */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(75, 21, 40, 0.72);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .modal-overlay.open {
+      opacity: 1;
+      pointer-events: all;
+    }
+    .modal {
+      background: #fff;
+      border-radius: 20px;
+      max-width: 880px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      position: relative;
+      transform: translateY(24px) scale(0.97);
+      transition: transform 0.3s ease;
+      box-shadow: 0 40px 80px rgba(75, 21, 40, 0.25);
+    }
+    .modal-overlay.open .modal {
+      transform: translateY(0) scale(1);
+    }
+    .modal-close {
+      position: absolute;
+      top: 1.25rem; right: 1.25rem;
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: var(--rose-pale);
+      border: 1px solid var(--rose-light);
+      color: var(--rose-dark);
+      font-size: 1.2rem;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s, transform 0.15s;
+      z-index: 10;
+      line-height: 1;
+    }
+    .modal-close:hover {
+      background: var(--rose-light);
+      transform: rotate(90deg);
+    }
+    .modal-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 400px;
+    }
+    /* Photos côté gauche */
+    .modal-photos {
+      background: var(--rose-pale);
+      border-radius: 20px 0 0 20px;
+      overflow: hidden;
+      position: relative;
+    }
+    .modal-main-photo {
+      width: 100%;
+      aspect-ratio: 1;
+      object-fit: cover;
+      display: block;
+      transition: opacity 0.3s ease;
+    }
+    .modal-main-placeholder {
+      width: 100%;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--rose-pale), var(--rose-light));
+    }
+    .modal-main-placeholder svg {
+      width: 64px; height: 64px;
+      color: var(--rose);
+      opacity: 0.4;
+    }
+    .modal-thumbs {
+      display: flex;
+      gap: 8px;
+      padding: 12px;
+      flex-wrap: wrap;
+    }
+    .modal-thumb {
+      width: 56px; height: 56px;
+      border-radius: 8px;
+      overflow: hidden;
+      border: 2px solid transparent;
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.15s;
+      background: var(--rose-light);
+      flex-shrink: 0;
+    }
+    .modal-thumb.active {
+      border-color: var(--rose);
+    }
+    .modal-thumb:hover {
+      transform: scale(1.08);
+    }
+    .modal-thumb img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .modal-thumb-placeholder {
+      width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, var(--rose-light), var(--rose-mid));
+      font-size: 0.6rem;
+      color: var(--rose-darker);
+    }
+    /* Infos côté droit */
+    .modal-info {
+      padding: 2.5rem 2rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .modal-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--rose-deep);
+      background: var(--rose-pale);
+      padding: 4px 12px;
+      border-radius: 999px;
+      align-self: flex-start;
+    }
+    .modal-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: var(--rose-darker);
+      line-height: 1.25;
+    }
+    .modal-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.75;
+      flex: 1;
+    }
+    .modal-btn-close {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding: 11px 22px;
+      border-radius: 999px;
+      border: 1.5px solid var(--rose);
+      color: var(--rose);
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.2s;
+      align-self: flex-start;
+      font-family: 'DM Sans', sans-serif;
+    }
+    .modal-btn-close:hover {
+      background: var(--rose);
+      color: #fff;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 680px) {
+      .modal-inner {
+        grid-template-columns: 1fr;
+      }
+      .modal-photos {
+        border-radius: 20px 20px 0 0;
+      }
+      .modal-info {
+        padding: 1.5rem;
+      }
+      .carousel-card {
+        width: clamp(180px, 60vw, 260px);
+      }
+    }
+  
+    /* ── Catalogue complet ── */
+    .catalogue { max-width: 1100px; margin: 0 auto; padding: 1rem 2.5rem 4.5rem; }
+    .catalogue .section-header { text-align: center; margin-bottom: 1.75rem; }
+    .filtres { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 2rem; }
+    .filtre {
+      font-family: 'DM Sans', sans-serif; font-size: 0.82rem; font-weight: 500;
+      padding: 8px 16px; border-radius: 999px; cursor: pointer;
+      border: 1.5px solid var(--rose-light); background: #fff; color: var(--rose-dark);
+      transition: all 0.2s;
+    }
+    .filtre span { opacity: 0.6; margin-left: 4px; font-weight: 400; }
+    .filtre:hover { border-color: var(--rose); }
+    .filtre.active { background: var(--rose); border-color: var(--rose); color: #fff; }
+    .grille { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1.1rem; }
+    .grille-item {
+      background: #fff; border: 1px solid var(--rose-light); border-radius: var(--radius);
+      overflow: hidden; cursor: pointer; text-align: left; padding: 0; font: inherit;
+      display: flex; flex-direction: column; justify-content: flex-start;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .grille-item:hover, .grille-item:focus-visible {
+      transform: translateY(-4px); box-shadow: 0 12px 32px rgba(212,83,126,0.16); outline: none;
+    }
+    .grille-item img { width: 100%; aspect-ratio: 1; object-fit: cover; background: var(--rose-pale); }
+    .grille-item .legende { padding: 0.7rem 0.9rem 0.85rem; }
+    .grille-item h3 {
+      font-family: 'Playfair Display', serif; font-size: 0.98rem; font-weight: 400;
+      color: var(--rose-darker); line-height: 1.3;
+    }
+    .grille-item p { font-size: 0.72rem; color: var(--rose); letter-spacing: 0.04em; margin-top: 2px; }
+    .plus-wrap { text-align: center; margin-top: 2.25rem; }
+    .btn-plus {
+      font-family: 'DM Sans', sans-serif; font-size: 0.875rem; font-weight: 500;
+      padding: 11px 26px; border-radius: 999px; border: 1.5px solid var(--rose);
+      color: var(--rose); background: transparent; cursor: pointer; transition: all 0.2s;
+    }
+    .btn-plus:hover { background: var(--rose); color: #fff; }
+
+    /* ── Flèches photo dans la modale ── */
+    .modal-photo-wrap { position: relative; }
+    .modal-nav {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 38px; height: 38px; border-radius: 50%; border: none; cursor: pointer;
+      background: rgba(255,255,255,0.88); color: var(--rose-dark); font-size: 1.2rem;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 12px rgba(75,21,40,0.15);
+    }
+    .modal-nav:hover { background: #fff; }
+    .modal-nav.prev { left: 10px; } .modal-nav.next { right: 10px; }
+    .modal-desc:empty { display: none; }
+    .modal-cta { align-self: flex-start; }
+    .modal-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; }
+
+    @media (max-width: 768px) {
+      .catalogue { padding: 1rem 1.25rem 3.5rem; }
+      .grille { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    }
+
+    /* ── Photos entières, jamais rognées ── */
+    .carousel-card { background: #fff; }
+    .carousel-card img, .grille-item img {
+      object-fit: contain !important; background: #fff; padding: 6px;
+    }
+    .modal-main-photo {
+      object-fit: contain !important; background: #fff;
+      aspect-ratio: auto !important; height: min(70vh, 520px);
+    }
+
+    /* ── Badge « Disponible » ── */
+    .badge-dispo-bijou {
+      display: inline-block; font-size: 0.68rem; font-weight: 500; letter-spacing: 0.04em;
+      padding: 3px 10px; border-radius: 999px; background: #EAF3DE; color: #3B6D11;
+    }
+    .grille-item { position: relative; }
+    .grille-item .badge-dispo-bijou { position: absolute; top: 10px; left: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.08); }
+    .modal-badges { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+    .modal-badges .modal-tag { align-self: auto; }
+
+    /* ── Filtre « Disponibles uniquement » ── */
+    .filtre-dispo { border-color: #CFE3B8; color: #3B6D11; display: inline-flex; align-items: center; gap: 7px; }
+    .filtre-dispo .pastille { width: 9px; height: 9px; border-radius: 50%; background: #8DBF5A; margin: 0; opacity: 1; }
+    .filtre-dispo:hover { border-color: #3B6D11; }
+    .filtre-dispo.active { background: #3B6D11; border-color: #3B6D11; color: #fff; }
+    .filtre-dispo.active .pastille { background: #fff; }
+    .filtre:disabled { opacity: 0.4; cursor: default; }
+    .grille-vide { grid-column: 1 / -1; text-align: center; color: var(--text-muted); padding: 2rem 0; }
+
+    /* ── Gnome décoratif dans l'en-tête ── */
+    .galerie-hero-deco {
+      position: absolute; left: max(2.5rem, 8vw); bottom: 0;
+      height: 92%; width: auto; max-height: 300px;
+      filter: drop-shadow(0 10px 18px rgba(75,21,40,0.18));
+      animation: fadeUp 0.7s 0.2s ease both;
+    }
+    .galerie-hero p + p { margin-top: 0.6rem; }
+    @media (max-width: 900px) { .galerie-hero-deco { height: 80%; left: 1rem; opacity: 0.9; } }
+    @media (max-width: 640px) { .galerie-hero-deco { display: none; } }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="nav-logo"><img src="img/logo-cachanax.png" alt="Cachanax"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="galerie.html" class="active">Galerie</a></li>
+      <li><a href="ateliers.html">Ateliers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">S'inscrire à un atelier</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-photo" aria-hidden="true">
+      <img src="img/galerie-stand.jpg" alt="">
+    </div>
+    <div class="hero-inner">
+      <span class="hero-tag fade-up">Créations</span>
+      <h1 class="fade-up-2">Chaque pièce est unique</h1>
+      <p class="hero-desc fade-up-3">Je peux réaliser sur-mesure votre bijou, n'hésitez pas à vous inspirer de mes précédentes réalisations.</p>
+      <p class="hero-desc fade-up-3">Les articles disponibles sont indiqués, vous pouvez les commander en m'envoyant un message via la page "Contact".</p>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;" class="fade-up-3">
+        <a href="#catalogue" class="btn-primary">Voir le catalogue →</a>
+        <a href="contact.html" class="btn-outline">Me contacter</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carrousel : la sélection (js/selection.js) -->
+  <section class="carousel-section" aria-label="Sélection">
+    <div class="carousel-track-wrapper">
+      <div class="carousel-track" id="carouselTrack"></div>
+    </div>
+  </section>
+
+  <!-- Catalogue complet -->
+  <section class="catalogue" id="catalogue">
+    <div class="section-header">
+      <span class="section-label">Catalogue</span>
+      <h2 class="section-title">Toutes mes créations</h2>
+    </div>
+    <div class="filtres" id="filtres" role="tablist"></div>
+    <div class="grille" id="grille"></div>
+    <div class="plus-wrap"><button class="btn-plus" id="btnPlus" type="button">Voir plus de créations</button></div>
+  </section>
+
+  <!-- Bandeau contact -->
+  <div class="contact-band">
+    <div class="contact-band-text">
+      <h2>Une création vous intéresse ?</h2>
+      <p>Contactez-moi pour en savoir plus.</p>
+    </div>
+    <a href="contact.html" class="btn-white">✉ Écrire un message</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <span class="footer-logo">✦ Cachanax</span>
+    <div class="footer-links">
+      <a href="https://www.instagram.com/cachanax.bijoux" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/cachanax" target="_blank" rel="noopener">Facebook</a>
+    </div>
+    <span class="footer-copy">© 2025 Cachanax</span>
+  </footer>
+
+  <!-- Modale -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose" aria-label="Fermer">✕</button>
+      <div class="modal-inner">
+        <div class="modal-photos">
+          <div class="modal-photo-wrap">
+            <img id="modalMainPhoto" class="modal-main-photo" src="" alt="">
+            <button class="modal-nav prev" id="photoPrev" aria-label="Photo précédente">‹</button>
+            <button class="modal-nav next" id="photoNext" aria-label="Photo suivante">›</button>
+          </div>
+          <div class="modal-thumbs" id="modalThumbs"></div>
+        </div>
+        <div class="modal-info">
+          <div class="modal-badges"><span class="modal-tag" id="modalTag"></span><span id="modalDispo"></span></div>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-actions">
+            <a class="btn-primary modal-cta" id="modalContact" href="contact.html">Cette pièce m'intéresse →</a>
+            <button class="modal-btn-close" id="modalBtnClose">← Retour</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bijoux.js"></script>
+  <script src="js/selection.js"></script>
+  <script>
+  /* ── Outils ── */
+  const norm = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+                     .replace(/^bo\s+/, '').replace(/\s+/g, ' ').trim();
+  const estDispo = b => /^(oui|o|yes|x|1|true)$/i.test(String(b.disponible || '').trim());
+  const BADGE = '<span class="badge-dispo-bijou">Disponible</span>';
+  const esc = s => s.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'})[c]);
+
+  /* ── Sélection pour le carrousel ── */
+  function getSelection() {
+    const voulus = (typeof selection !== 'undefined' ? selection : []).map(norm);
+    if (voulus.length) {
+      const trouves = [];
+      voulus.forEach(n => {
+        const b = bijoux.find(x => norm(x.dossier) === n || norm(x.titre) === n);
+        if (b) trouves.push(b); else console.warn('Sélection : bijou introuvable →', n);
+      });
+      if (trouves.length) return trouves;
+    }
+    // Par défaut : 20 pièces tirées au hasard, différentes à chaque visite
+    const melange = [...bijoux];
+    for (let i = melange.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [melange[i], melange[j]] = [melange[j], melange[i]];
+    }
+    return melange.slice(0, 20);
+  }
+
+  function buildCarousel() {
+    const track = document.getElementById('carouselTrack');
+    const sel = getSelection();
+    let liste = sel;
+    while (liste.length < 8) liste = liste.concat(sel);   // assez de cartes pour remplir l'écran
+    [...liste, ...liste].forEach(b => {
+      const card = document.createElement('div');
+      card.className = 'carousel-card';
+      card.innerHTML = `<img src="${b.photos[0]}" alt="${esc(b.titre)}" loading="lazy">
+        <div class="carousel-card-overlay"><h3>${esc(b.titre)}</h3><p>${esc(b.categorie)}${estDispo(b) ? ' · Disponible' : ''}</p></div>`;
+      card.addEventListener('click', () => openModal(b.id));
+      track.appendChild(card);
+    });
+    track.style.animationDuration = (liste.length * 4.5) + 's';
+  }
+
+  /* ── Catalogue avec filtres ── */
+  const PAGE = 24;
+  let filtre = 'Tout', visibles = PAGE;
+
+  let dispoSeul = false;
+  const parCategorie = c => c === 'Tout' ? bijoux : bijoux.filter(b => b.categorie === c);
+  const appliquerDispo = l => dispoSeul ? l.filter(estDispo) : l;
+
+  function buildFiltres() {
+    const cats = ['Tout', ...new Set(bijoux.map(b => b.categorie))];
+    const zone = document.getElementById('filtres');
+    cats.forEach(c => {
+      const btn = document.createElement('button');
+      btn.className = 'filtre' + (c === filtre ? ' active' : '');
+      btn.type = 'button';
+      btn.dataset.cat = c;
+      btn.addEventListener('click', () => {
+        filtre = c; visibles = PAGE;
+        zone.querySelectorAll('.filtre[data-cat]').forEach(f => f.classList.toggle('active', f === btn));
+        renderGrille();
+      });
+      zone.appendChild(btn);
+    });
+    // Interrupteur « Disponibles uniquement » (affiché seulement s'il y a des pièces disponibles)
+    if (bijoux.some(estDispo)) {
+      const t = document.createElement('button');
+      t.className = 'filtre filtre-dispo';
+      t.type = 'button';
+      t.setAttribute('aria-pressed', 'false');
+      t.innerHTML = '<span class="pastille"></span>Disponibles uniquement';
+      t.addEventListener('click', () => {
+        dispoSeul = !dispoSeul; visibles = PAGE;
+        t.classList.toggle('active', dispoSeul);
+        t.setAttribute('aria-pressed', String(dispoSeul));
+        renderGrille();
+      });
+      zone.appendChild(t);
+    }
+    majCompteurs();
+  }
+
+  function majCompteurs() {
+    document.querySelectorAll('.filtre[data-cat]').forEach(btn => {
+      const c = btn.dataset.cat, n = appliquerDispo(parCategorie(c)).length;
+      btn.innerHTML = `${esc(c)}<span>${n}</span>`;
+      btn.disabled = n === 0 && c !== 'Tout';
+    });
+  }
+
+  function renderGrille() {
+    majCompteurs();
+    const liste = appliquerDispo(parCategorie(filtre));
+    const grille = document.getElementById('grille');
+    grille.innerHTML = '';
+    liste.slice(0, visibles).forEach(b => {
+      const item = document.createElement('button');
+      item.className = 'grille-item';
+      item.type = 'button';
+      item.innerHTML = (estDispo(b) ? BADGE : '') + `<img src="${b.photos[0]}" alt="${esc(b.titre)}" loading="lazy">
+        <div class="legende"><h3>${esc(b.titre)}</h3><p>${esc(b.categorie)}</p></div>`;
+      item.addEventListener('click', () => openModal(b.id));
+      grille.appendChild(item);
+    });
+    if (!liste.length) grille.innerHTML = '<p class="grille-vide">Aucune pièce disponible dans cette catégorie pour le moment.</p>';
+    document.getElementById('btnPlus').parentElement.style.display = liste.length > visibles ? '' : 'none';
+  }
+  document.getElementById('btnPlus').addEventListener('click', () => { visibles += PAGE; renderGrille(); });
+
+  /* ── Modale ── */
+  let photos = [], idx = 0;
+
+  function openModal(id) {
+    const b = bijoux.find(x => x.id === id);
+    if (!b) return;
+    photos = b.photos; idx = 0;
+    document.getElementById('modalTag').textContent = b.categorie;
+    document.getElementById('modalTitle').textContent = b.titre;
+    document.getElementById('modalDesc').textContent = b.desc || '';
+    document.getElementById('modalDispo').innerHTML = estDispo(b) ? BADGE : '';
+    document.getElementById('modalContact').href = 'contact.html?creation=' + encodeURIComponent(b.titre);
+    renderPhoto(); renderThumbs();
+    document.getElementById('modalOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function renderPhoto() {
+    const img = document.getElementById('modalMainPhoto');
+    img.src = photos[idx];
+    img.alt = document.getElementById('modalTitle').textContent + ' — photo ' + (idx + 1);
+    const plusieurs = photos.length > 1;
+    document.getElementById('photoPrev').style.display = plusieurs ? '' : 'none';
+    document.getElementById('photoNext').style.display = plusieurs ? '' : 'none';
+    document.querySelectorAll('.modal-thumb').forEach((t, j) => t.classList.toggle('active', j === idx));
+  }
+
+  function renderThumbs() {
+    const zone = document.getElementById('modalThumbs');
+    zone.innerHTML = '';
+    if (photos.length < 2) return;
+    photos.forEach((p, i) => {
+      const t = document.createElement('div');
+      t.className = 'modal-thumb' + (i === idx ? ' active' : '');
+      t.innerHTML = `<img src="${p}" alt="Vue ${i + 1}" loading="lazy">`;
+      t.addEventListener('click', () => { idx = i; renderPhoto(); });
+      zone.appendChild(t);
+    });
+  }
+
+  const step = d => { idx = (idx + d + photos.length) % photos.length; renderPhoto(); };
+  document.getElementById('photoPrev').addEventListener('click', () => step(-1));
+  document.getElementById('photoNext').addEventListener('click', () => step(1));
+
+  function closeModal() {
+    document.getElementById('modalOverlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  document.getElementById('modalBtnClose').addEventListener('click', closeModal);
+  document.getElementById('modalOverlay').addEventListener('click', e => {
+    if (e.target.id === 'modalOverlay') closeModal();
+  });
+  document.addEventListener('keydown', e => {
+    if (!document.getElementById('modalOverlay').classList.contains('open')) return;
+    if (e.key === 'Escape') closeModal();
+    if (e.key === 'ArrowLeft' && photos.length > 1) step(-1);
+    if (e.key === 'ArrowRight' && photos.length > 1) step(1);
+  });
+
+  /* ── Démarrage ── */
+  buildCarousel();
+  buildFiltres();
+  renderGrille();
+  </script>
+
+</body>
+</html>
