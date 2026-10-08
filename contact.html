@@ -7,6 +7,7 @@
   <title>Contact — Cachanax</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
   <!-- Navigation -->
@@ -42,42 +43,45 @@
         Envoyez-moi un message
       </h2>
       <!--
-        Ce formulaire utilise Formspree (gratuit jusqu'à 50 messages/mois).
-        Remplacez YOUR_FORM_ID par votre identifiant après inscription sur formspree.io
+        Ce formulaire envoie les messages vers un scénario Make (webhook), qui les enregistre dans Notion.
+        Le script d'envoi est en bas de page.
       -->
-      <form
-        class="contact-form"
-        action="https://formspree.io/f/YOUR_FORM_ID"
-        method="POST"
-      >
-        <div class="form-group">
-          <label for="prenom">Votre prénom *</label>
-          <input type="text" id="prenom" name="prenom" required placeholder="Marie">
-        </div>
+		<form class="contact-form" id="contact-form">
+			  <div class="form-group">
+				<label for="prenom">Votre nom et prénom *</label>
+				<input type="text" id="prenom" name="prenom" required placeholder="Dupont Marie">
+			  </div>
 
-        <div class="form-group">
-          <label for="email">Votre email *</label>
-          <input type="email" id="email" name="email" required placeholder="marie@exemple.fr">
-        </div>
+			  <div class="form-group">
+				<label for="email">Votre email *</label>
+				<input type="email" id="email" name="email" required placeholder="marie@exemple.fr">
+			  </div>
 
-        <div class="form-group">
-          <label for="sujet">Sujet</label>
-          <select id="sujet" name="sujet">
-            <option value="">Choisir…</option>
-            <option value="atelier">S'inscrire à un atelier</option>
-            <option value="creation">En savoir plus sur une création</option>
-            <option value="dates">Recevoir les prochaines dates</option>
-            <option value="autre">Autre</option>
-          </select>
-        </div>
+			  <div class="form-group">
+				<label for="sujet">Sujet</label>
+				<select id="sujet" name="sujet">
+				  <option value="">Choisir…</option>
+				  <option value="Atelier">S'inscrire à un atelier</option>
+				  <option value="Création">En savoir plus sur une création</option>
+				  <option value="Prochaines dates">Recevoir les prochaines dates</option>
+				  <option value="Autre">Autre</option>
+				</select>
+			  </div>
 
-        <div class="form-group">
-          <label for="message">Message *</label>
-          <textarea id="message" name="message" required placeholder="Bonjour, je souhaite…"></textarea>
-        </div>
+			  <div class="form-group">
+				<label for="message">Message *</label>
+				<textarea id="message" name="message" required placeholder="Bonjour, je souhaite…"></textarea>
+			  </div>
 
-        <button type="submit" class="form-submit">Envoyer le message →</button>
-      </form>
+			  <!-- Anti-spam : invisible pour les humains -->
+			  <div style="position:absolute; left:-9999px;" aria-hidden="true">
+				<label for="site_web">Ne pas remplir</label>
+				<input type="text" id="site_web" name="site_web" tabindex="-1" autocomplete="off">
+			  </div>
+
+			  <button type="submit" class="form-submit">Envoyer le message →</button>
+				<p class="form-status" id="form-status" role="status"></p>
+		</form>
     </div>
 
     <!-- Infos de contact -->
@@ -138,23 +142,63 @@
       <a href="https://www.instagram.com/cachanax.bijoux" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.facebook.com/cachanax" target="_blank" rel="noopener">Facebook</a>
     </div>
-    <span class="footer-copy">© 2025 Cachanax</span>
+    <span class="footer-copy">© 2026 Cachanax</span>
   </footer>
 
   <script>
-  // Pré-remplit le formulaire quand on vient d'une fiche bijou (bouton « Cette pièce m'intéresse »)
+  // Pré-remplit le formulaire quand on vient d'un atelier (?atelier=…) ou d'une fiche bijou (?creation=…)
   const params = new URLSearchParams(location.search);
   const atelier = params.get('atelier');
   if (atelier) {
-    document.getElementById('sujet').value = 'atelier';
+    document.getElementById('sujet').value = 'Atelier';
     document.getElementById('message').value = "Bonjour, je souhaite m'inscrire à l'atelier du " + atelier.charAt(0).toLowerCase() + atelier.slice(1) + '.';
   }
   const creation = params.get('creation');
   if (creation) {
-    document.getElementById('sujet').value = 'creation';
+    document.getElementById('sujet').value = 'Création';
     document.getElementById('message').value = 'Bonjour, je souhaite en savoir plus sur « ' + creation + ' ».';
   }
   </script>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contact-form');
+  if (!form) { console.error('Formulaire contact-form introuvable'); return; }
+  const statut = document.getElementById('form-status');
+  const bouton = form.querySelector('.form-submit');
 
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    if (form.site_web.value) {
+      form.reset();
+      statut.textContent = 'Merci, votre message a bien été envoyé !';
+      return;
+    }
+
+    bouton.disabled = true;
+    bouton.textContent = 'Envoi en cours…';
+
+    const donnees = new URLSearchParams(new FormData(form));
+    donnees.delete('site_web');
+
+    try {
+      await fetch('https://hook.eu1.make.com/cbh382x3ponf8qm8nc08fmek1h6k6ivp', {
+        method: 'POST',
+        mode: 'no-cors',
+        body: donnees
+      });
+      form.reset();
+      statut.textContent = 'Merci, votre message a bien été envoyé ! Je vous réponds au plus tôt.';
+      statut.className = 'form-status ok';
+    } catch (err) {
+      statut.textContent = "Oups, l'envoi n'a pas fonctionné. Écrivez-moi directement à bijoux.cachanax@gmail.com";
+      statut.className = 'form-status erreur';
+    } finally {
+      bouton.disabled = false;
+      bouton.textContent = 'Envoyer le message →';
+    }
+  });
+});
+</script>
 </body>
 </html>

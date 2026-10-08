@@ -508,6 +508,9 @@ nav {
   align-self: flex-start;
 }
 .form-submit:hover { background: var(--rose-deep); transform: translateY(-2px); }
+.form-status { margin-top: 1rem; font-size: 0.95rem; }
+.form-status.ok { color: #72243E; }
+.form-status.erreur { color: #D4537E; }
 
 .contact-infos { display: flex; flex-direction: column; gap: 1.5rem; padding-top: 0.5rem; }
 .contact-info-item { display: flex; gap: 1rem; align-items: flex-start; }
