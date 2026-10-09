@@ -43,7 +43,7 @@
         Envoyez-moi un message
       </h2>
       <!--
-        Ce formulaire envoie les messages vers un scénario Make (webhook), qui les enregistre dans Notion.
+        Ce formulaire envoie les messages par email (via Web3Forms) vers bijoux.cachanax@gmail.com.
         Le script d'envoi est en bas de page.
       -->
 		<form class="contact-form" id="contact-form">
@@ -160,6 +160,12 @@
   }
   </script>
 <script>
+// ===== Envoi du formulaire =====
+// Clé Web3Forms reçue par email : la coller entre les guillemets ci-dessous.
+const CLE_WEB3FORMS = '578b7c85-53cc-4c6f-b435-a87d1cfcec6a';
+// Ancienne destination (Make → Notion), à réutiliser plus tard :
+// https://hook.eu1.make.com/cbh382x3ponf8qm8nc08fmek1h6k6ivp
+
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('contact-form');
   if (!form) { console.error('Formulaire contact-form introuvable'); return; }
@@ -178,15 +184,21 @@ document.addEventListener('DOMContentLoaded', () => {
     bouton.disabled = true;
     bouton.textContent = 'Envoi en cours…';
 
-    const donnees = new URLSearchParams(new FormData(form));
+    const donnees = new FormData(form);
     donnees.delete('site_web');
+    donnees.append('access_key', CLE_WEB3FORMS);
+    donnees.append('subject', 'Cachanax.com : ' + (form.sujet.value || 'nouveau message') + ' – ' + form.prenom.value);
+    donnees.append('from_name', 'Site Cachanax');
+    donnees.append('replyto', form.email.value);
 
     try {
-      await fetch('https://hook.eu1.make.com/cbh382x3ponf8qm8nc08fmek1h6k6ivp', {
+      const reponse = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        mode: 'no-cors',
+        headers: { 'Accept': 'application/json' },
         body: donnees
       });
+      const resultat = await reponse.json();
+      if (!resultat.success) throw new Error(resultat.message);
       form.reset();
       statut.textContent = 'Merci, votre message a bien été envoyé ! Je vous réponds au plus tôt.';
       statut.className = 'form-status ok';
