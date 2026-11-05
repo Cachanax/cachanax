@@ -12,6 +12,10 @@
   le titre, la description, etc. Il est créé automatiquement
   la première fois : il suffit ensuite de le modifier.
 
+  Les photos du site sont retouchées automatiquement (retouche.py) :
+  vignette dans le passe-partout, couleurs et lumière corrigées.
+  Réglage par bijou dans infos.txt, ligne « vignette: ».
+
   Lancement : double-clic sur « Mettre à jour la galerie.bat »
   Simulation (ne modifie rien) : python mettre_a_jour_galerie.py --test
 ════════════════════════════════════════════════════════════════
@@ -21,13 +25,15 @@ import json
 import re
 import shutil
 import sys
+import tempfile
+import time
 import unicodedata
 from pathlib import Path
 
 try:
-    from PIL import Image, ImageOps
+    from PIL import Image
 except ImportError:
-    print("Il manque la bibliothèque Pillow. Lancez : python -m pip install Pillow")
+    print("Il manque des outils : lancez d'abord « Installer les outils.bat ».")
     input("Appuyez sur Entrée pour fermer...")
     sys.exit(1)
 
@@ -42,8 +48,10 @@ EXCLUES = ["Expos", "Noël", "Montres"]
 
 MAX_PHOTOS = 5          # photos par bijou
 TAILLE_MAX = 1200       # plus grand côté, en pixels
-QUALITE = 82            # qualité JPEG
+QUALITE = 88            # qualité JPEG
 EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp"}
+
+CHOIX_VIGNETTE = ("auto", "detoure", "corrige", "origine")
 
 FICHE = "infos.txt"
 ETAT = Path(__file__).resolve().parent / "etat_galerie.json"
@@ -110,18 +118,26 @@ def lire_fiche(chemin):
     return infos
 
 
+def choix_vignette(infos):
+    choix = slug(infos.get("vignette", "auto"))
+    return choix if choix in CHOIX_VIGNETTE else "auto"
+
+
 def ecrire_fiche(chemin, titre, disponible="non", vedette="non", afficher="oui", description=""):
     contenu = (
         "# Fiche du bijou pour le site cachanax.com\n"
         "# disponible / vedette / afficher : oui ou non\n"
         "#   vedette  = mis en avant dans le carrousel de la galerie\n"
         "#   afficher = non pour le retirer du site sans toucher aux photos\n"
+        "# vignette : auto, detoure, corrige ou origine\n"
+        "#   auto = détourée si le résultat est fiable, sinon photo corrigée dans le cadre\n"
         "# La description s'écrit sous la ligne « description: »\n"
         "\n"
         f"titre: {titre}\n"
         f"disponible: {disponible}\n"
         f"vedette: {vedette}\n"
         f"afficher: {afficher}\n"
+        "vignette: auto\n"
         "description:\n"
         f"{description}\n"
     )
@@ -150,26 +166,55 @@ def photos_source(dossier):
     return fichiers[:MAX_PHOTOS]
 
 
-def empreinte(fichiers):
-    return [[f.name, f.stat().st_size, int(f.stat().st_mtime)] for f in fichiers]
+def empreinte(fichiers, choix):
+    return [[f.name, f.stat().st_size, int(f.stat().st_mtime)] for f in fichiers] + [choix]
 
 
-def preparer_photos(sources, cible):
+def avec_reprises(action, *args):
+    """OneDrive peut verrouiller un fichier un instant pendant la synchronisation."""
+    for essai in range(6):
+        try:
+            return action(*args)
+        except PermissionError:
+            if essai == 5:
+                raise
+            time.sleep(2)
+
+
+def preparer_photos(sources, cible, choix, retouche):
+    """Retouche les photos d'un bijou et renvoie la version retenue pour la vignette.
+    Le travail se fait hors de OneDrive, puis les fichiers sont remplacés un par un :
+    le dossier du bijou n'est jamais supprimé, il peut être verrouillé par OneDrive."""
     if TEST:
-        return
-    if cible.exists():
-        shutil.rmtree(cible)
-    cible.mkdir(parents=True)
-    for i, src in enumerate(sources, 1):
-        with Image.open(src) as im:
-            im = ImageOps.exif_transpose(im)
-            if im.mode != "RGB":
-                fond = Image.new("RGB", im.size, (255, 255, 255))
-                fond.paste(im, mask=im.convert("RGBA").split()[-1])
-                im = fond
-            im.thumbnail((TAILLE_MAX, TAILLE_MAX), Image.LANCZOS)
-            im.save(cible / f"{i}.jpg", "JPEG", quality=QUALITE,
-                    optimize=True, progressive=True)
+        return "simulation"
+    version = None
+    with tempfile.TemporaryDirectory() as temp:
+        temp = Path(temp)
+        for i, src in enumerate(sources, 1):
+            with Image.open(src) as im:
+                if i == 1:
+                    sortie, version = retouche.vignette(im, choix)
+                else:
+                    sortie = retouche.autre_photo(im, TAILLE_MAX)
+            sortie.save(temp / f"{i}.jpg", "JPEG", quality=QUALITE, optimize=True, progressive=True)
+        cible.mkdir(parents=True, exist_ok=True)
+        for f in sorted(temp.iterdir()):
+            avec_reprises(shutil.copyfile, f, cible / f.name)
+    gardes = {f"{i}.jpg" for i in range(1, len(sources) + 1)}
+    for f in cible.glob("*.jpg"):
+        if f.name not in gardes:
+            avec_reprises(f.unlink)
+    return version
+
+
+def retirer_dossier(dossier):
+    """Une pièce retirée du site : un dossier verrouillé n'arrête pas la mise à jour."""
+    try:
+        for f in dossier.glob("*"):
+            avec_reprises(f.unlink)
+        avec_reprises(dossier.rmdir)
+    except OSError:
+        print(f"Attention : dossier à supprimer plus tard : {dossier}")
 
 
 def chemin_web(p):
@@ -184,6 +229,19 @@ def main():
     if TEST:
         print("*** SIMULATION : aucun fichier ne sera modifié ***\n")
 
+    retouche = None
+    if not TEST:
+        try:
+            import retouche
+        except ImportError as e:
+            print(f"Il manque des outils ({e.name}) : lancez d'abord « Installer les outils.bat ».")
+            print("Rien n'a été modifié.")
+            return
+
+    if not TEST:
+        for reste in IMG.glob("*/*.tmp"):        # restes d'une mise à jour interrompue
+            shutil.rmtree(reste, ignore_errors=True)
+
     premier_lancement = not ETAT.exists()
     etat = {} if premier_lancement else json.loads(ETAT.read_text(encoding="utf-8"))
     ancien = ancien_catalogue() if premier_lancement else {}
@@ -197,6 +255,7 @@ def main():
 
     bijoux, vedettes, nouvelles_fiches, masques, sans_photo = [], [], [], [], []
     traites = adoptes = 0
+    versions, echecs = [], []
     nouvel_etat = {}
 
     for cat in ordre:
@@ -235,7 +294,8 @@ def main():
                 continue
 
             cible = IMG / slug(cat) / slug(d.name)
-            emp = empreinte(sources)
+            choix = choix_vignette(infos)
+            emp = empreinte(sources, choix)
             deja = etat.get(ident)
 
             if deja and deja["sources"] == emp and all((DEPOT / p).exists() for p in deja["photos"]):
@@ -245,10 +305,33 @@ def main():
                 photos = ancien[ident]["photos"]          # on garde les photos déjà en ligne
                 adoptes += 1
             else:
-                preparer_photos(sources, cible)
+                try:
+                    version = preparer_photos(sources, cible, choix, retouche)
+                except Exception as e:
+                    # Un bijou en échec n'arrête pas les autres
+                    echecs.append(f"{cat} / {d.name} : {e}")
+                    print(f"  ÉCHEC : {cat} / {d.name} : {e}", flush=True)
+                    if not deja:
+                        continue
+                    nouvel_etat[ident] = deja
+                    photos = deja["photos"]
+                    bijoux.append({
+                        "id": ident,
+                        "titre": infos.get("titre") or titre_par_defaut(d.name),
+                        "categorie": cat,
+                        "dossier": d.name,
+                        "vignette": photos[0],
+                        "photos": photos,
+                        "disponible": "oui" if oui(infos.get("disponible", "non")) else "non",
+                        "desc": infos.get("description", ""),
+                    })
+                    if oui(infos.get("vedette", "non")):
+                        vedettes.append(d.name)
+                    continue
                 photos = [chemin_web(cible / f"{i}.jpg") for i in range(1, len(sources) + 1)]
                 traites += 1
-                print(f"  photos préparées : {cat} / {d.name} ({len(sources)})")
+                versions.append((f"{cat} / {d.name}", version))
+                print(f"  photos préparées : {cat} / {d.name} ({len(sources)}, vignette : {version})", flush=True)
 
             nouvel_etat[ident] = {"sources": emp, "photos": photos}
             bijoux.append({
@@ -270,7 +353,7 @@ def main():
         for p in etat[ident]["photos"][:1]:
             dossier = (DEPOT / p).parent
             if not TEST and dossier.is_dir() and IMG in dossier.parents:
-                shutil.rmtree(dossier)
+                retirer_dossier(dossier)
 
     # ── Écriture des fichiers du site ──
     if not TEST:
@@ -316,9 +399,19 @@ def main():
             print(f"   - {s}")
     if inconnues:
         print(f"\nNouvelle(s) catégorie(s) publiée(s) : {', '.join(inconnues)}")
+    if echecs:
+        print(f"\nBijoux non traités ({len(echecs)}), relancez la mise à jour :")
+        for e in echecs:
+            print(f"   - {e}")
     if TEST:
         print("\n*** SIMULATION : rien n'a été modifié ***")
     else:
+        if versions:
+            print("\nÀ contrôler dans GitHub Desktop avant de publier :")
+            for nom, version in versions:
+                print(f"   - {nom} : vignette {version}")
+            print("Si une vignette ne convient pas, changez « vignette: » dans son infos.txt "
+                  "(detoure, corrige ou origine), puis relancez.")
         print("\nTerminé. Dans GitHub Desktop : vérifiez, « Commit », puis « Push origin ».")
 
 

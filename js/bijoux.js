@@ -1,15 +1,8 @@
 /*
-  ════════════════════════════════════════════════════════════════
-  CATALOGUE DES BIJOUX — généré à partir du dossier OneDrive « Photos »
-  (un sous-dossier = un bijou ; le nom du dossier = le titre).
-
-  Vous pouvez modifier à la main :
-    - titre : le nom affiché
-    - desc  : votre description (laissez "" s'il n'y en a pas encore)
-    - disponible : "oui" si la pièce est en stock (badge « Disponible »),
-                   "non" sinon
-  Ne touchez pas à id, vignette ni photos.
-  ════════════════════════════════════════════════════════════════
+  CATALOGUE DES BIJOUX — FICHIER GÉNÉRÉ AUTOMATIQUEMENT, ne pas modifier.
+  Pour changer un titre, une description ou la disponibilité :
+  modifiez le fichier infos.txt du bijou dans OneDrive > Cachanax > Photos,
+  puis relancez « Mettre à jour la galerie ».
 */
 const bijoux = [
   {
@@ -17,7 +10,7 @@ const bijoux = [
     "titre": "Amethyste en habit de perles",
     "categorie": "Colliers",
     "dossier": "Amethyste en habit de perles",
-    "vignette": "img/colliers/amethyste-en-habit-de-perles/vignette.jpg",
+    "vignette": "img/colliers/amethyste-en-habit-de-perles/1.jpg",
     "photos": [
       "img/colliers/amethyste-en-habit-de-perles/1.jpg",
       "img/colliers/amethyste-en-habit-de-perles/2.jpg",
@@ -32,7 +25,7 @@ const bijoux = [
     "titre": "Arc en ciel",
     "categorie": "Colliers",
     "dossier": "Arc en ciel",
-    "vignette": "img/colliers/arc-en-ciel/vignette.jpg",
+    "vignette": "img/colliers/arc-en-ciel/1.jpg",
     "photos": [
       "img/colliers/arc-en-ciel/1.jpg",
       "img/colliers/arc-en-ciel/2.jpg",
@@ -44,11 +37,26 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "colliers--aurore-brillante",
+    "titre": "Aurore brillante",
+    "categorie": "Colliers",
+    "dossier": "Aurore brillante",
+    "vignette": "img/colliers/aurore-brillante/1.jpg",
+    "photos": [
+      "img/colliers/aurore-brillante/1.jpg",
+      "img/colliers/aurore-brillante/2.jpg",
+      "img/colliers/aurore-brillante/3.jpg",
+      "img/colliers/aurore-brillante/4.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Strass bleus enchassés dans des perles de rocailles calibrées, ce collier bleu et bronze est une pièce unique."
+  },
+  {
     "id": "colliers--baroque",
     "titre": "Baroque",
     "categorie": "Colliers",
     "dossier": "Baroque",
-    "vignette": "img/colliers/baroque/vignette.jpg",
+    "vignette": "img/colliers/baroque/1.jpg",
     "photos": [
       "img/colliers/baroque/1.jpg",
       "img/colliers/baroque/2.jpg",
@@ -64,7 +72,7 @@ const bijoux = [
     "titre": "Boucles de printemps",
     "categorie": "Colliers",
     "dossier": "Boucles de printemps",
-    "vignette": "img/colliers/boucles-de-printemps/vignette.jpg",
+    "vignette": "img/colliers/boucles-de-printemps/1.jpg",
     "photos": [
       "img/colliers/boucles-de-printemps/1.jpg",
       "img/colliers/boucles-de-printemps/2.jpg",
@@ -79,7 +87,7 @@ const bijoux = [
     "titre": "Boucles noir et rouge",
     "categorie": "Colliers",
     "dossier": "Boucles noir et rouge",
-    "vignette": "img/colliers/boucles-noir-et-rouge/vignette.jpg",
+    "vignette": "img/colliers/boucles-noir-et-rouge/1.jpg",
     "photos": [
       "img/colliers/boucles-noir-et-rouge/1.jpg",
       "img/colliers/boucles-noir-et-rouge/2.jpg",
@@ -93,7 +101,7 @@ const bijoux = [
     "titre": "Bouquet vert et marron",
     "categorie": "Colliers",
     "dossier": "Bouquet vert et marron",
-    "vignette": "img/colliers/bouquet-vert-et-marron/vignette.jpg",
+    "vignette": "img/colliers/bouquet-vert-et-marron/1.jpg",
     "photos": [
       "img/colliers/bouquet-vert-et-marron/1.jpg",
       "img/colliers/bouquet-vert-et-marron/2.jpg",
@@ -108,7 +116,7 @@ const bijoux = [
     "titre": "Bulle bleu",
     "categorie": "Colliers",
     "dossier": "Bulle bleu",
-    "vignette": "img/colliers/bulle-bleu/vignette.jpg",
+    "vignette": "img/colliers/bulle-bleu/1.jpg",
     "photos": [
       "img/colliers/bulle-bleu/1.jpg",
       "img/colliers/bulle-bleu/2.jpg",
@@ -119,11 +127,27 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "colliers--chips-corail",
+    "titre": "Chips corail",
+    "categorie": "Colliers",
+    "dossier": "Chips corail",
+    "vignette": "img/colliers/chips-corail/1.jpg",
+    "photos": [
+      "img/colliers/chips-corail/1.jpg",
+      "img/colliers/chips-corail/2.jpg",
+      "img/colliers/chips-corail/3.jpg",
+      "img/colliers/chips-corail/4.jpg",
+      "img/colliers/chips-corail/5.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Chips corail en ivoire végétal, sur un léger collier en macramé."
+  },
+  {
     "id": "colliers--chips-en-resille",
     "titre": "Chips en résille",
     "categorie": "Colliers",
     "dossier": "Chips en résille",
-    "vignette": "img/colliers/chips-en-resille/vignette.jpg",
+    "vignette": "img/colliers/chips-en-resille/1.jpg",
     "photos": [
       "img/colliers/chips-en-resille/1.jpg",
       "img/colliers/chips-en-resille/2.jpg",
@@ -139,7 +163,7 @@ const bijoux = [
     "titre": "Chrysocole pendentif",
     "categorie": "Colliers",
     "dossier": "Chrysocole pendentif",
-    "vignette": "img/colliers/chrysocole-pendentif/vignette.jpg",
+    "vignette": "img/colliers/chrysocole-pendentif/1.jpg",
     "photos": [
       "img/colliers/chrysocole-pendentif/1.jpg",
       "img/colliers/chrysocole-pendentif/2.jpg",
@@ -155,7 +179,7 @@ const bijoux = [
     "titre": "Ciel et eau",
     "categorie": "Colliers",
     "dossier": "Ciel et eau",
-    "vignette": "img/colliers/ciel-et-eau/vignette.jpg",
+    "vignette": "img/colliers/ciel-et-eau/1.jpg",
     "photos": [
       "img/colliers/ciel-et-eau/1.jpg",
       "img/colliers/ciel-et-eau/2.jpg",
@@ -171,7 +195,7 @@ const bijoux = [
     "titre": "Coeur de feu",
     "categorie": "Colliers",
     "dossier": "Coeur de feu",
-    "vignette": "img/colliers/coeur-de-feu/vignette.jpg",
+    "vignette": "img/colliers/coeur-de-feu/1.jpg",
     "photos": [
       "img/colliers/coeur-de-feu/1.jpg",
       "img/colliers/coeur-de-feu/2.jpg",
@@ -181,11 +205,27 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "colliers--coeur-de-rivoli-bleu",
+    "titre": "Coeur de rivoli bleu",
+    "categorie": "Colliers",
+    "dossier": "Coeur de rivoli bleu",
+    "vignette": "img/colliers/coeur-de-rivoli-bleu/1.jpg",
+    "photos": [
+      "img/colliers/coeur-de-rivoli-bleu/1.jpg",
+      "img/colliers/coeur-de-rivoli-bleu/2.jpg",
+      "img/colliers/coeur-de-rivoli-bleu/3.jpg",
+      "img/colliers/coeur-de-rivoli-bleu/4.jpg",
+      "img/colliers/coeur-de-rivoli-bleu/5.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Rivoli en strass transparent, entouré de cœur bleu Swarovski, sur un collier en macramé."
+  },
+  {
     "id": "colliers--coeur-fleuri-douceur",
     "titre": "Coeur fleuri douceur",
     "categorie": "Colliers",
     "dossier": "Coeur fleuri douceur",
-    "vignette": "img/colliers/coeur-fleuri-douceur/vignette.jpg",
+    "vignette": "img/colliers/coeur-fleuri-douceur/1.jpg",
     "photos": [
       "img/colliers/coeur-fleuri-douceur/1.jpg",
       "img/colliers/coeur-fleuri-douceur/2.jpg"
@@ -198,7 +238,7 @@ const bijoux = [
     "titre": "Coeur marin",
     "categorie": "Colliers",
     "dossier": "Coeur marin",
-    "vignette": "img/colliers/coeur-marin/vignette.jpg",
+    "vignette": "img/colliers/coeur-marin/1.jpg",
     "photos": [
       "img/colliers/coeur-marin/1.jpg",
       "img/colliers/coeur-marin/2.jpg",
@@ -214,7 +254,7 @@ const bijoux = [
     "titre": "Collier harmonie rouge et noir",
     "categorie": "Colliers",
     "dossier": "Collier harmonie rouge et noir",
-    "vignette": "img/colliers/collier-harmonie-rouge-et-noir/vignette.jpg",
+    "vignette": "img/colliers/collier-harmonie-rouge-et-noir/1.jpg",
     "photos": [
       "img/colliers/collier-harmonie-rouge-et-noir/1.jpg",
       "img/colliers/collier-harmonie-rouge-et-noir/2.jpg"
@@ -227,7 +267,7 @@ const bijoux = [
     "titre": "Couleurs d'automne",
     "categorie": "Colliers",
     "dossier": "Couleurs d'automne",
-    "vignette": "img/colliers/couleurs-d-automne/vignette.jpg",
+    "vignette": "img/colliers/couleurs-d-automne/1.jpg",
     "photos": [
       "img/colliers/couleurs-d-automne/1.jpg",
       "img/colliers/couleurs-d-automne/2.jpg",
@@ -241,7 +281,7 @@ const bijoux = [
     "titre": "Donut bleu marine",
     "categorie": "Colliers",
     "dossier": "Donut bleu marine",
-    "vignette": "img/colliers/donut-bleu-marine/vignette.jpg",
+    "vignette": "img/colliers/donut-bleu-marine/1.jpg",
     "photos": [
       "img/colliers/donut-bleu-marine/1.jpg",
       "img/colliers/donut-bleu-marine/2.jpg",
@@ -257,7 +297,7 @@ const bijoux = [
     "titre": "Donut en cravate",
     "categorie": "Colliers",
     "dossier": "Donut en cravate",
-    "vignette": "img/colliers/donut-en-cravate/vignette.jpg",
+    "vignette": "img/colliers/donut-en-cravate/1.jpg",
     "photos": [
       "img/colliers/donut-en-cravate/1.jpg",
       "img/colliers/donut-en-cravate/2.jpg",
@@ -273,7 +313,7 @@ const bijoux = [
     "titre": "Donut Howlite turquoise",
     "categorie": "Colliers",
     "dossier": "Donut Howlite turquoise",
-    "vignette": "img/colliers/donut-howlite-turquoise/vignette.jpg",
+    "vignette": "img/colliers/donut-howlite-turquoise/1.jpg",
     "photos": [
       "img/colliers/donut-howlite-turquoise/1.jpg",
       "img/colliers/donut-howlite-turquoise/2.jpg",
@@ -289,7 +329,7 @@ const bijoux = [
     "titre": "Donut marbré",
     "categorie": "Colliers",
     "dossier": "Donut marbré",
-    "vignette": "img/colliers/donut-marbre/vignette.jpg",
+    "vignette": "img/colliers/donut-marbre/1.jpg",
     "photos": [
       "img/colliers/donut-marbre/1.jpg",
       "img/colliers/donut-marbre/2.jpg"
@@ -302,7 +342,7 @@ const bijoux = [
     "titre": "Entrelacs anis et mauve",
     "categorie": "Colliers",
     "dossier": "Entrelacs anis et mauve",
-    "vignette": "img/colliers/entrelacs-anis-et-mauve/vignette.jpg",
+    "vignette": "img/colliers/entrelacs-anis-et-mauve/1.jpg",
     "photos": [
       "img/colliers/entrelacs-anis-et-mauve/1.jpg",
       "img/colliers/entrelacs-anis-et-mauve/2.jpg",
@@ -318,7 +358,7 @@ const bijoux = [
     "titre": "Etoile bleue",
     "categorie": "Colliers",
     "dossier": "Etoile bleue",
-    "vignette": "img/colliers/etoile-bleue/vignette.jpg",
+    "vignette": "img/colliers/etoile-bleue/1.jpg",
     "photos": [
       "img/colliers/etoile-bleue/1.jpg",
       "img/colliers/etoile-bleue/2.jpg",
@@ -332,7 +372,7 @@ const bijoux = [
     "titre": "Etoile filante",
     "categorie": "Colliers",
     "dossier": "Etoile filante",
-    "vignette": "img/colliers/etoile-filante/vignette.jpg",
+    "vignette": "img/colliers/etoile-filante/1.jpg",
     "photos": [
       "img/colliers/etoile-filante/1.jpg",
       "img/colliers/etoile-filante/2.jpg",
@@ -346,7 +386,7 @@ const bijoux = [
     "titre": "Etoile rose",
     "categorie": "Colliers",
     "dossier": "Etoile rose",
-    "vignette": "img/colliers/etoile-rose/vignette.jpg",
+    "vignette": "img/colliers/etoile-rose/1.jpg",
     "photos": [
       "img/colliers/etoile-rose/1.jpg",
       "img/colliers/etoile-rose/2.jpg",
@@ -362,7 +402,7 @@ const bijoux = [
     "titre": "Etoile solaire",
     "categorie": "Colliers",
     "dossier": "Etoile solaire",
-    "vignette": "img/colliers/etoile-solaire/vignette.jpg",
+    "vignette": "img/colliers/etoile-solaire/1.jpg",
     "photos": [
       "img/colliers/etoile-solaire/1.jpg",
       "img/colliers/etoile-solaire/2.jpg",
@@ -377,7 +417,7 @@ const bijoux = [
     "titre": "Etoile vert et marron",
     "categorie": "Colliers",
     "dossier": "Etoile vert et marron",
-    "vignette": "img/colliers/etoile-vert-et-marron/vignette.jpg",
+    "vignette": "img/colliers/etoile-vert-et-marron/1.jpg",
     "photos": [
       "img/colliers/etoile-vert-et-marron/1.jpg",
       "img/colliers/etoile-vert-et-marron/2.jpg",
@@ -393,7 +433,7 @@ const bijoux = [
     "titre": "Fine clochette",
     "categorie": "Colliers",
     "dossier": "Fine clochette",
-    "vignette": "img/colliers/fine-clochette/vignette.jpg",
+    "vignette": "img/colliers/fine-clochette/1.jpg",
     "photos": [
       "img/colliers/fine-clochette/1.jpg",
       "img/colliers/fine-clochette/2.jpg",
@@ -408,7 +448,7 @@ const bijoux = [
     "titre": "Fleur bleue",
     "categorie": "Colliers",
     "dossier": "Fleur bleue",
-    "vignette": "img/colliers/fleur-bleue/vignette.jpg",
+    "vignette": "img/colliers/fleur-bleue/1.jpg",
     "photos": [
       "img/colliers/fleur-bleue/1.jpg"
     ],
@@ -420,7 +460,7 @@ const bijoux = [
     "titre": "Fleur du Vietnam",
     "categorie": "Colliers",
     "dossier": "Fleur du Vietnam",
-    "vignette": "img/colliers/fleur-du-vietnam/vignette.jpg",
+    "vignette": "img/colliers/fleur-du-vietnam/1.jpg",
     "photos": [
       "img/colliers/fleur-du-vietnam/1.jpg",
       "img/colliers/fleur-du-vietnam/2.jpg",
@@ -436,7 +476,7 @@ const bijoux = [
     "titre": "Fleur mandala bleu anis et blanc",
     "categorie": "Colliers",
     "dossier": "Fleur mandala bleu anis et blanc",
-    "vignette": "img/colliers/fleur-mandala-bleu-anis-et-blanc/vignette.jpg",
+    "vignette": "img/colliers/fleur-mandala-bleu-anis-et-blanc/1.jpg",
     "photos": [
       "img/colliers/fleur-mandala-bleu-anis-et-blanc/1.jpg",
       "img/colliers/fleur-mandala-bleu-anis-et-blanc/2.jpg",
@@ -450,7 +490,7 @@ const bijoux = [
     "titre": "Fleur noir et or",
     "categorie": "Colliers",
     "dossier": "Fleur noir et or",
-    "vignette": "img/colliers/fleur-noir-et-or/vignette.jpg",
+    "vignette": "img/colliers/fleur-noir-et-or/1.jpg",
     "photos": [
       "img/colliers/fleur-noir-et-or/1.jpg",
       "img/colliers/fleur-noir-et-or/2.jpg"
@@ -463,7 +503,7 @@ const bijoux = [
     "titre": "Fleur rose",
     "categorie": "Colliers",
     "dossier": "Fleur rose",
-    "vignette": "img/colliers/fleur-rose/vignette.jpg",
+    "vignette": "img/colliers/fleur-rose/1.jpg",
     "photos": [
       "img/colliers/fleur-rose/1.jpg",
       "img/colliers/fleur-rose/2.jpg",
@@ -477,7 +517,7 @@ const bijoux = [
     "titre": "Fleur strass bleu",
     "categorie": "Colliers",
     "dossier": "Fleur strass bleu",
-    "vignette": "img/colliers/fleur-strass-bleu/vignette.jpg",
+    "vignette": "img/colliers/fleur-strass-bleu/1.jpg",
     "photos": [
       "img/colliers/fleur-strass-bleu/1.jpg",
       "img/colliers/fleur-strass-bleu/2.jpg",
@@ -493,7 +533,7 @@ const bijoux = [
     "titre": "Fleurettes rouge et blanc",
     "categorie": "Colliers",
     "dossier": "Fleurettes rouge et blanc",
-    "vignette": "img/colliers/fleurettes-rouge-et-blanc/vignette.jpg",
+    "vignette": "img/colliers/fleurettes-rouge-et-blanc/1.jpg",
     "photos": [
       "img/colliers/fleurettes-rouge-et-blanc/1.jpg",
       "img/colliers/fleurettes-rouge-et-blanc/2.jpg",
@@ -509,7 +549,7 @@ const bijoux = [
     "titre": "Fleurs bleues",
     "categorie": "Colliers",
     "dossier": "Fleurs bleues",
-    "vignette": "img/colliers/fleurs-bleues/vignette.jpg",
+    "vignette": "img/colliers/fleurs-bleues/1.jpg",
     "photos": [
       "img/colliers/fleurs-bleues/1.jpg",
       "img/colliers/fleurs-bleues/2.jpg",
@@ -523,7 +563,7 @@ const bijoux = [
     "titre": "Fleurs entralacées",
     "categorie": "Colliers",
     "dossier": "Fleurs entralacées",
-    "vignette": "img/colliers/fleurs-entralacees/vignette.jpg",
+    "vignette": "img/colliers/fleurs-entralacees/1.jpg",
     "photos": [
       "img/colliers/fleurs-entralacees/1.jpg",
       "img/colliers/fleurs-entralacees/2.jpg",
@@ -539,7 +579,7 @@ const bijoux = [
     "titre": "Fraise chocolat",
     "categorie": "Colliers",
     "dossier": "Fraise chocolat",
-    "vignette": "img/colliers/fraise-chocolat/vignette.jpg",
+    "vignette": "img/colliers/fraise-chocolat/1.jpg",
     "photos": [
       "img/colliers/fraise-chocolat/1.jpg"
     ],
@@ -551,7 +591,7 @@ const bijoux = [
     "titre": "Fête des mères bleu",
     "categorie": "Colliers",
     "dossier": "Fête des mères bleu",
-    "vignette": "img/colliers/fete-des-meres-bleu/vignette.jpg",
+    "vignette": "img/colliers/fete-des-meres-bleu/1.jpg",
     "photos": [
       "img/colliers/fete-des-meres-bleu/1.jpg",
       "img/colliers/fete-des-meres-bleu/2.jpg",
@@ -565,7 +605,7 @@ const bijoux = [
     "titre": "Goutte brillante",
     "categorie": "Colliers",
     "dossier": "Goutte brillante",
-    "vignette": "img/colliers/goutte-brillante/vignette.jpg",
+    "vignette": "img/colliers/goutte-brillante/1.jpg",
     "photos": [
       "img/colliers/goutte-brillante/1.jpg",
       "img/colliers/goutte-brillante/2.jpg",
@@ -581,7 +621,7 @@ const bijoux = [
     "titre": "Habit de pendentif bleu",
     "categorie": "Colliers",
     "dossier": "Habit de pendentif bleu",
-    "vignette": "img/colliers/habit-de-pendentif-bleu/vignette.jpg",
+    "vignette": "img/colliers/habit-de-pendentif-bleu/1.jpg",
     "photos": [
       "img/colliers/habit-de-pendentif-bleu/1.jpg",
       "img/colliers/habit-de-pendentif-bleu/2.jpg",
@@ -596,7 +636,7 @@ const bijoux = [
     "titre": "Habit de pendentif fleur",
     "categorie": "Colliers",
     "dossier": "Habit de pendentif fleur",
-    "vignette": "img/colliers/habit-de-pendentif-fleur/vignette.jpg",
+    "vignette": "img/colliers/habit-de-pendentif-fleur/1.jpg",
     "photos": [
       "img/colliers/habit-de-pendentif-fleur/1.jpg",
       "img/colliers/habit-de-pendentif-fleur/2.jpg",
@@ -611,7 +651,7 @@ const bijoux = [
     "titre": "Habit pendentif coeur",
     "categorie": "Colliers",
     "dossier": "Habit pendentif coeur",
-    "vignette": "img/colliers/habit-pendentif-coeur/vignette.jpg",
+    "vignette": "img/colliers/habit-pendentif-coeur/1.jpg",
     "photos": [
       "img/colliers/habit-pendentif-coeur/1.jpg",
       "img/colliers/habit-pendentif-coeur/2.jpg",
@@ -627,7 +667,7 @@ const bijoux = [
     "titre": "Habit pendentif Murano",
     "categorie": "Colliers",
     "dossier": "Habit pendentif Murano",
-    "vignette": "img/colliers/habit-pendentif-murano/vignette.jpg",
+    "vignette": "img/colliers/habit-pendentif-murano/1.jpg",
     "photos": [
       "img/colliers/habit-pendentif-murano/1.jpg",
       "img/colliers/habit-pendentif-murano/2.jpg",
@@ -643,7 +683,7 @@ const bijoux = [
     "titre": "Hibou marron",
     "categorie": "Colliers",
     "dossier": "Hibou marron",
-    "vignette": "img/colliers/hibou-marron/vignette.jpg",
+    "vignette": "img/colliers/hibou-marron/1.jpg",
     "photos": [
       "img/colliers/hibou-marron/1.jpg",
       "img/colliers/hibou-marron/2.jpg",
@@ -659,7 +699,7 @@ const bijoux = [
     "titre": "Hibou mauve et argent",
     "categorie": "Colliers",
     "dossier": "Hibou mauve et argent",
-    "vignette": "img/colliers/hibou-mauve-et-argent/vignette.jpg",
+    "vignette": "img/colliers/hibou-mauve-et-argent/1.jpg",
     "photos": [
       "img/colliers/hibou-mauve-et-argent/1.jpg",
       "img/colliers/hibou-mauve-et-argent/2.jpg",
@@ -675,7 +715,7 @@ const bijoux = [
     "titre": "Jolie poupée",
     "categorie": "Colliers",
     "dossier": "Jolie poupée",
-    "vignette": "img/colliers/jolie-poupee/vignette.jpg",
+    "vignette": "img/colliers/jolie-poupee/1.jpg",
     "photos": [
       "img/colliers/jolie-poupee/1.jpg",
       "img/colliers/jolie-poupee/2.jpg",
@@ -691,7 +731,7 @@ const bijoux = [
     "titre": "Macrame Sacaron mauve",
     "categorie": "Colliers",
     "dossier": "Macrame Sacaron mauve",
-    "vignette": "img/colliers/macrame-sacaron-mauve/vignette.jpg",
+    "vignette": "img/colliers/macrame-sacaron-mauve/1.jpg",
     "photos": [
       "img/colliers/macrame-sacaron-mauve/1.jpg",
       "img/colliers/macrame-sacaron-mauve/2.jpg",
@@ -707,7 +747,7 @@ const bijoux = [
     "titre": "Macramé couleurs et pendentif pression",
     "categorie": "Colliers",
     "dossier": "Macramé couleurs et pendentif pression",
-    "vignette": "img/colliers/macrame-couleurs-et-pendentif-pression/vignette.jpg",
+    "vignette": "img/colliers/macrame-couleurs-et-pendentif-pression/1.jpg",
     "photos": [
       "img/colliers/macrame-couleurs-et-pendentif-pression/1.jpg",
       "img/colliers/macrame-couleurs-et-pendentif-pression/2.jpg",
@@ -723,7 +763,7 @@ const bijoux = [
     "titre": "Macramé Sacaron bleu",
     "categorie": "Colliers",
     "dossier": "Macramé Sacaron bleu",
-    "vignette": "img/colliers/macrame-sacaron-bleu/vignette.jpg",
+    "vignette": "img/colliers/macrame-sacaron-bleu/1.jpg",
     "photos": [
       "img/colliers/macrame-sacaron-bleu/1.jpg",
       "img/colliers/macrame-sacaron-bleu/2.jpg",
@@ -739,7 +779,7 @@ const bijoux = [
     "titre": "Macramé Sacaron feuilles vert",
     "categorie": "Colliers",
     "dossier": "Macramé Sacaron feuilles vert",
-    "vignette": "img/colliers/macrame-sacaron-feuilles-vert/vignette.jpg",
+    "vignette": "img/colliers/macrame-sacaron-feuilles-vert/1.jpg",
     "photos": [
       "img/colliers/macrame-sacaron-feuilles-vert/1.jpg",
       "img/colliers/macrame-sacaron-feuilles-vert/2.jpg",
@@ -755,7 +795,7 @@ const bijoux = [
     "titre": "Macramé Sacaron jaune",
     "categorie": "Colliers",
     "dossier": "Macramé Sacaron jaune",
-    "vignette": "img/colliers/macrame-sacaron-jaune/vignette.jpg",
+    "vignette": "img/colliers/macrame-sacaron-jaune/1.jpg",
     "photos": [
       "img/colliers/macrame-sacaron-jaune/1.jpg",
       "img/colliers/macrame-sacaron-jaune/2.jpg",
@@ -771,7 +811,7 @@ const bijoux = [
     "titre": "Macramé Sacaron marron",
     "categorie": "Colliers",
     "dossier": "Macramé Sacaron marron",
-    "vignette": "img/colliers/macrame-sacaron-marron/vignette.jpg",
+    "vignette": "img/colliers/macrame-sacaron-marron/1.jpg",
     "photos": [
       "img/colliers/macrame-sacaron-marron/1.jpg",
       "img/colliers/macrame-sacaron-marron/2.jpg",
@@ -787,7 +827,7 @@ const bijoux = [
     "titre": "Macramé Sacaron orange",
     "categorie": "Colliers",
     "dossier": "Macramé Sacaron orange",
-    "vignette": "img/colliers/macrame-sacaron-orange/vignette.jpg",
+    "vignette": "img/colliers/macrame-sacaron-orange/1.jpg",
     "photos": [
       "img/colliers/macrame-sacaron-orange/1.jpg",
       "img/colliers/macrame-sacaron-orange/2.jpg",
@@ -803,7 +843,7 @@ const bijoux = [
     "titre": "Marguerite",
     "categorie": "Colliers",
     "dossier": "Marguerite",
-    "vignette": "img/colliers/marguerite/vignette.jpg",
+    "vignette": "img/colliers/marguerite/1.jpg",
     "photos": [
       "img/colliers/marguerite/1.jpg",
       "img/colliers/marguerite/2.jpg",
@@ -818,7 +858,7 @@ const bijoux = [
     "titre": "Millefiori en résille",
     "categorie": "Colliers",
     "dossier": "Millefiori en résille",
-    "vignette": "img/colliers/millefiori-en-resille/vignette.jpg",
+    "vignette": "img/colliers/millefiori-en-resille/1.jpg",
     "photos": [
       "img/colliers/millefiori-en-resille/1.jpg"
     ],
@@ -830,7 +870,7 @@ const bijoux = [
     "titre": "Miracles et résilles",
     "categorie": "Colliers",
     "dossier": "Miracles et résilles",
-    "vignette": "img/colliers/miracles-et-resilles/vignette.jpg",
+    "vignette": "img/colliers/miracles-et-resilles/1.jpg",
     "photos": [
       "img/colliers/miracles-et-resilles/1.jpg",
       "img/colliers/miracles-et-resilles/2.jpg",
@@ -846,7 +886,7 @@ const bijoux = [
     "titre": "Oeil de chat bleu",
     "categorie": "Colliers",
     "dossier": "Oeil de chat bleu",
-    "vignette": "img/colliers/oeil-de-chat-bleu/vignette.jpg",
+    "vignette": "img/colliers/oeil-de-chat-bleu/1.jpg",
     "photos": [
       "img/colliers/oeil-de-chat-bleu/1.jpg",
       "img/colliers/oeil-de-chat-bleu/2.jpg",
@@ -860,7 +900,7 @@ const bijoux = [
     "titre": "Oeil de tigre en habit de feu",
     "categorie": "Colliers",
     "dossier": "Oeil de tigre en habit de feu",
-    "vignette": "img/colliers/oeil-de-tigre-en-habit-de-feu/vignette.jpg",
+    "vignette": "img/colliers/oeil-de-tigre-en-habit-de-feu/1.jpg",
     "photos": [
       "img/colliers/oeil-de-tigre-en-habit-de-feu/1.jpg",
       "img/colliers/oeil-de-tigre-en-habit-de-feu/2.jpg",
@@ -876,7 +916,7 @@ const bijoux = [
     "titre": "Papillon vole",
     "categorie": "Colliers",
     "dossier": "Papillon vole",
-    "vignette": "img/colliers/papillon-vole/vignette.jpg",
+    "vignette": "img/colliers/papillon-vole/1.jpg",
     "photos": [
       "img/colliers/papillon-vole/1.jpg",
       "img/colliers/papillon-vole/2.jpg",
@@ -892,7 +932,7 @@ const bijoux = [
     "titre": "Planète verte",
     "categorie": "Colliers",
     "dossier": "Planète verte",
-    "vignette": "img/colliers/planete-verte/vignette.jpg",
+    "vignette": "img/colliers/planete-verte/1.jpg",
     "photos": [
       "img/colliers/planete-verte/1.jpg",
       "img/colliers/planete-verte/2.jpg",
@@ -908,7 +948,7 @@ const bijoux = [
     "titre": "Ras du cou fleuri",
     "categorie": "Colliers",
     "dossier": "Ras du cou fleuri",
-    "vignette": "img/colliers/ras-du-cou-fleuri/vignette.jpg",
+    "vignette": "img/colliers/ras-du-cou-fleuri/1.jpg",
     "photos": [
       "img/colliers/ras-du-cou-fleuri/1.jpg",
       "img/colliers/ras-du-cou-fleuri/2.jpg",
@@ -924,7 +964,7 @@ const bijoux = [
     "titre": "Ras du cou kumihimo jaune",
     "categorie": "Colliers",
     "dossier": "Ras du cou kumihimo jaune",
-    "vignette": "img/colliers/ras-du-cou-kumihimo-jaune/vignette.jpg",
+    "vignette": "img/colliers/ras-du-cou-kumihimo-jaune/1.jpg",
     "photos": [
       "img/colliers/ras-du-cou-kumihimo-jaune/1.jpg",
       "img/colliers/ras-du-cou-kumihimo-jaune/2.jpg",
@@ -938,7 +978,7 @@ const bijoux = [
     "titre": "Ronde de perles",
     "categorie": "Colliers",
     "dossier": "Ronde de perles",
-    "vignette": "img/colliers/ronde-de-perles/vignette.jpg",
+    "vignette": "img/colliers/ronde-de-perles/1.jpg",
     "photos": [
       "img/colliers/ronde-de-perles/1.jpg",
       "img/colliers/ronde-de-perles/2.jpg",
@@ -952,7 +992,7 @@ const bijoux = [
     "titre": "Ronde verte",
     "categorie": "Colliers",
     "dossier": "Ronde verte",
-    "vignette": "img/colliers/ronde-verte/vignette.jpg",
+    "vignette": "img/colliers/ronde-verte/1.jpg",
     "photos": [
       "img/colliers/ronde-verte/1.jpg",
       "img/colliers/ronde-verte/2.jpg",
@@ -968,7 +1008,7 @@ const bijoux = [
     "titre": "Rouages azuréens",
     "categorie": "Colliers",
     "dossier": "Rouages azuréens",
-    "vignette": "img/colliers/rouages-azureens/vignette.jpg",
+    "vignette": "img/colliers/rouages-azureens/1.jpg",
     "photos": [
       "img/colliers/rouages-azureens/1.jpg"
     ],
@@ -980,7 +1020,7 @@ const bijoux = [
     "titre": "Sahara mauve by Cachanax",
     "categorie": "Colliers",
     "dossier": "Sahara mauve by Cachanax",
-    "vignette": "img/colliers/sahara-mauve-by-cachanax/vignette.jpg",
+    "vignette": "img/colliers/sahara-mauve-by-cachanax/1.jpg",
     "photos": [
       "img/colliers/sahara-mauve-by-cachanax/1.jpg",
       "img/colliers/sahara-mauve-by-cachanax/2.jpg",
@@ -996,7 +1036,7 @@ const bijoux = [
     "titre": "Sahara noir by Cachanax",
     "categorie": "Colliers",
     "dossier": "Sahara noir by Cachanax",
-    "vignette": "img/colliers/sahara-noir-by-cachanax/vignette.jpg",
+    "vignette": "img/colliers/sahara-noir-by-cachanax/1.jpg",
     "photos": [
       "img/colliers/sahara-noir-by-cachanax/1.jpg",
       "img/colliers/sahara-noir-by-cachanax/2.jpg",
@@ -1011,7 +1051,7 @@ const bijoux = [
     "titre": "Sautoir ananas",
     "categorie": "Colliers",
     "dossier": "Sautoir ananas",
-    "vignette": "img/colliers/sautoir-ananas/vignette.jpg",
+    "vignette": "img/colliers/sautoir-ananas/1.jpg",
     "photos": [
       "img/colliers/sautoir-ananas/1.jpg",
       "img/colliers/sautoir-ananas/2.jpg",
@@ -1027,7 +1067,7 @@ const bijoux = [
     "titre": "Sautoir framboise et bleu",
     "categorie": "Colliers",
     "dossier": "Sautoir framboise et bleu",
-    "vignette": "img/colliers/sautoir-framboise-et-bleu/vignette.jpg",
+    "vignette": "img/colliers/sautoir-framboise-et-bleu/1.jpg",
     "photos": [
       "img/colliers/sautoir-framboise-et-bleu/1.jpg",
       "img/colliers/sautoir-framboise-et-bleu/2.jpg",
@@ -1043,7 +1083,7 @@ const bijoux = [
     "titre": "Soleil",
     "categorie": "Colliers",
     "dossier": "Soleil",
-    "vignette": "img/colliers/soleil/vignette.jpg",
+    "vignette": "img/colliers/soleil/1.jpg",
     "photos": [
       "img/colliers/soleil/1.jpg",
       "img/colliers/soleil/2.jpg",
@@ -1059,7 +1099,7 @@ const bijoux = [
     "titre": "Soleil couchant",
     "categorie": "Colliers",
     "dossier": "Soleil couchant",
-    "vignette": "img/colliers/soleil-couchant/vignette.jpg",
+    "vignette": "img/colliers/soleil-couchant/1.jpg",
     "photos": [
       "img/colliers/soleil-couchant/1.jpg",
       "img/colliers/soleil-couchant/2.jpg",
@@ -1075,7 +1115,7 @@ const bijoux = [
     "titre": "Strass en habit bleu",
     "categorie": "Colliers",
     "dossier": "Strass en habit bleu",
-    "vignette": "img/colliers/strass-en-habit-bleu/vignette.jpg",
+    "vignette": "img/colliers/strass-en-habit-bleu/1.jpg",
     "photos": [
       "img/colliers/strass-en-habit-bleu/1.jpg",
       "img/colliers/strass-en-habit-bleu/2.jpg",
@@ -1090,7 +1130,7 @@ const bijoux = [
     "titre": "Strass à l'anis",
     "categorie": "Colliers",
     "dossier": "Strass à l'anis",
-    "vignette": "img/colliers/strass-a-l-anis/vignette.jpg",
+    "vignette": "img/colliers/strass-a-l-anis/1.jpg",
     "photos": [
       "img/colliers/strass-a-l-anis/1.jpg",
       "img/colliers/strass-a-l-anis/2.jpg",
@@ -1106,7 +1146,7 @@ const bijoux = [
     "titre": "Style et pendentif pression",
     "categorie": "Colliers",
     "dossier": "Style et pendentif pression",
-    "vignette": "img/colliers/style-et-pendentif-pression/vignette.jpg",
+    "vignette": "img/colliers/style-et-pendentif-pression/1.jpg",
     "photos": [
       "img/colliers/style-et-pendentif-pression/1.jpg",
       "img/colliers/style-et-pendentif-pression/2.jpg",
@@ -1121,7 +1161,7 @@ const bijoux = [
     "titre": "Style marron et azur",
     "categorie": "Colliers",
     "dossier": "Style marron et azur",
-    "vignette": "img/colliers/style-marron-et-azur/vignette.jpg",
+    "vignette": "img/colliers/style-marron-et-azur/1.jpg",
     "photos": [
       "img/colliers/style-marron-et-azur/1.jpg",
       "img/colliers/style-marron-et-azur/2.jpg",
@@ -1137,7 +1177,7 @@ const bijoux = [
     "titre": "Style noir et blanc",
     "categorie": "Colliers",
     "dossier": "Style noir et blanc",
-    "vignette": "img/colliers/style-noir-et-blanc/vignette.jpg",
+    "vignette": "img/colliers/style-noir-et-blanc/1.jpg",
     "photos": [
       "img/colliers/style-noir-et-blanc/1.jpg",
       "img/colliers/style-noir-et-blanc/2.jpg",
@@ -1153,7 +1193,7 @@ const bijoux = [
     "titre": "Style vert bleu et blanc",
     "categorie": "Colliers",
     "dossier": "Style vert bleu et blanc",
-    "vignette": "img/colliers/style-vert-bleu-et-blanc/vignette.jpg",
+    "vignette": "img/colliers/style-vert-bleu-et-blanc/1.jpg",
     "photos": [
       "img/colliers/style-vert-bleu-et-blanc/1.jpg",
       "img/colliers/style-vert-bleu-et-blanc/2.jpg",
@@ -1169,7 +1209,7 @@ const bijoux = [
     "titre": "Suspension bleue",
     "categorie": "Colliers",
     "dossier": "Suspension bleue",
-    "vignette": "img/colliers/suspension-bleue/vignette.jpg",
+    "vignette": "img/colliers/suspension-bleue/1.jpg",
     "photos": [
       "img/colliers/suspension-bleue/1.jpg",
       "img/colliers/suspension-bleue/2.jpg",
@@ -1184,7 +1224,7 @@ const bijoux = [
     "titre": "Symétrie orange et anis",
     "categorie": "Colliers",
     "dossier": "Symétrie orange et anis",
-    "vignette": "img/colliers/symetrie-orange-et-anis/vignette.jpg",
+    "vignette": "img/colliers/symetrie-orange-et-anis/1.jpg",
     "photos": [
       "img/colliers/symetrie-orange-et-anis/1.jpg",
       "img/colliers/symetrie-orange-et-anis/2.jpg",
@@ -1200,7 +1240,7 @@ const bijoux = [
     "titre": "Tresse perles et fils",
     "categorie": "Colliers",
     "dossier": "Tresse perles et fils",
-    "vignette": "img/colliers/tresse-perles-et-fils/vignette.jpg",
+    "vignette": "img/colliers/tresse-perles-et-fils/1.jpg",
     "photos": [
       "img/colliers/tresse-perles-et-fils/1.jpg",
       "img/colliers/tresse-perles-et-fils/2.jpg",
@@ -1216,7 +1256,7 @@ const bijoux = [
     "titre": "Tube de toupies",
     "categorie": "Colliers",
     "dossier": "Tube de toupies",
-    "vignette": "img/colliers/tube-de-toupies/vignette.jpg",
+    "vignette": "img/colliers/tube-de-toupies/1.jpg",
     "photos": [
       "img/colliers/tube-de-toupies/1.jpg",
       "img/colliers/tube-de-toupies/2.jpg"
@@ -1229,7 +1269,7 @@ const bijoux = [
     "titre": "V canard",
     "categorie": "Colliers",
     "dossier": "V canard",
-    "vignette": "img/colliers/v-canard/vignette.jpg",
+    "vignette": "img/colliers/v-canard/1.jpg",
     "photos": [
       "img/colliers/v-canard/1.jpg",
       "img/colliers/v-canard/2.jpg",
@@ -1245,7 +1285,7 @@ const bijoux = [
     "titre": "Bangle jaune et rose",
     "categorie": "Bracelets",
     "dossier": "Bangle jaune et rose",
-    "vignette": "img/bracelets/bangle-jaune-et-rose/vignette.jpg",
+    "vignette": "img/bracelets/bangle-jaune-et-rose/1.jpg",
     "photos": [
       "img/bracelets/bangle-jaune-et-rose/1.jpg",
       "img/bracelets/bangle-jaune-et-rose/2.jpg",
@@ -1259,7 +1299,7 @@ const bijoux = [
     "titre": "Bangle roux",
     "categorie": "Bracelets",
     "dossier": "Bangle roux",
-    "vignette": "img/bracelets/bangle-roux/vignette.jpg",
+    "vignette": "img/bracelets/bangle-roux/1.jpg",
     "photos": [
       "img/bracelets/bangle-roux/1.jpg",
       "img/bracelets/bangle-roux/2.jpg",
@@ -1271,11 +1311,27 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "bracelets--bangle-zanzibar",
+    "titre": "Bangle Zanzibar",
+    "categorie": "Bracelets",
+    "dossier": "Bangle Zanzibar",
+    "vignette": "img/bracelets/bangle-zanzibar/1.jpg",
+    "photos": [
+      "img/bracelets/bangle-zanzibar/1.jpg",
+      "img/bracelets/bangle-zanzibar/2.jpg",
+      "img/bracelets/bangle-zanzibar/3.jpg",
+      "img/bracelets/bangle-zanzibar/4.jpg",
+      "img/bracelets/bangle-zanzibar/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Bracelet de petite taille en perles calibrées, sans fermeture, à enfiler, d'après un modèle de Kétiko Paris."
+  },
+  {
     "id": "bracelets--bouton-fleur",
     "titre": "Bouton fleur",
     "categorie": "Bracelets",
     "dossier": "Bouton fleur",
-    "vignette": "img/bracelets/bouton-fleur/vignette.jpg",
+    "vignette": "img/bracelets/bouton-fleur/1.jpg",
     "photos": [
       "img/bracelets/bouton-fleur/1.jpg",
       "img/bracelets/bouton-fleur/2.jpg",
@@ -1291,7 +1347,7 @@ const bijoux = [
     "titre": "Bracelet attrape-rêve",
     "categorie": "Bracelets",
     "dossier": "Bracelet attrape-rêve",
-    "vignette": "img/bracelets/bracelet-attrape-reve/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-attrape-reve/1.jpg",
     "photos": [
       "img/bracelets/bracelet-attrape-reve/1.jpg",
       "img/bracelets/bracelet-attrape-reve/2.jpg",
@@ -1306,7 +1362,7 @@ const bijoux = [
     "titre": "Bracelet bleu et vert avec charms",
     "categorie": "Bracelets",
     "dossier": "Bracelet bleu et vert avec charms",
-    "vignette": "img/bracelets/bracelet-bleu-et-vert-avec-charms/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-bleu-et-vert-avec-charms/1.jpg",
     "photos": [
       "img/bracelets/bracelet-bleu-et-vert-avec-charms/1.jpg",
       "img/bracelets/bracelet-bleu-et-vert-avec-charms/2.jpg",
@@ -1322,7 +1378,7 @@ const bijoux = [
     "titre": "Bracelet duchesse",
     "categorie": "Bracelets",
     "dossier": "Bracelet duchesse",
-    "vignette": "img/bracelets/bracelet-duchesse/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-duchesse/1.jpg",
     "photos": [
       "img/bracelets/bracelet-duchesse/1.jpg",
       "img/bracelets/bracelet-duchesse/2.jpg",
@@ -1338,7 +1394,7 @@ const bijoux = [
     "titre": "Bracelet fleur améthyste",
     "categorie": "Bracelets",
     "dossier": "Bracelet fleur améthyste",
-    "vignette": "img/bracelets/bracelet-fleur-amethyste/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-fleur-amethyste/1.jpg",
     "photos": [
       "img/bracelets/bracelet-fleur-amethyste/1.jpg"
     ],
@@ -1350,7 +1406,7 @@ const bijoux = [
     "titre": "Bracelet Halloween",
     "categorie": "Bracelets",
     "dossier": "Bracelet Halloween",
-    "vignette": "img/bracelets/bracelet-halloween/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-halloween/1.jpg",
     "photos": [
       "img/bracelets/bracelet-halloween/1.jpg",
       "img/bracelets/bracelet-halloween/2.jpg",
@@ -1366,7 +1422,7 @@ const bijoux = [
     "titre": "Bracelet noeuds de 8",
     "categorie": "Bracelets",
     "dossier": "Bracelet noeuds de 8",
-    "vignette": "img/bracelets/bracelet-noeuds-de-8/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-noeuds-de-8/1.jpg",
     "photos": [
       "img/bracelets/bracelet-noeuds-de-8/1.jpg",
       "img/bracelets/bracelet-noeuds-de-8/2.jpg"
@@ -1379,7 +1435,7 @@ const bijoux = [
     "titre": "Bracelet oeil de chat et navettes bleu",
     "categorie": "Bracelets",
     "dossier": "Bracelet oeil de chat et navettes bleu",
-    "vignette": "img/bracelets/bracelet-oeil-de-chat-et-navettes-bleu/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-oeil-de-chat-et-navettes-bleu/1.jpg",
     "photos": [
       "img/bracelets/bracelet-oeil-de-chat-et-navettes-bleu/1.jpg",
       "img/bracelets/bracelet-oeil-de-chat-et-navettes-bleu/2.jpg",
@@ -1395,7 +1451,7 @@ const bijoux = [
     "titre": "Bracelet perles et macramé marron",
     "categorie": "Bracelets",
     "dossier": "Bracelet perles et macramé marron",
-    "vignette": "img/bracelets/bracelet-perles-et-macrame-marron/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-perles-et-macrame-marron/1.jpg",
     "photos": [
       "img/bracelets/bracelet-perles-et-macrame-marron/1.jpg",
       "img/bracelets/bracelet-perles-et-macrame-marron/2.jpg",
@@ -1410,7 +1466,7 @@ const bijoux = [
     "titre": "Bracelet perles et macramé orange",
     "categorie": "Bracelets",
     "dossier": "Bracelet perles et macramé orange",
-    "vignette": "img/bracelets/bracelet-perles-et-macrame-orange/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-perles-et-macrame-orange/1.jpg",
     "photos": [
       "img/bracelets/bracelet-perles-et-macrame-orange/1.jpg",
       "img/bracelets/bracelet-perles-et-macrame-orange/2.jpg",
@@ -1426,7 +1482,7 @@ const bijoux = [
     "titre": "Bracelet perles et macramé rose et gris",
     "categorie": "Bracelets",
     "dossier": "Bracelet perles et macramé rose et gris",
-    "vignette": "img/bracelets/bracelet-perles-et-macrame-rose-et-gris/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-perles-et-macrame-rose-et-gris/1.jpg",
     "photos": [
       "img/bracelets/bracelet-perles-et-macrame-rose-et-gris/1.jpg",
       "img/bracelets/bracelet-perles-et-macrame-rose-et-gris/2.jpg",
@@ -1438,11 +1494,24 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "bracelets--bracelet-petites-fleurs",
+    "titre": "Bracelet petites fleurs",
+    "categorie": "Bracelets",
+    "dossier": "Bracelet petites fleurs",
+    "vignette": "img/bracelets/bracelet-petites-fleurs/1.jpg",
+    "photos": [
+      "img/bracelets/bracelet-petites-fleurs/1.jpg",
+      "img/bracelets/bracelet-petites-fleurs/2.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Bracelet multicolore composé de petites perles de rocaille calibrées"
+  },
+  {
     "id": "bracelets--bracelet-plume",
     "titre": "Bracelet Plume",
     "categorie": "Bracelets",
     "dossier": "Bracelet Plume",
-    "vignette": "img/bracelets/bracelet-plume/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-plume/1.jpg",
     "photos": [
       "img/bracelets/bracelet-plume/1.jpg",
       "img/bracelets/bracelet-plume/2.jpg",
@@ -1458,7 +1527,7 @@ const bijoux = [
     "titre": "Bracelet polaris mauve et bleu",
     "categorie": "Bracelets",
     "dossier": "Bracelet polaris mauve et bleu",
-    "vignette": "img/bracelets/bracelet-polaris-mauve-et-bleu/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-polaris-mauve-et-bleu/1.jpg",
     "photos": [
       "img/bracelets/bracelet-polaris-mauve-et-bleu/1.jpg",
       "img/bracelets/bracelet-polaris-mauve-et-bleu/2.jpg",
@@ -1474,7 +1543,7 @@ const bijoux = [
     "titre": "Bracelet polaris rose et vert",
     "categorie": "Bracelets",
     "dossier": "Bracelet polaris rose et vert",
-    "vignette": "img/bracelets/bracelet-polaris-rose-et-vert/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-polaris-rose-et-vert/1.jpg",
     "photos": [
       "img/bracelets/bracelet-polaris-rose-et-vert/1.jpg",
       "img/bracelets/bracelet-polaris-rose-et-vert/2.jpg",
@@ -1490,7 +1559,7 @@ const bijoux = [
     "titre": "Bracelet rosace bleu",
     "categorie": "Bracelets",
     "dossier": "Bracelet rosace bleu",
-    "vignette": "img/bracelets/bracelet-rosace-bleu/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-rosace-bleu/1.jpg",
     "photos": [
       "img/bracelets/bracelet-rosace-bleu/1.jpg",
       "img/bracelets/bracelet-rosace-bleu/2.jpg",
@@ -1506,7 +1575,7 @@ const bijoux = [
     "titre": "Bracelet Swarovski rose et mauve",
     "categorie": "Bracelets",
     "dossier": "Bracelet Swarovski rose et mauve",
-    "vignette": "img/bracelets/bracelet-swarovski-rose-et-mauve/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-swarovski-rose-et-mauve/1.jpg",
     "photos": [
       "img/bracelets/bracelet-swarovski-rose-et-mauve/1.jpg",
       "img/bracelets/bracelet-swarovski-rose-et-mauve/2.jpg",
@@ -1522,7 +1591,7 @@ const bijoux = [
     "titre": "Bracelet Tila moutarde et brique",
     "categorie": "Bracelets",
     "dossier": "Bracelet Tila moutarde et brique",
-    "vignette": "img/bracelets/bracelet-tila-moutarde-et-brique/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-tila-moutarde-et-brique/1.jpg",
     "photos": [
       "img/bracelets/bracelet-tila-moutarde-et-brique/1.jpg",
       "img/bracelets/bracelet-tila-moutarde-et-brique/2.jpg",
@@ -1536,7 +1605,7 @@ const bijoux = [
     "titre": "Bracelet Tila rose et mauve",
     "categorie": "Bracelets",
     "dossier": "Bracelet Tila rose et mauve",
-    "vignette": "img/bracelets/bracelet-tila-rose-et-mauve/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-tila-rose-et-mauve/1.jpg",
     "photos": [
       "img/bracelets/bracelet-tila-rose-et-mauve/1.jpg"
     ],
@@ -1548,7 +1617,7 @@ const bijoux = [
     "titre": "Bracelet vert macramé",
     "categorie": "Bracelets",
     "dossier": "Bracelet vert macramé",
-    "vignette": "img/bracelets/bracelet-vert-macrame/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-vert-macrame/1.jpg",
     "photos": [
       "img/bracelets/bracelet-vert-macrame/1.jpg",
       "img/bracelets/bracelet-vert-macrame/2.jpg",
@@ -1564,7 +1633,7 @@ const bijoux = [
     "titre": "Bracelet wave mauve et bleu",
     "categorie": "Bracelets",
     "dossier": "Bracelet wave mauve et bleu",
-    "vignette": "img/bracelets/bracelet-wave-mauve-et-bleu/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-wave-mauve-et-bleu/1.jpg",
     "photos": [
       "img/bracelets/bracelet-wave-mauve-et-bleu/1.jpg",
       "img/bracelets/bracelet-wave-mauve-et-bleu/2.jpg",
@@ -1579,7 +1648,7 @@ const bijoux = [
     "titre": "Bracelet étoile macramé",
     "categorie": "Bracelets",
     "dossier": "Bracelet étoile macramé",
-    "vignette": "img/bracelets/bracelet-etoile-macrame/vignette.jpg",
+    "vignette": "img/bracelets/bracelet-etoile-macrame/1.jpg",
     "photos": [
       "img/bracelets/bracelet-etoile-macrame/1.jpg",
       "img/bracelets/bracelet-etoile-macrame/2.jpg",
@@ -1593,7 +1662,7 @@ const bijoux = [
     "titre": "Bracelets jonc Miyuki et toupies toutes couleurs",
     "categorie": "Bracelets",
     "dossier": "Bracelets jonc Miyuki et toupies toutes couleurs",
-    "vignette": "img/bracelets/bracelets-jonc-miyuki-et-toupies-toutes-couleurs/vignette.jpg",
+    "vignette": "img/bracelets/bracelets-jonc-miyuki-et-toupies-toutes-couleurs/1.jpg",
     "photos": [
       "img/bracelets/bracelets-jonc-miyuki-et-toupies-toutes-couleurs/1.jpg",
       "img/bracelets/bracelets-jonc-miyuki-et-toupies-toutes-couleurs/2.jpg",
@@ -1604,12 +1673,27 @@ const bijoux = [
     "disponible": "non",
     "desc": "Bracelet jonc de 20 cm, fermé par un aimant soutenu par un fil d'acier passé dans le tube formé par les perles Miyuki et Toupies. Les couleurs dynamisent ce bracelet."
   },
-    {
+  {
+    "id": "bracelets--bracelets-miyuki-et-toupies",
+    "titre": "Bracelets Miyuki et toupies",
+    "categorie": "Bracelets",
+    "dossier": "Bracelets Miyuki et toupies",
+    "vignette": "img/bracelets/bracelets-miyuki-et-toupies/1.jpg",
+    "photos": [
+      "img/bracelets/bracelets-miyuki-et-toupies/1.jpg",
+      "img/bracelets/bracelets-miyuki-et-toupies/2.jpg",
+      "img/bracelets/bracelets-miyuki-et-toupies/3.jpg",
+      "img/bracelets/bracelets-miyuki-et-toupies/4.jpg"
+    ],
+    "disponible": "non",
+    "desc": "bracelets en macramé avec des perles bicones (ou toupies) en garniture"
+  },
+  {
     "id": "bracelets--bracelets-oeil-de-chat",
     "titre": "Bracelets oeil de chat",
     "categorie": "Bracelets",
     "dossier": "Bracelets oeil de chat",
-    "vignette": "img/bracelets/bracelets-oeil-de-chat/vignette.jpg",
+    "vignette": "img/bracelets/bracelets-oeil-de-chat/1.jpg",
     "photos": [
       "img/bracelets/bracelets-oeil-de-chat/1.jpg",
       "img/bracelets/bracelets-oeil-de-chat/2.jpg",
@@ -1625,7 +1709,7 @@ const bijoux = [
     "titre": "Briolettes et toupies orange",
     "categorie": "Bracelets",
     "dossier": "Briolettes et toupies orange",
-    "vignette": "img/bracelets/briolettes-et-toupies-orange/vignette.jpg",
+    "vignette": "img/bracelets/briolettes-et-toupies-orange/1.jpg",
     "photos": [
       "img/bracelets/briolettes-et-toupies-orange/1.jpg",
       "img/bracelets/briolettes-et-toupies-orange/2.jpg",
@@ -1639,7 +1723,7 @@ const bijoux = [
     "titre": "Carré fleurs anis chocolat",
     "categorie": "Bracelets",
     "dossier": "Carré fleurs anis chocolat",
-    "vignette": "img/bracelets/carre-fleurs-anis-chocolat/vignette.jpg",
+    "vignette": "img/bracelets/carre-fleurs-anis-chocolat/1.jpg",
     "photos": [
       "img/bracelets/carre-fleurs-anis-chocolat/1.jpg",
       "img/bracelets/carre-fleurs-anis-chocolat/2.jpg"
@@ -1652,7 +1736,7 @@ const bijoux = [
     "titre": "Carré fleurs soleil rose",
     "categorie": "Bracelets",
     "dossier": "Carré fleurs soleil rose",
-    "vignette": "img/bracelets/carre-fleurs-soleil-rose/vignette.jpg",
+    "vignette": "img/bracelets/carre-fleurs-soleil-rose/1.jpg",
     "photos": [
       "img/bracelets/carre-fleurs-soleil-rose/1.jpg",
       "img/bracelets/carre-fleurs-soleil-rose/2.jpg",
@@ -1668,7 +1752,7 @@ const bijoux = [
     "titre": "Chenille de nacre verte",
     "categorie": "Bracelets",
     "dossier": "Chenille de nacre verte",
-    "vignette": "img/bracelets/chenille-de-nacre-verte/vignette.jpg",
+    "vignette": "img/bracelets/chenille-de-nacre-verte/1.jpg",
     "photos": [
       "img/bracelets/chenille-de-nacre-verte/1.jpg",
       "img/bracelets/chenille-de-nacre-verte/2.jpg",
@@ -1684,7 +1768,7 @@ const bijoux = [
     "titre": "Donut mauve",
     "categorie": "Bracelets",
     "dossier": "Donut mauve",
-    "vignette": "img/bracelets/donut-mauve/vignette.jpg",
+    "vignette": "img/bracelets/donut-mauve/1.jpg",
     "photos": [
       "img/bracelets/donut-mauve/1.jpg",
       "img/bracelets/donut-mauve/2.jpg"
@@ -1697,7 +1781,7 @@ const bijoux = [
     "titre": "Entrelacs et bouton rose et mauve",
     "categorie": "Bracelets",
     "dossier": "Entrelacs et bouton rose et mauve",
-    "vignette": "img/bracelets/entrelacs-et-bouton-rose-et-mauve/vignette.jpg",
+    "vignette": "img/bracelets/entrelacs-et-bouton-rose-et-mauve/1.jpg",
     "photos": [
       "img/bracelets/entrelacs-et-bouton-rose-et-mauve/1.jpg",
       "img/bracelets/entrelacs-et-bouton-rose-et-mauve/2.jpg",
@@ -1713,7 +1797,7 @@ const bijoux = [
     "titre": "Fleurs rose mauve",
     "categorie": "Bracelets",
     "dossier": "Fleurs rose mauve",
-    "vignette": "img/bracelets/fleurs-rose-mauve/vignette.jpg",
+    "vignette": "img/bracelets/fleurs-rose-mauve/1.jpg",
     "photos": [
       "img/bracelets/fleurs-rose-mauve/1.jpg",
       "img/bracelets/fleurs-rose-mauve/2.jpg"
@@ -1726,7 +1810,7 @@ const bijoux = [
     "titre": "Graphique vert mauve",
     "categorie": "Bracelets",
     "dossier": "Graphique vert mauve",
-    "vignette": "img/bracelets/graphique-vert-mauve/vignette.jpg",
+    "vignette": "img/bracelets/graphique-vert-mauve/1.jpg",
     "photos": [
       "img/bracelets/graphique-vert-mauve/1.jpg",
       "img/bracelets/graphique-vert-mauve/2.jpg",
@@ -1742,7 +1826,7 @@ const bijoux = [
     "titre": "Jonc automnal",
     "categorie": "Bracelets",
     "dossier": "Jonc automnal",
-    "vignette": "img/bracelets/jonc-automnal/vignette.jpg",
+    "vignette": "img/bracelets/jonc-automnal/1.jpg",
     "photos": [
       "img/bracelets/jonc-automnal/1.jpg",
       "img/bracelets/jonc-automnal/2.jpg",
@@ -1758,7 +1842,7 @@ const bijoux = [
     "titre": "Jonc fin vert",
     "categorie": "Bracelets",
     "dossier": "Jonc fin vert",
-    "vignette": "img/bracelets/jonc-fin-vert/vignette.jpg",
+    "vignette": "img/bracelets/jonc-fin-vert/1.jpg",
     "photos": [
       "img/bracelets/jonc-fin-vert/1.jpg",
       "img/bracelets/jonc-fin-vert/2.jpg",
@@ -1774,7 +1858,7 @@ const bijoux = [
     "titre": "Libellule by Cachanax 3",
     "categorie": "Bracelets",
     "dossier": "Libellule by Cachanax 3",
-    "vignette": "img/bracelets/libellule-by-cachanax-3/vignette.jpg",
+    "vignette": "img/bracelets/libellule-by-cachanax-3/1.jpg",
     "photos": [
       "img/bracelets/libellule-by-cachanax-3/1.jpg",
       "img/bracelets/libellule-by-cachanax-3/2.jpg",
@@ -1790,7 +1874,7 @@ const bijoux = [
     "titre": "Losanges et toupies vert",
     "categorie": "Bracelets",
     "dossier": "Losanges et toupies vert",
-    "vignette": "img/bracelets/losanges-et-toupies-vert/vignette.jpg",
+    "vignette": "img/bracelets/losanges-et-toupies-vert/1.jpg",
     "photos": [
       "img/bracelets/losanges-et-toupies-vert/1.jpg",
       "img/bracelets/losanges-et-toupies-vert/2.jpg",
@@ -1805,7 +1889,7 @@ const bijoux = [
     "titre": "Manchette fleur coeur Pierre de Lune",
     "categorie": "Bracelets",
     "dossier": "Manchette fleur coeur Pierre de Lune",
-    "vignette": "img/bracelets/manchette-fleur-coeur-pierre-de-lune/vignette.jpg",
+    "vignette": "img/bracelets/manchette-fleur-coeur-pierre-de-lune/1.jpg",
     "photos": [
       "img/bracelets/manchette-fleur-coeur-pierre-de-lune/1.jpg",
       "img/bracelets/manchette-fleur-coeur-pierre-de-lune/2.jpg",
@@ -1814,14 +1898,14 @@ const bijoux = [
       "img/bracelets/manchette-fleur-coeur-pierre-de-lune/5.jpg"
     ],
     "disponible": "non",
-    "desc": "Bracelet en perles Miyuki, sur lequel sont serties 3 pierres de Lune de 1cm chacune pour le centre des fleurs. Le tissage est collé sur une manchette en Rhodium de 18 x 3 cm, adaptable tout poignet."
+    "desc": "Bracelet en perles Miyuki, sur lequel sont serties 3 pierres de Lune de 1cm chacune pour le centre des fleurs. Le tissage est collé sur une manchette en Rhodium de 18 x 3 cm, adaptable tout poignet, d'après un modèle de Kétiko Paris"
   },
   {
     "id": "bracelets--manchette-fleurs-anis-et-azur",
     "titre": "Manchette fleurs anis et azur",
     "categorie": "Bracelets",
     "dossier": "Manchette fleurs anis et azur",
-    "vignette": "img/bracelets/manchette-fleurs-anis-et-azur/vignette.jpg",
+    "vignette": "img/bracelets/manchette-fleurs-anis-et-azur/1.jpg",
     "photos": [
       "img/bracelets/manchette-fleurs-anis-et-azur/1.jpg",
       "img/bracelets/manchette-fleurs-anis-et-azur/2.jpg",
@@ -1832,11 +1916,25 @@ const bijoux = [
     "desc": "Bracelet en perles Miyuki et toupies Swarovski. Le tissage est collé sur une manchette en Rhodium de 18 x 3 cm, adaptable tout poignet."
   },
   {
+    "id": "bracelets--manchette-hippie",
+    "titre": "Manchette Hippie",
+    "categorie": "Bracelets",
+    "dossier": "Manchette Hippie",
+    "vignette": "img/bracelets/manchette-hippie/1.jpg",
+    "photos": [
+      "img/bracelets/manchette-hippie/1.jpg",
+      "img/bracelets/manchette-hippie/2.jpg",
+      "img/bracelets/manchette-hippie/3.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Bracelet en perles Miyuki et toupies Swarovski. Le tissage est collé sur une manchette en Rhodium de 18 x 3 cm, adaptable tout poignet."
+  },
+  {
     "id": "bracelets--manchette-jaune-vert-et-mauve",
     "titre": "Manchette jaune, vert et mauve",
     "categorie": "Bracelets",
     "dossier": "Manchette jaune, vert et mauve",
-    "vignette": "img/bracelets/manchette-jaune-vert-et-mauve/vignette.jpg",
+    "vignette": "img/bracelets/manchette-jaune-vert-et-mauve/1.jpg",
     "photos": [
       "img/bracelets/manchette-jaune-vert-et-mauve/1.jpg",
       "img/bracelets/manchette-jaune-vert-et-mauve/2.jpg",
@@ -1852,7 +1950,7 @@ const bijoux = [
     "titre": "Manchette mauve, bleu et moutarde",
     "categorie": "Bracelets",
     "dossier": "Manchette mauve, bleu et moutarde",
-    "vignette": "img/bracelets/manchette-mauve-bleu-et-moutarde/vignette.jpg",
+    "vignette": "img/bracelets/manchette-mauve-bleu-et-moutarde/1.jpg",
     "photos": [
       "img/bracelets/manchette-mauve-bleu-et-moutarde/1.jpg",
       "img/bracelets/manchette-mauve-bleu-et-moutarde/2.jpg"
@@ -1865,7 +1963,7 @@ const bijoux = [
     "titre": "Manchette vert, bleu foncé et blanc",
     "categorie": "Bracelets",
     "dossier": "Manchette vert, bleu foncé et blanc",
-    "vignette": "img/bracelets/manchette-vert-bleu-fonce-et-blanc/vignette.jpg",
+    "vignette": "img/bracelets/manchette-vert-bleu-fonce-et-blanc/1.jpg",
     "photos": [
       "img/bracelets/manchette-vert-bleu-fonce-et-blanc/1.jpg",
       "img/bracelets/manchette-vert-bleu-fonce-et-blanc/2.jpg",
@@ -1881,7 +1979,7 @@ const bijoux = [
     "titre": "Manchette égyptienne",
     "categorie": "Bracelets",
     "dossier": "Manchette égyptienne",
-    "vignette": "img/bracelets/manchette-egyptienne/vignette.jpg",
+    "vignette": "img/bracelets/manchette-egyptienne/1.jpg",
     "photos": [
       "img/bracelets/manchette-egyptienne/1.jpg"
     ],
@@ -1893,7 +1991,7 @@ const bijoux = [
     "titre": "Noeuds plats et perles chocolat orange 3",
     "categorie": "Bracelets",
     "dossier": "Noeuds plats et perles chocolat orange 3",
-    "vignette": "img/bracelets/noeuds-plats-et-perles-chocolat-orange-3/vignette.jpg",
+    "vignette": "img/bracelets/noeuds-plats-et-perles-chocolat-orange-3/1.jpg",
     "photos": [
       "img/bracelets/noeuds-plats-et-perles-chocolat-orange-3/1.jpg"
     ],
@@ -1905,7 +2003,7 @@ const bijoux = [
     "titre": "Petites fleurs noires",
     "categorie": "Bracelets",
     "dossier": "Petites fleurs noires",
-    "vignette": "img/bracelets/petites-fleurs-noires/vignette.jpg",
+    "vignette": "img/bracelets/petites-fleurs-noires/1.jpg",
     "photos": [
       "img/bracelets/petites-fleurs-noires/1.jpg"
     ],
@@ -1917,7 +2015,7 @@ const bijoux = [
     "titre": "Quartz blanc avec bracelet macramé",
     "categorie": "Bracelets",
     "dossier": "Quartz blanc avec bracelet macramé",
-    "vignette": "img/bracelets/quartz-blanc-avec-bracelet-macrame/vignette.jpg",
+    "vignette": "img/bracelets/quartz-blanc-avec-bracelet-macrame/1.jpg",
     "photos": [
       "img/bracelets/quartz-blanc-avec-bracelet-macrame/1.jpg",
       "img/bracelets/quartz-blanc-avec-bracelet-macrame/2.jpg",
@@ -1933,7 +2031,7 @@ const bijoux = [
     "titre": "Rosée impériale",
     "categorie": "Bracelets",
     "dossier": "Rosée impériale",
-    "vignette": "img/bracelets/rosee-imperiale/vignette.jpg",
+    "vignette": "img/bracelets/rosee-imperiale/1.jpg",
     "photos": [
       "img/bracelets/rosee-imperiale/1.jpg",
       "img/bracelets/rosee-imperiale/2.jpg",
@@ -1949,7 +2047,7 @@ const bijoux = [
     "titre": "Sahara by Cachanax bleu 2",
     "categorie": "Bracelets",
     "dossier": "Sahara by Cachanax bleu 2",
-    "vignette": "img/bracelets/sahara-by-cachanax-bleu-2/vignette.jpg",
+    "vignette": "img/bracelets/sahara-by-cachanax-bleu-2/1.jpg",
     "photos": [
       "img/bracelets/sahara-by-cachanax-bleu-2/1.jpg",
       "img/bracelets/sahara-by-cachanax-bleu-2/2.jpg",
@@ -1965,7 +2063,7 @@ const bijoux = [
     "titre": "Sahara by Cachanax bleu et blanc",
     "categorie": "Bracelets",
     "dossier": "Sahara by Cachanax bleu et blanc",
-    "vignette": "img/bracelets/sahara-by-cachanax-bleu-et-blanc/vignette.jpg",
+    "vignette": "img/bracelets/sahara-by-cachanax-bleu-et-blanc/1.jpg",
     "photos": [
       "img/bracelets/sahara-by-cachanax-bleu-et-blanc/1.jpg"
     ],
@@ -1977,7 +2075,7 @@ const bijoux = [
     "titre": "Sahara by Cachanax noir rouge",
     "categorie": "Bracelets",
     "dossier": "Sahara by Cachanax noir rouge",
-    "vignette": "img/bracelets/sahara-by-cachanax-noir-rouge/vignette.jpg",
+    "vignette": "img/bracelets/sahara-by-cachanax-noir-rouge/1.jpg",
     "photos": [
       "img/bracelets/sahara-by-cachanax-noir-rouge/1.jpg",
       "img/bracelets/sahara-by-cachanax-noir-rouge/2.jpg",
@@ -1993,7 +2091,7 @@ const bijoux = [
     "titre": "Sahara by Cachanax soleil",
     "categorie": "Bracelets",
     "dossier": "Sahara by Cachanax soleil",
-    "vignette": "img/bracelets/sahara-by-cachanax-soleil/vignette.jpg",
+    "vignette": "img/bracelets/sahara-by-cachanax-soleil/1.jpg",
     "photos": [
       "img/bracelets/sahara-by-cachanax-soleil/1.jpg",
       "img/bracelets/sahara-by-cachanax-soleil/2.jpg",
@@ -2009,7 +2107,7 @@ const bijoux = [
     "titre": "Sahara rose et mauve",
     "categorie": "Bracelets",
     "dossier": "Sahara rose et mauve",
-    "vignette": "img/bracelets/sahara-rose-et-mauve/vignette.jpg",
+    "vignette": "img/bracelets/sahara-rose-et-mauve/1.jpg",
     "photos": [
       "img/bracelets/sahara-rose-et-mauve/1.jpg",
       "img/bracelets/sahara-rose-et-mauve/2.jpg",
@@ -2025,7 +2123,7 @@ const bijoux = [
     "titre": "Shamballah",
     "categorie": "Bracelets",
     "dossier": "Shamballah",
-    "vignette": "img/bracelets/shamballah/vignette.jpg",
+    "vignette": "img/bracelets/shamballah/1.jpg",
     "photos": [
       "img/bracelets/shamballah/1.jpg",
       "img/bracelets/shamballah/2.jpg",
@@ -2041,7 +2139,7 @@ const bijoux = [
     "titre": "Tissage et toupies",
     "categorie": "Bracelets",
     "dossier": "Tissage et toupies",
-    "vignette": "img/bracelets/tissage-et-toupies/vignette.jpg",
+    "vignette": "img/bracelets/tissage-et-toupies/1.jpg",
     "photos": [
       "img/bracelets/tissage-et-toupies/1.jpg",
       "img/bracelets/tissage-et-toupies/2.jpg"
@@ -2054,7 +2152,7 @@ const bijoux = [
     "titre": "Vague couleur du ciel",
     "categorie": "Bracelets",
     "dossier": "Vague couleur du ciel",
-    "vignette": "img/bracelets/vague-couleur-du-ciel/vignette.jpg",
+    "vignette": "img/bracelets/vague-couleur-du-ciel/1.jpg",
     "photos": [
       "img/bracelets/vague-couleur-du-ciel/1.jpg",
       "img/bracelets/vague-couleur-du-ciel/2.jpg",
@@ -2062,14 +2160,14 @@ const bijoux = [
       "img/bracelets/vague-couleur-du-ciel/4.jpg"
     ],
     "disponible": "non",
-    "desc": "Bracelet en micro-macramé, avec strass Swarovski bleu et perles œil de chat. La longueur est ajustable	de 19 à 24 cm, avec un fermoir à ressort."
+    "desc": "Bracelet en micro-macramé, avec strass Swarovski bleu et perles œil de chat. La longueur est ajustable\tde 19 à 24 cm, avec un fermoir à ressort."
   },
   {
     "id": "bracelets--vagues-bleues",
     "titre": "Vagues bleues",
     "categorie": "Bracelets",
     "dossier": "Vagues bleues",
-    "vignette": "img/bracelets/vagues-bleues/vignette.jpg",
+    "vignette": "img/bracelets/vagues-bleues/1.jpg",
     "photos": [
       "img/bracelets/vagues-bleues/1.jpg",
       "img/bracelets/vagues-bleues/2.jpg",
@@ -2085,7 +2183,7 @@ const bijoux = [
     "titre": "Vagues mauve et orange",
     "categorie": "Bracelets",
     "dossier": "Vagues mauve et orange",
-    "vignette": "img/bracelets/vagues-mauve-et-orange/vignette.jpg",
+    "vignette": "img/bracelets/vagues-mauve-et-orange/1.jpg",
     "photos": [
       "img/bracelets/vagues-mauve-et-orange/1.jpg",
       "img/bracelets/vagues-mauve-et-orange/2.jpg",
@@ -2101,7 +2199,7 @@ const bijoux = [
     "titre": "Vagues rose et gris",
     "categorie": "Bracelets",
     "dossier": "Vagues rose et gris",
-    "vignette": "img/bracelets/vagues-rose-et-gris/vignette.jpg",
+    "vignette": "img/bracelets/vagues-rose-et-gris/1.jpg",
     "photos": [
       "img/bracelets/vagues-rose-et-gris/1.jpg",
       "img/bracelets/vagues-rose-et-gris/2.jpg"
@@ -2114,7 +2212,7 @@ const bijoux = [
     "titre": "Arc en ciel",
     "categorie": "Boucles d'oreilles",
     "dossier": "Arc en ciel",
-    "vignette": "img/boucles-d-oreilles/arc-en-ciel/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/arc-en-ciel/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/arc-en-ciel/1.jpg"
     ],
@@ -2126,7 +2224,7 @@ const bijoux = [
     "titre": "Attrape-rêve",
     "categorie": "Boucles d'oreilles",
     "dossier": "Attrape-rêve",
-    "vignette": "img/boucles-d-oreilles/attrape-reve/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/attrape-reve/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/attrape-reve/1.jpg",
       "img/boucles-d-oreilles/attrape-reve/2.jpg",
@@ -2136,11 +2234,23 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "boucles-d-oreilles--bo-aurore-brillante",
+    "titre": "Aurore brillante",
+    "categorie": "Boucles d'oreilles",
+    "dossier": "BO Aurore brillante",
+    "vignette": "img/boucles-d-oreilles/bo-aurore-brillante/1.jpg",
+    "photos": [
+      "img/boucles-d-oreilles/bo-aurore-brillante/1.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Strass bleu enchassé dans des perles calibrées tissées en forme de triangle."
+  },
+  {
     "id": "boucles-d-oreilles--bo-boule-rose-orange",
     "titre": "Boule rose orangé",
     "categorie": "Boucles d'oreilles",
     "dossier": "BO Boule rose orangé",
-    "vignette": "img/boucles-d-oreilles/bo-boule-rose-orange/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/bo-boule-rose-orange/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/bo-boule-rose-orange/1.jpg",
       "img/boucles-d-oreilles/bo-boule-rose-orange/2.jpg"
@@ -2153,7 +2263,7 @@ const bijoux = [
     "titre": "Fleurs bleu, vert et moutarde",
     "categorie": "Boucles d'oreilles",
     "dossier": "BO Fleurs bleu, vert et moutarde",
-    "vignette": "img/boucles-d-oreilles/bo-fleurs-bleu-vert-et-moutarde/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/bo-fleurs-bleu-vert-et-moutarde/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/bo-fleurs-bleu-vert-et-moutarde/1.jpg",
       "img/boucles-d-oreilles/bo-fleurs-bleu-vert-et-moutarde/2.jpg",
@@ -2168,7 +2278,7 @@ const bijoux = [
     "titre": "Fleurs macramé",
     "categorie": "Boucles d'oreilles",
     "dossier": "BO Fleurs macramé",
-    "vignette": "img/boucles-d-oreilles/bo-fleurs-macrame/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/bo-fleurs-macrame/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/bo-fleurs-macrame/1.jpg",
       "img/boucles-d-oreilles/bo-fleurs-macrame/2.jpg",
@@ -2183,7 +2293,7 @@ const bijoux = [
     "titre": "Habits prère Noël",
     "categorie": "Boucles d'oreilles",
     "dossier": "BO habits prère Noël",
-    "vignette": "img/boucles-d-oreilles/bo-habits-prere-noel/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/bo-habits-prere-noel/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/bo-habits-prere-noel/1.jpg",
       "img/boucles-d-oreilles/bo-habits-prere-noel/2.jpg",
@@ -2198,7 +2308,7 @@ const bijoux = [
     "titre": "Lanterne mauve",
     "categorie": "Boucles d'oreilles",
     "dossier": "BO Lanterne mauve",
-    "vignette": "img/boucles-d-oreilles/bo-lanterne-mauve/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/bo-lanterne-mauve/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/bo-lanterne-mauve/1.jpg",
       "img/boucles-d-oreilles/bo-lanterne-mauve/2.jpg",
@@ -2214,7 +2324,7 @@ const bijoux = [
     "titre": "Pentagone filant",
     "categorie": "Boucles d'oreilles",
     "dossier": "BO Pentagone filant",
-    "vignette": "img/boucles-d-oreilles/bo-pentagone-filant/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/bo-pentagone-filant/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/bo-pentagone-filant/1.jpg",
       "img/boucles-d-oreilles/bo-pentagone-filant/2.jpg",
@@ -2229,7 +2339,7 @@ const bijoux = [
     "titre": "Pingouin écharpe rouge",
     "categorie": "Boucles d'oreilles",
     "dossier": "BO pingouin écharpe rouge",
-    "vignette": "img/boucles-d-oreilles/bo-pingouin-echarpe-rouge/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/bo-pingouin-echarpe-rouge/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/bo-pingouin-echarpe-rouge/1.jpg",
       "img/boucles-d-oreilles/bo-pingouin-echarpe-rouge/2.jpg",
@@ -2244,7 +2354,7 @@ const bijoux = [
     "titre": "Printemps",
     "categorie": "Boucles d'oreilles",
     "dossier": "BO Printemps",
-    "vignette": "img/boucles-d-oreilles/bo-printemps/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/bo-printemps/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/bo-printemps/1.jpg"
     ],
@@ -2256,13 +2366,13 @@ const bijoux = [
     "titre": "Triangle rouge",
     "categorie": "Boucles d'oreilles",
     "dossier": "BO Triangle rouge",
-    "vignette": "img/boucles-d-oreilles/bo-triangle-rouge/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/bo-triangle-rouge/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/bo-triangle-rouge/1.jpg",
       "img/boucles-d-oreilles/bo-triangle-rouge/2.jpg",
       "img/boucles-d-oreilles/bo-triangle-rouge/3.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": "Triangle de perles Miyuki orné de toupies Swarovski pour un éclat de lumière."
   },
   {
@@ -2270,7 +2380,7 @@ const bijoux = [
     "titre": "Bonhomme de neige",
     "categorie": "Boucles d'oreilles",
     "dossier": "Bonhomme de neige",
-    "vignette": "img/boucles-d-oreilles/bonhomme-de-neige/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/bonhomme-de-neige/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/bonhomme-de-neige/1.jpg",
       "img/boucles-d-oreilles/bonhomme-de-neige/2.jpg",
@@ -2285,7 +2395,7 @@ const bijoux = [
     "titre": "Boucles d'oreilles pingouin",
     "categorie": "Boucles d'oreilles",
     "dossier": "Boucles d'oreilles pingouin",
-    "vignette": "img/boucles-d-oreilles/boucles-d-oreilles-pingouin/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/boucles-d-oreilles-pingouin/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/boucles-d-oreilles-pingouin/1.jpg",
       "img/boucles-d-oreilles/boucles-d-oreilles-pingouin/2.jpg",
@@ -2301,7 +2411,7 @@ const bijoux = [
     "titre": "Boule de fleurs",
     "categorie": "Boucles d'oreilles",
     "dossier": "Boule de fleurs",
-    "vignette": "img/boucles-d-oreilles/boule-de-fleurs/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/boule-de-fleurs/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/boule-de-fleurs/1.jpg",
       "img/boucles-d-oreilles/boule-de-fleurs/2.jpg",
@@ -2317,7 +2427,7 @@ const bijoux = [
     "titre": "Boules bleu",
     "categorie": "Boucles d'oreilles",
     "dossier": "Boules bleu",
-    "vignette": "img/boucles-d-oreilles/boules-bleu/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/boules-bleu/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/boules-bleu/1.jpg",
       "img/boucles-d-oreilles/boules-bleu/2.jpg",
@@ -2325,7 +2435,7 @@ const bijoux = [
       "img/boucles-d-oreilles/boules-bleu/4.jpg",
       "img/boucles-d-oreilles/boules-bleu/5.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": "Boule en bois recouverte par des perles bleues, montées sur des crochets d'oreille dorés."
   },
   {
@@ -2333,7 +2443,7 @@ const bijoux = [
     "titre": "Chips bleu",
     "categorie": "Boucles d'oreilles",
     "dossier": "Chips bleu",
-    "vignette": "img/boucles-d-oreilles/chips-bleu/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/chips-bleu/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/chips-bleu/1.jpg",
       "img/boucles-d-oreilles/chips-bleu/2.jpg"
@@ -2346,7 +2456,7 @@ const bijoux = [
     "titre": "Chips corail",
     "categorie": "Boucles d'oreilles",
     "dossier": "Chips corail",
-    "vignette": "img/boucles-d-oreilles/chips-corail/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/chips-corail/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/chips-corail/1.jpg",
       "img/boucles-d-oreilles/chips-corail/2.jpg",
@@ -2360,7 +2470,7 @@ const bijoux = [
     "titre": "Clochettes vertes",
     "categorie": "Boucles d'oreilles",
     "dossier": "Clochettes vertes",
-    "vignette": "img/boucles-d-oreilles/clochettes-vertes/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/clochettes-vertes/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/clochettes-vertes/1.jpg"
     ],
@@ -2372,7 +2482,7 @@ const bijoux = [
     "titre": "Couronne de Noël",
     "categorie": "Boucles d'oreilles",
     "dossier": "Couronne de Noël",
-    "vignette": "img/boucles-d-oreilles/couronne-de-noel/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/couronne-de-noel/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/couronne-de-noel/1.jpg",
       "img/boucles-d-oreilles/couronne-de-noel/2.jpg",
@@ -2382,11 +2492,38 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "boucles-d-oreilles--creoles-rose-et-argent",
+    "titre": "Créoles rose et argent",
+    "categorie": "Boucles d'oreilles",
+    "dossier": "Créoles rose et argent",
+    "vignette": "img/boucles-d-oreilles/creoles-rose-et-argent/1.jpg",
+    "photos": [
+      "img/boucles-d-oreilles/creoles-rose-et-argent/1.jpg",
+      "img/boucles-d-oreilles/creoles-rose-et-argent/2.jpg",
+      "img/boucles-d-oreilles/creoles-rose-et-argent/3.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Créole recouvertes de perles de rocailles rose et argent"
+  },
+  {
+    "id": "boucles-d-oreilles--cone-blanc-et-marron-orange",
+    "titre": "Cône blanc et marron orangé",
+    "categorie": "Boucles d'oreilles",
+    "dossier": "Cône blanc et marron orangé",
+    "vignette": "img/boucles-d-oreilles/cone-blanc-et-marron-orange/1.jpg",
+    "photos": [
+      "img/boucles-d-oreilles/cone-blanc-et-marron-orange/1.jpg",
+      "img/boucles-d-oreilles/cone-blanc-et-marron-orange/2.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Crochets d'oreilles doré, supportant des boucles en perles. Ce modèle est réalisable en atelier."
+  },
+  {
     "id": "boucles-d-oreilles--cone-d-automne",
     "titre": "Cône d'automne",
     "categorie": "Boucles d'oreilles",
     "dossier": "Cône d'automne",
-    "vignette": "img/boucles-d-oreilles/cone-d-automne/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/cone-d-automne/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/cone-d-automne/1.jpg",
       "img/boucles-d-oreilles/cone-d-automne/2.jpg",
@@ -2401,7 +2538,7 @@ const bijoux = [
     "titre": "Cône estival",
     "categorie": "Boucles d'oreilles",
     "dossier": "Cône estival",
-    "vignette": "img/boucles-d-oreilles/cone-estival/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/cone-estival/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/cone-estival/1.jpg",
       "img/boucles-d-oreilles/cone-estival/2.jpg",
@@ -2417,7 +2554,7 @@ const bijoux = [
     "titre": "Cône noir et vert",
     "categorie": "Boucles d'oreilles",
     "dossier": "Cône noir et vert",
-    "vignette": "img/boucles-d-oreilles/cone-noir-et-vert/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/cone-noir-et-vert/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/cone-noir-et-vert/1.jpg"
     ],
@@ -2429,7 +2566,7 @@ const bijoux = [
     "titre": "Cône rouge",
     "categorie": "Boucles d'oreilles",
     "dossier": "Cône rouge",
-    "vignette": "img/boucles-d-oreilles/cone-rouge/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/cone-rouge/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/cone-rouge/1.jpg",
       "img/boucles-d-oreilles/cone-rouge/2.jpg",
@@ -2441,11 +2578,26 @@ const bijoux = [
     "desc": "rochets d'oreilles doré, supportant des boucles en perles. Ce modèle est réalisable en atelier."
   },
   {
+    "id": "boucles-d-oreilles--entrelacs",
+    "titre": "Entrelacs",
+    "categorie": "Boucles d'oreilles",
+    "dossier": "Entrelacs",
+    "vignette": "img/boucles-d-oreilles/entrelacs/1.jpg",
+    "photos": [
+      "img/boucles-d-oreilles/entrelacs/1.jpg",
+      "img/boucles-d-oreilles/entrelacs/2.jpg",
+      "img/boucles-d-oreilles/entrelacs/3.jpg",
+      "img/boucles-d-oreilles/entrelacs/4.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Tissages de perles de racailles entrelacés autour d'une perle ronde noire."
+  },
+  {
     "id": "boucles-d-oreilles--etoile-filante",
     "titre": "Etoile filante",
     "categorie": "Boucles d'oreilles",
     "dossier": "Etoile filante",
-    "vignette": "img/boucles-d-oreilles/etoile-filante/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/etoile-filante/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/etoile-filante/1.jpg",
       "img/boucles-d-oreilles/etoile-filante/2.jpg",
@@ -2461,7 +2613,7 @@ const bijoux = [
     "titre": "Eventail",
     "categorie": "Boucles d'oreilles",
     "dossier": "Eventail",
-    "vignette": "img/boucles-d-oreilles/eventail/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/eventail/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/eventail/1.jpg",
       "img/boucles-d-oreilles/eventail/2.jpg",
@@ -2477,7 +2629,7 @@ const bijoux = [
     "titre": "Feuillage de feu",
     "categorie": "Boucles d'oreilles",
     "dossier": "Feuillage de feu",
-    "vignette": "img/boucles-d-oreilles/feuillage-de-feu/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/feuillage-de-feu/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/feuillage-de-feu/1.jpg",
       "img/boucles-d-oreilles/feuillage-de-feu/2.jpg",
@@ -2491,13 +2643,27 @@ const bijoux = [
     "titre": "Fleur bleu",
     "categorie": "Boucles d'oreilles",
     "dossier": "Fleur bleu",
-    "vignette": "img/boucles-d-oreilles/fleur-bleu/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/fleur-bleu/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/fleur-bleu/1.jpg",
       "img/boucles-d-oreilles/fleur-bleu/2.jpg",
       "img/boucles-d-oreilles/fleur-bleu/3.jpg",
       "img/boucles-d-oreilles/fleur-bleu/4.jpg",
       "img/boucles-d-oreilles/fleur-bleu/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Petite fleur en perles sur crochet argenté. Modèle réalisable en atelier."
+  },
+  {
+    "id": "boucles-d-oreilles--fleur-marron",
+    "titre": "Fleur marron",
+    "categorie": "Boucles d'oreilles",
+    "dossier": "Fleur marron",
+    "vignette": "img/boucles-d-oreilles/fleur-marron/1.jpg",
+    "photos": [
+      "img/boucles-d-oreilles/fleur-marron/1.jpg",
+      "img/boucles-d-oreilles/fleur-marron/2.jpg",
+      "img/boucles-d-oreilles/fleur-marron/3.jpg"
     ],
     "disponible": "non",
     "desc": "Petite fleur en perles sur crochet argenté. Modèle réalisable en atelier."
@@ -2507,14 +2673,14 @@ const bijoux = [
     "titre": "Fleur rouge",
     "categorie": "Boucles d'oreilles",
     "dossier": "Fleur rouge",
-    "vignette": "img/boucles-d-oreilles/fleur-rouge/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/fleur-rouge/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/fleur-rouge/1.jpg",
       "img/boucles-d-oreilles/fleur-rouge/2.jpg",
       "img/boucles-d-oreilles/fleur-rouge/3.jpg",
       "img/boucles-d-oreilles/fleur-rouge/4.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": "Petite fleur en perles sur crochet doré. Modèle réalisable en atelier."
   },
   {
@@ -2522,7 +2688,7 @@ const bijoux = [
     "titre": "Fleur verte",
     "categorie": "Boucles d'oreilles",
     "dossier": "Fleur verte",
-    "vignette": "img/boucles-d-oreilles/fleur-verte/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/fleur-verte/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/fleur-verte/1.jpg",
       "img/boucles-d-oreilles/fleur-verte/2.jpg",
@@ -2538,7 +2704,7 @@ const bijoux = [
     "titre": "Fleurs noir et or",
     "categorie": "Boucles d'oreilles",
     "dossier": "Fleurs noir et or",
-    "vignette": "img/boucles-d-oreilles/fleurs-noir-et-or/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/fleurs-noir-et-or/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/fleurs-noir-et-or/1.jpg"
     ],
@@ -2550,7 +2716,7 @@ const bijoux = [
     "titre": "Flocon",
     "categorie": "Boucles d'oreilles",
     "dossier": "Flocon",
-    "vignette": "img/boucles-d-oreilles/flocon/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/flocon/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/flocon/1.jpg",
       "img/boucles-d-oreilles/flocon/2.jpg",
@@ -2566,7 +2732,7 @@ const bijoux = [
     "titre": "Goutte bleue",
     "categorie": "Boucles d'oreilles",
     "dossier": "Goutte bleue",
-    "vignette": "img/boucles-d-oreilles/goutte-bleue/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/goutte-bleue/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/goutte-bleue/1.jpg",
       "img/boucles-d-oreilles/goutte-bleue/2.jpg",
@@ -2580,7 +2746,7 @@ const bijoux = [
     "titre": "Marin",
     "categorie": "Boucles d'oreilles",
     "dossier": "Marin",
-    "vignette": "img/boucles-d-oreilles/marin/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/marin/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/marin/1.jpg"
     ],
@@ -2592,7 +2758,7 @@ const bijoux = [
     "titre": "Matriochka",
     "categorie": "Boucles d'oreilles",
     "dossier": "Matriochka",
-    "vignette": "img/boucles-d-oreilles/matriochka/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/matriochka/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/matriochka/1.jpg",
       "img/boucles-d-oreilles/matriochka/2.jpg",
@@ -2606,7 +2772,7 @@ const bijoux = [
     "titre": "Mini boule",
     "categorie": "Boucles d'oreilles",
     "dossier": "Mini boule",
-    "vignette": "img/boucles-d-oreilles/mini-boule/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/mini-boule/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/mini-boule/1.jpg",
       "img/boucles-d-oreilles/mini-boule/2.jpg",
@@ -2617,11 +2783,27 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "boucles-d-oreilles--mr-et-mme-noel",
+    "titre": "Mr et Mme Noël",
+    "categorie": "Boucles d'oreilles",
+    "dossier": "Mr et Mme Noël",
+    "vignette": "img/boucles-d-oreilles/mr-et-mme-noel/1.jpg",
+    "photos": [
+      "img/boucles-d-oreilles/mr-et-mme-noel/1.jpg",
+      "img/boucles-d-oreilles/mr-et-mme-noel/2.jpg",
+      "img/boucles-d-oreilles/mr-et-mme-noel/3.jpg",
+      "img/boucles-d-oreilles/mr-et-mme-noel/4.jpg",
+      "img/boucles-d-oreilles/mr-et-mme-noel/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Personnages en perles tissées, avec franges de perles."
+  },
+  {
     "id": "boucles-d-oreilles--nuage-bleu",
     "titre": "Nuage bleu",
     "categorie": "Boucles d'oreilles",
     "dossier": "Nuage bleu",
-    "vignette": "img/boucles-d-oreilles/nuage-bleu/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/nuage-bleu/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/nuage-bleu/1.jpg",
       "img/boucles-d-oreilles/nuage-bleu/2.jpg"
@@ -2634,7 +2816,7 @@ const bijoux = [
     "titre": "Papillons roses",
     "categorie": "Boucles d'oreilles",
     "dossier": "Papillons roses",
-    "vignette": "img/boucles-d-oreilles/papillons-roses/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/papillons-roses/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/papillons-roses/1.jpg",
       "img/boucles-d-oreilles/papillons-roses/2.jpg",
@@ -2648,7 +2830,7 @@ const bijoux = [
     "titre": "Ronde rose",
     "categorie": "Boucles d'oreilles",
     "dossier": "Ronde rose",
-    "vignette": "img/boucles-d-oreilles/ronde-rose/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/ronde-rose/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/ronde-rose/1.jpg",
       "img/boucles-d-oreilles/ronde-rose/2.jpg",
@@ -2660,11 +2842,26 @@ const bijoux = [
     "desc": "tissage en rond de perles de différentes tailles, sans support"
   },
   {
+    "id": "boucles-d-oreilles--roue-saumon",
+    "titre": "Roue saumon",
+    "categorie": "Boucles d'oreilles",
+    "dossier": "Roue saumon",
+    "vignette": "img/boucles-d-oreilles/roue-saumon/1.jpg",
+    "photos": [
+      "img/boucles-d-oreilles/roue-saumon/1.jpg",
+      "img/boucles-d-oreilles/roue-saumon/2.jpg",
+      "img/boucles-d-oreilles/roue-saumon/3.jpg",
+      "img/boucles-d-oreilles/roue-saumon/4.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Fleur en perles duo et rocaille, couleur saumon et cristal"
+  },
+  {
     "id": "boucles-d-oreilles--sapin",
     "titre": "Sapin",
     "categorie": "Boucles d'oreilles",
     "dossier": "Sapin",
-    "vignette": "img/boucles-d-oreilles/sapin/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/sapin/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/sapin/1.jpg",
       "img/boucles-d-oreilles/sapin/2.jpg"
@@ -2677,7 +2874,7 @@ const bijoux = [
     "titre": "Sapin et Cadeau",
     "categorie": "Boucles d'oreilles",
     "dossier": "Sapin et Cadeau",
-    "vignette": "img/boucles-d-oreilles/sapin-et-cadeau/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/sapin-et-cadeau/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/sapin-et-cadeau/1.jpg",
       "img/boucles-d-oreilles/sapin-et-cadeau/2.jpg",
@@ -2689,11 +2886,57 @@ const bijoux = [
     "desc": "Cadeau et sapin en relief, sur des crochets dorés."
   },
   {
+    "id": "boucles-d-oreilles--sapin-joyeux",
+    "titre": "Sapin joyeux",
+    "categorie": "Boucles d'oreilles",
+    "dossier": "Sapin joyeux",
+    "vignette": "img/boucles-d-oreilles/sapin-joyeux/1.jpg",
+    "photos": [
+      "img/boucles-d-oreilles/sapin-joyeux/1.jpg",
+      "img/boucles-d-oreilles/sapin-joyeux/2.jpg",
+      "img/boucles-d-oreilles/sapin-joyeux/3.jpg",
+      "img/boucles-d-oreilles/sapin-joyeux/4.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Ce petit sapin en tissage de perles vous rendra instantanément le sourire."
+  },
+  {
+    "id": "boucles-d-oreilles--sapin-van-gogh",
+    "titre": "Sapin Van Gogh",
+    "categorie": "Boucles d'oreilles",
+    "dossier": "Sapin Van Gogh",
+    "vignette": "img/boucles-d-oreilles/sapin-van-gogh/1.jpg",
+    "photos": [
+      "img/boucles-d-oreilles/sapin-van-gogh/1.jpg",
+      "img/boucles-d-oreilles/sapin-van-gogh/2.jpg",
+      "img/boucles-d-oreilles/sapin-van-gogh/3.jpg",
+      "img/boucles-d-oreilles/sapin-van-gogh/4.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "idéal pour une tenue de noël raffinée, ce sapin aux couleurs du ciel du célèbre tableau de Vincent van Gogh Les tournesols."
+  },
+  {
+    "id": "boucles-d-oreilles--strass-rose",
+    "titre": "Strass rose",
+    "categorie": "Boucles d'oreilles",
+    "dossier": "Strass rose",
+    "vignette": "img/boucles-d-oreilles/strass-rose/1.jpg",
+    "photos": [
+      "img/boucles-d-oreilles/strass-rose/1.jpg",
+      "img/boucles-d-oreilles/strass-rose/2.jpg",
+      "img/boucles-d-oreilles/strass-rose/3.jpg",
+      "img/boucles-d-oreilles/strass-rose/4.jpg",
+      "img/boucles-d-oreilles/strass-rose/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Strass rose enchassé dans un tissage de perles calibrées, entre la fleur et le personnage, chacun peut imaginer le sujet qu'il veut."
+  },
+  {
     "id": "boucles-d-oreilles--torsade-bleu",
     "titre": "Torsade bleu",
     "categorie": "Boucles d'oreilles",
     "dossier": "Torsade bleu",
-    "vignette": "img/boucles-d-oreilles/torsade-bleu/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/torsade-bleu/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/torsade-bleu/1.jpg",
       "img/boucles-d-oreilles/torsade-bleu/2.jpg"
@@ -2706,7 +2949,7 @@ const bijoux = [
     "titre": "Torsade dorée",
     "categorie": "Boucles d'oreilles",
     "dossier": "Torsade dorée",
-    "vignette": "img/boucles-d-oreilles/torsade-doree/vignette.jpg",
+    "vignette": "img/boucles-d-oreilles/torsade-doree/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/torsade-doree/1.jpg"
     ],
@@ -2718,7 +2961,7 @@ const bijoux = [
     "titre": "Arc en ciel",
     "categorie": "Parures",
     "dossier": "Arc en ciel",
-    "vignette": "img/parures/arc-en-ciel/vignette.jpg",
+    "vignette": "img/parures/arc-en-ciel/1.jpg",
     "photos": [
       "img/parures/arc-en-ciel/1.jpg",
       "img/parures/arc-en-ciel/2.jpg",
@@ -2734,19 +2977,19 @@ const bijoux = [
     "titre": "Aurore de glace",
     "categorie": "Parures",
     "dossier": "Aurore  de glace",
-    "vignette": "img/parures/aurore-de-glace/vignette.jpg",
+    "vignette": "img/parures/aurore-de-glace/1.jpg",
     "photos": [
       "img/parures/aurore-de-glace/1.jpg"
     ],
     "disponible": "non",
-    "desc": "Collier géométrique présentant des strass sertis dans des perles Delica Miyuki, sur une chaîne argent d'une longueur réglable jusqu'à 48 cm. Les boucles d'oreilles sont montées sur des crochets d'oreilles en argent "
+    "desc": "Collier géométrique présentant des strass sertis dans des perles Delica Miyuki, sur une chaîne argent d'une longueur réglable jusqu'à 48 cm. Les boucles d'oreilles sont montées sur des crochets d'oreilles en argent"
   },
   {
     "id": "parures--chips-bleu",
     "titre": "Chips bleu",
     "categorie": "Parures",
     "dossier": "Chips bleu",
-    "vignette": "img/parures/chips-bleu/vignette.jpg",
+    "vignette": "img/parures/chips-bleu/1.jpg",
     "photos": [
       "img/parures/chips-bleu/1.jpg",
       "img/parures/chips-bleu/2.jpg"
@@ -2759,7 +3002,7 @@ const bijoux = [
     "titre": "Chips corail",
     "categorie": "Parures",
     "dossier": "Chips corail",
-    "vignette": "img/parures/chips-corail/vignette.jpg",
+    "vignette": "img/parures/chips-corail/1.jpg",
     "photos": [
       "img/parures/chips-corail/1.jpg",
       "img/parures/chips-corail/2.jpg",
@@ -2775,7 +3018,7 @@ const bijoux = [
     "titre": "Donut et papillon",
     "categorie": "Parures",
     "dossier": "Donut et papillon",
-    "vignette": "img/parures/donut-et-papillon/vignette.jpg",
+    "vignette": "img/parures/donut-et-papillon/1.jpg",
     "photos": [
       "img/parures/donut-et-papillon/1.jpg",
       "img/parures/donut-et-papillon/2.jpg",
@@ -2790,7 +3033,7 @@ const bijoux = [
     "titre": "Entrelacs de fleurs",
     "categorie": "Parures",
     "dossier": "Entrelacs de fleurs",
-    "vignette": "img/parures/entrelacs-de-fleurs/vignette.jpg",
+    "vignette": "img/parures/entrelacs-de-fleurs/1.jpg",
     "photos": [
       "img/parures/entrelacs-de-fleurs/1.jpg"
     ],
@@ -2802,7 +3045,7 @@ const bijoux = [
     "titre": "Feuillage de feu",
     "categorie": "Parures",
     "dossier": "Feuillage de feu",
-    "vignette": "img/parures/feuillage-de-feu/vignette.jpg",
+    "vignette": "img/parures/feuillage-de-feu/1.jpg",
     "photos": [
       "img/parures/feuillage-de-feu/1.jpg",
       "img/parures/feuillage-de-feu/2.jpg",
@@ -2818,7 +3061,7 @@ const bijoux = [
     "titre": "Fleurs bleu toupies",
     "categorie": "Parures",
     "dossier": "Fleurs bleu toupies",
-    "vignette": "img/parures/fleurs-bleu-toupies/vignette.jpg",
+    "vignette": "img/parures/fleurs-bleu-toupies/1.jpg",
     "photos": [
       "img/parures/fleurs-bleu-toupies/1.jpg"
     ],
@@ -2830,7 +3073,7 @@ const bijoux = [
     "titre": "Fleurs noir et or",
     "categorie": "Parures",
     "dossier": "Fleurs noir et or",
-    "vignette": "img/parures/fleurs-noir-et-or/vignette.jpg",
+    "vignette": "img/parures/fleurs-noir-et-or/1.jpg",
     "photos": [
       "img/parures/fleurs-noir-et-or/1.jpg"
     ],
@@ -2842,7 +3085,7 @@ const bijoux = [
     "titre": "Mariée en bleu",
     "categorie": "Parures",
     "dossier": "Mariée en bleu",
-    "vignette": "img/parures/mariee-en-bleu/vignette.jpg",
+    "vignette": "img/parures/mariee-en-bleu/1.jpg",
     "photos": [
       "img/parures/mariee-en-bleu/1.jpg",
       "img/parures/mariee-en-bleu/2.jpg",
@@ -2858,7 +3101,7 @@ const bijoux = [
     "titre": "Printemps",
     "categorie": "Parures",
     "dossier": "Printemps",
-    "vignette": "img/parures/printemps/vignette.jpg",
+    "vignette": "img/parures/printemps/1.jpg",
     "photos": [
       "img/parures/printemps/1.jpg",
       "img/parures/printemps/2.jpg"
@@ -2871,7 +3114,7 @@ const bijoux = [
     "titre": "Ronde fleurie",
     "categorie": "Parures",
     "dossier": "Ronde fleurie",
-    "vignette": "img/parures/ronde-fleurie/vignette.jpg",
+    "vignette": "img/parures/ronde-fleurie/1.jpg",
     "photos": [
       "img/parures/ronde-fleurie/1.jpg",
       "img/parures/ronde-fleurie/2.jpg",
@@ -2887,7 +3130,7 @@ const bijoux = [
     "titre": "Toupies rose orangé",
     "categorie": "Parures",
     "dossier": "Toupies rose orangé",
-    "vignette": "img/parures/toupies-rose-orange/vignette.jpg",
+    "vignette": "img/parures/toupies-rose-orange/1.jpg",
     "photos": [
       "img/parures/toupies-rose-orange/1.jpg",
       "img/parures/toupies-rose-orange/2.jpg",
@@ -2901,7 +3144,7 @@ const bijoux = [
     "titre": "Ange Swarovski bleu",
     "categorie": "Divers",
     "dossier": "Ange Swarovski bleu",
-    "vignette": "img/divers/ange-swarovski-bleu/vignette.jpg",
+    "vignette": "img/divers/ange-swarovski-bleu/1.jpg",
     "photos": [
       "img/divers/ange-swarovski-bleu/1.jpg",
       "img/divers/ange-swarovski-bleu/2.jpg",
@@ -2916,7 +3159,7 @@ const bijoux = [
     "titre": "Attrape-rêve",
     "categorie": "Divers",
     "dossier": "Attrape-rêve",
-    "vignette": "img/divers/attrape-reve/vignette.jpg",
+    "vignette": "img/divers/attrape-reve/1.jpg",
     "photos": [
       "img/divers/attrape-reve/1.jpg",
       "img/divers/attrape-reve/2.jpg",
@@ -2932,7 +3175,7 @@ const bijoux = [
     "titre": "Bague fleur",
     "categorie": "Divers",
     "dossier": "Bague fleur",
-    "vignette": "img/divers/bague-fleur/vignette.jpg",
+    "vignette": "img/divers/bague-fleur/1.jpg",
     "photos": [
       "img/divers/bague-fleur/1.jpg",
       "img/divers/bague-fleur/2.jpg",
@@ -2947,7 +3190,7 @@ const bijoux = [
     "titre": "Bague Miyuki",
     "categorie": "Divers",
     "dossier": "Bague Miyuki",
-    "vignette": "img/divers/bague-miyuki/vignette.jpg",
+    "vignette": "img/divers/bague-miyuki/1.jpg",
     "photos": [
       "img/divers/bague-miyuki/1.jpg",
       "img/divers/bague-miyuki/2.jpg"
@@ -2960,7 +3203,7 @@ const bijoux = [
     "titre": "Biche fleurie",
     "categorie": "Divers",
     "dossier": "Biche fleurie",
-    "vignette": "img/divers/biche-fleurie/vignette.jpg",
+    "vignette": "img/divers/biche-fleurie/1.jpg",
     "photos": [
       "img/divers/biche-fleurie/1.jpg",
       "img/divers/biche-fleurie/2.jpg"
@@ -2973,7 +3216,7 @@ const bijoux = [
     "titre": "Boite couleur coeur",
     "categorie": "Divers",
     "dossier": "Boite couleur coeur",
-    "vignette": "img/divers/boite-couleur-coeur/vignette.jpg",
+    "vignette": "img/divers/boite-couleur-coeur/1.jpg",
     "photos": [
       "img/divers/boite-couleur-coeur/1.jpg",
       "img/divers/boite-couleur-coeur/2.jpg",
@@ -2988,7 +3231,7 @@ const bijoux = [
     "titre": "Boite triangle bleu et marron",
     "categorie": "Divers",
     "dossier": "Boite triangle bleu et marron",
-    "vignette": "img/divers/boite-triangle-bleu-et-marron/vignette.jpg",
+    "vignette": "img/divers/boite-triangle-bleu-et-marron/1.jpg",
     "photos": [
       "img/divers/boite-triangle-bleu-et-marron/1.jpg",
       "img/divers/boite-triangle-bleu-et-marron/2.jpg",
@@ -3004,7 +3247,7 @@ const bijoux = [
     "titre": "Broche papillon",
     "categorie": "Divers",
     "dossier": "Broche papillon",
-    "vignette": "img/divers/broche-papillon/vignette.jpg",
+    "vignette": "img/divers/broche-papillon/1.jpg",
     "photos": [
       "img/divers/broche-papillon/1.jpg"
     ],
@@ -3016,7 +3259,7 @@ const bijoux = [
     "titre": "Broche papillon bleu",
     "categorie": "Divers",
     "dossier": "Broche papillon bleu",
-    "vignette": "img/divers/broche-papillon-bleu/vignette.jpg",
+    "vignette": "img/divers/broche-papillon-bleu/1.jpg",
     "photos": [
       "img/divers/broche-papillon-bleu/1.jpg",
       "img/divers/broche-papillon-bleu/2.jpg"
@@ -3029,7 +3272,7 @@ const bijoux = [
     "titre": "Chat porte clé",
     "categorie": "Divers",
     "dossier": "Chat porte clé",
-    "vignette": "img/divers/chat-porte-cle/vignette.jpg",
+    "vignette": "img/divers/chat-porte-cle/1.jpg",
     "photos": [
       "img/divers/chat-porte-cle/1.jpg",
       "img/divers/chat-porte-cle/2.jpg",
@@ -3043,7 +3286,7 @@ const bijoux = [
     "titre": "Chouette2",
     "categorie": "Divers",
     "dossier": "Chouette2",
-    "vignette": "img/divers/chouette2/vignette.jpg",
+    "vignette": "img/divers/chouette2/1.jpg",
     "photos": [
       "img/divers/chouette2/1.jpg",
       "img/divers/chouette2/2.jpg",
@@ -3057,7 +3300,7 @@ const bijoux = [
     "titre": "Cochon rose",
     "categorie": "Divers",
     "dossier": "Cochon rose",
-    "vignette": "img/divers/cochon-rose/vignette.jpg",
+    "vignette": "img/divers/cochon-rose/1.jpg",
     "photos": [
       "img/divers/cochon-rose/1.jpg",
       "img/divers/cochon-rose/2.jpg",
@@ -3073,7 +3316,7 @@ const bijoux = [
     "titre": "Coeur entouré",
     "categorie": "Divers",
     "dossier": "Coeur entouré",
-    "vignette": "img/divers/coeur-entoure/vignette.jpg",
+    "vignette": "img/divers/coeur-entoure/1.jpg",
     "photos": [
       "img/divers/coeur-entoure/1.jpg",
       "img/divers/coeur-entoure/2.jpg"
@@ -3086,7 +3329,7 @@ const bijoux = [
     "titre": "Dragon",
     "categorie": "Divers",
     "dossier": "Dragon",
-    "vignette": "img/divers/dragon/vignette.jpg",
+    "vignette": "img/divers/dragon/1.jpg",
     "photos": [
       "img/divers/dragon/1.jpg",
       "img/divers/dragon/2.jpg",
@@ -3102,7 +3345,7 @@ const bijoux = [
     "titre": "Dragon macramé",
     "categorie": "Divers",
     "dossier": "Dragon macramé",
-    "vignette": "img/divers/dragon-macrame/vignette.jpg",
+    "vignette": "img/divers/dragon-macrame/1.jpg",
     "photos": [
       "img/divers/dragon-macrame/1.jpg",
       "img/divers/dragon-macrame/2.jpg",
@@ -3118,7 +3361,7 @@ const bijoux = [
     "titre": "Fleur de lotus",
     "categorie": "Divers",
     "dossier": "Fleur de lotus",
-    "vignette": "img/divers/fleur-de-lotus/vignette.jpg",
+    "vignette": "img/divers/fleur-de-lotus/1.jpg",
     "photos": [
       "img/divers/fleur-de-lotus/1.jpg",
       "img/divers/fleur-de-lotus/2.jpg"
@@ -3131,7 +3374,7 @@ const bijoux = [
     "titre": "Fleur et arrosoir",
     "categorie": "Divers",
     "dossier": "Fleur et arrosoir",
-    "vignette": "img/divers/fleur-et-arrosoir/vignette.jpg",
+    "vignette": "img/divers/fleur-et-arrosoir/1.jpg",
     "photos": [
       "img/divers/fleur-et-arrosoir/1.jpg",
       "img/divers/fleur-et-arrosoir/2.jpg",
@@ -3146,7 +3389,7 @@ const bijoux = [
     "titre": "Fées",
     "categorie": "Divers",
     "dossier": "Fées",
-    "vignette": "img/divers/fees/vignette.jpg",
+    "vignette": "img/divers/fees/1.jpg",
     "photos": [
       "img/divers/fees/1.jpg",
       "img/divers/fees/2.jpg",
@@ -3162,7 +3405,7 @@ const bijoux = [
     "titre": "Gnome",
     "categorie": "Divers",
     "dossier": "Gnome",
-    "vignette": "img/divers/gnome/vignette.jpg",
+    "vignette": "img/divers/gnome/1.jpg",
     "photos": [
       "img/divers/gnome/1.jpg",
       "img/divers/gnome/2.jpg",
@@ -3177,7 +3420,7 @@ const bijoux = [
     "titre": "Hello Kitty Swarovski",
     "categorie": "Divers",
     "dossier": "Hello Kitty Swarovski",
-    "vignette": "img/divers/hello-kitty-swarovski/vignette.jpg",
+    "vignette": "img/divers/hello-kitty-swarovski/1.jpg",
     "photos": [
       "img/divers/hello-kitty-swarovski/1.jpg",
       "img/divers/hello-kitty-swarovski/2.jpg",
@@ -3193,7 +3436,7 @@ const bijoux = [
     "titre": "Kaléidoscope",
     "categorie": "Divers",
     "dossier": "Kaléidoscope",
-    "vignette": "img/divers/kaleidoscope/vignette.jpg",
+    "vignette": "img/divers/kaleidoscope/1.jpg",
     "photos": [
       "img/divers/kaleidoscope/1.jpg",
       "img/divers/kaleidoscope/2.jpg",
@@ -3209,7 +3452,7 @@ const bijoux = [
     "titre": "Licorne",
     "categorie": "Divers",
     "dossier": "Licorne",
-    "vignette": "img/divers/licorne/vignette.jpg",
+    "vignette": "img/divers/licorne/1.jpg",
     "photos": [
       "img/divers/licorne/1.jpg",
       "img/divers/licorne/2.jpg"
@@ -3222,7 +3465,7 @@ const bijoux = [
     "titre": "Maison des abeilles",
     "categorie": "Divers",
     "dossier": "Maison des abeilles",
-    "vignette": "img/divers/maison-des-abeilles/vignette.jpg",
+    "vignette": "img/divers/maison-des-abeilles/1.jpg",
     "photos": [
       "img/divers/maison-des-abeilles/1.jpg",
       "img/divers/maison-des-abeilles/2.jpg",
@@ -3238,7 +3481,7 @@ const bijoux = [
     "titre": "Marque page",
     "categorie": "Divers",
     "dossier": "Marque page",
-    "vignette": "img/divers/marque-page/vignette.jpg",
+    "vignette": "img/divers/marque-page/1.jpg",
     "photos": [
       "img/divers/marque-page/1.jpg",
       "img/divers/marque-page/2.jpg"
@@ -3251,7 +3494,7 @@ const bijoux = [
     "titre": "Matriochka 3D rouge",
     "categorie": "Divers",
     "dossier": "Matriochka 3D rouge",
-    "vignette": "img/divers/matriochka-3d-rouge/vignette.jpg",
+    "vignette": "img/divers/matriochka-3d-rouge/1.jpg",
     "photos": [
       "img/divers/matriochka-3d-rouge/1.jpg",
       "img/divers/matriochka-3d-rouge/2.jpg"
@@ -3259,12 +3502,12 @@ const bijoux = [
     "disponible": "non",
     "desc": ""
   },
-    {
+  {
     "id": "divers--oeuf-de-dragon",
     "titre": "Oeuf de dragon",
     "categorie": "Divers",
     "dossier": "Oeuf de dragon",
-    "vignette": "img/divers/oeuf-de-dragon/vignette.jpg",
+    "vignette": "img/divers/oeuf-de-dragon/1.jpg",
     "photos": [
       "img/divers/oeuf-de-dragon/1.jpg",
       "img/divers/oeuf-de-dragon/2.jpg",
@@ -3279,7 +3522,7 @@ const bijoux = [
     "titre": "Ours",
     "categorie": "Divers",
     "dossier": "Ours",
-    "vignette": "img/divers/ours/vignette.jpg",
+    "vignette": "img/divers/ours/1.jpg",
     "photos": [
       "img/divers/ours/1.jpg",
       "img/divers/ours/2.jpg",
@@ -3295,7 +3538,7 @@ const bijoux = [
     "titre": "Pendentif chat",
     "categorie": "Divers",
     "dossier": "Pendentif chat",
-    "vignette": "img/divers/pendentif-chat/vignette.jpg",
+    "vignette": "img/divers/pendentif-chat/1.jpg",
     "photos": [
       "img/divers/pendentif-chat/1.jpg",
       "img/divers/pendentif-chat/2.jpg",
@@ -3309,7 +3552,7 @@ const bijoux = [
     "titre": "Perroquet",
     "categorie": "Divers",
     "dossier": "Perroquet",
-    "vignette": "img/divers/perroquet/vignette.jpg",
+    "vignette": "img/divers/perroquet/1.jpg",
     "photos": [
       "img/divers/perroquet/1.jpg"
     ],
@@ -3321,7 +3564,7 @@ const bijoux = [
     "titre": "Porte clé hibou",
     "categorie": "Divers",
     "dossier": "Porte clé hibou",
-    "vignette": "img/divers/porte-cle-hibou/vignette.jpg",
+    "vignette": "img/divers/porte-cle-hibou/1.jpg",
     "photos": [
       "img/divers/porte-cle-hibou/1.jpg"
     ],
@@ -3333,7 +3576,7 @@ const bijoux = [
     "titre": "Porte clé Rubik's cube",
     "categorie": "Divers",
     "dossier": "Porte clé Rubik's cube",
-    "vignette": "img/divers/porte-cle-rubik-s-cube/vignette.jpg",
+    "vignette": "img/divers/porte-cle-rubik-s-cube/1.jpg",
     "photos": [
       "img/divers/porte-cle-rubik-s-cube/1.jpg"
     ],
@@ -3341,11 +3584,26 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "divers--porte-cles-chat-marron",
+    "titre": "Porte clés chat marron",
+    "categorie": "Divers",
+    "dossier": "Porte clés chat marron",
+    "vignette": "img/divers/porte-cles-chat-marron/1.jpg",
+    "photos": [
+      "img/divers/porte-cles-chat-marron/1.jpg",
+      "img/divers/porte-cles-chat-marron/2.jpg",
+      "img/divers/porte-cles-chat-marron/3.jpg",
+      "img/divers/porte-cles-chat-marron/4.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Chat Recto verso, en 3D."
+  },
+  {
     "id": "divers--reines-des-abeilles",
     "titre": "Reines des abeilles",
     "categorie": "Divers",
     "dossier": "Reines des abeilles",
-    "vignette": "img/divers/reines-des-abeilles/vignette.jpg",
+    "vignette": "img/divers/reines-des-abeilles/1.jpg",
     "photos": [
       "img/divers/reines-des-abeilles/1.jpg",
       "img/divers/reines-des-abeilles/2.jpg",
@@ -3361,7 +3619,7 @@ const bijoux = [
     "titre": "Robe de danse",
     "categorie": "Divers",
     "dossier": "Robe de danse",
-    "vignette": "img/divers/robe-de-danse/vignette.jpg",
+    "vignette": "img/divers/robe-de-danse/1.jpg",
     "photos": [
       "img/divers/robe-de-danse/1.jpg",
       "img/divers/robe-de-danse/2.jpg",
@@ -3375,7 +3633,7 @@ const bijoux = [
     "titre": "Tableaux",
     "categorie": "Divers",
     "dossier": "Tableaux",
-    "vignette": "img/divers/tableaux/vignette.jpg",
+    "vignette": "img/divers/tableaux/1.jpg",
     "photos": [
       "img/divers/tableaux/1.jpg",
       "img/divers/tableaux/2.jpg",
@@ -3389,7 +3647,7 @@ const bijoux = [
     "titre": "Tortue Larimar",
     "categorie": "Divers",
     "dossier": "Tortue Larimar",
-    "vignette": "img/divers/tortue-larimar/vignette.jpg",
+    "vignette": "img/divers/tortue-larimar/1.jpg",
     "photos": [
       "img/divers/tortue-larimar/1.jpg",
       "img/divers/tortue-larimar/2.jpg",
