@@ -1307,8 +1307,8 @@ const bijoux = [
       "img/bracelets/bangle-roux/4.jpg",
       "img/bracelets/bangle-roux/5.jpg"
     ],
-    "disponible": "non",
-    "desc": ""
+    "disponible": "oui",
+    "desc": "bracelet sans fermoir, de taille moyenne. Tissé en perles calibrées, l'insertion de perles bicones ou toupies Swarovski lui donne de l'éclat."
   },
   {
     "id": "bracelets--bangle-zanzibar",
@@ -1427,8 +1427,8 @@ const bijoux = [
       "img/bracelets/bracelet-noeuds-de-8/1.jpg",
       "img/bracelets/bracelet-noeuds-de-8/2.jpg"
     ],
-    "disponible": "non",
-    "desc": ""
+    "disponible": "oui",
+    "desc": "Tissage Kumihimo"
   },
   {
     "id": "bracelets--bracelet-oeil-de-chat-et-navettes-bleu",
@@ -1459,7 +1459,7 @@ const bijoux = [
       "img/bracelets/bracelet-perles-et-macrame-marron/4.jpg"
     ],
     "disponible": "non",
-    "desc": ""
+    "desc": "Tissage en macramé intégrant des perles"
   },
   {
     "id": "bracelets--bracelet-perles-et-macrame-orange",
@@ -1474,8 +1474,8 @@ const bijoux = [
       "img/bracelets/bracelet-perles-et-macrame-orange/4.jpg",
       "img/bracelets/bracelet-perles-et-macrame-orange/5.jpg"
     ],
-    "disponible": "non",
-    "desc": ""
+    "disponible": "oui",
+    "desc": "Tissage en macramé intégrant des perles Polaris et toupies Swarovski."
   },
   {
     "id": "bracelets--bracelet-perles-et-macrame-rose-et-gris",
@@ -1490,8 +1490,8 @@ const bijoux = [
       "img/bracelets/bracelet-perles-et-macrame-rose-et-gris/4.jpg",
       "img/bracelets/bracelet-perles-et-macrame-rose-et-gris/5.jpg"
     ],
-    "disponible": "non",
-    "desc": ""
+    "disponible": "oui",
+    "desc": "Tissage en macramé intégrant des perles type œil de chat grises."
   },
   {
     "id": "bracelets--bracelet-petites-fleurs",
@@ -1551,8 +1551,8 @@ const bijoux = [
       "img/bracelets/bracelet-polaris-rose-et-vert/4.jpg",
       "img/bracelets/bracelet-polaris-rose-et-vert/5.jpg"
     ],
-    "disponible": "non",
-    "desc": ""
+    "disponible": "oui",
+    "desc": "Bracelet en macramé avec des perles calibrées et des perles synthétiques type Polaris, incrustées de points brillants."
   },
   {
     "id": "bracelets--bracelet-rosace-bleu",
@@ -1583,7 +1583,7 @@ const bijoux = [
       "img/bracelets/bracelet-swarovski-rose-et-mauve/4.jpg",
       "img/bracelets/bracelet-swarovski-rose-et-mauve/5.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": "Bracelet en perles de cristal rose et mauve, d'une longueur de 20 cm non ajustable avec un Fermoir en perle."
   },
   {
@@ -1625,8 +1625,8 @@ const bijoux = [
       "img/bracelets/bracelet-vert-macrame/4.jpg",
       "img/bracelets/bracelet-vert-macrame/5.jpg"
     ],
-    "disponible": "non",
-    "desc": ""
+    "disponible": "oui",
+    "desc": "bracelet en micro-macramé, incrusté de perles toupies Swarovski."
   },
   {
     "id": "bracelets--bracelet-wave-mauve-et-bleu",
@@ -1640,8 +1640,8 @@ const bijoux = [
       "img/bracelets/bracelet-wave-mauve-et-bleu/3.jpg",
       "img/bracelets/bracelet-wave-mauve-et-bleu/4.jpg"
     ],
-    "disponible": "non",
-    "desc": ""
+    "disponible": "oui",
+    "desc": "Bracelet de perles facettes et tila"
   },
   {
     "id": "bracelets--bracelet-etoile-macrame",
@@ -1670,7 +1670,7 @@ const bijoux = [
       "img/bracelets/bracelets-jonc-miyuki-et-toupies-toutes-couleurs/4.jpg",
       "img/bracelets/bracelets-jonc-miyuki-et-toupies-toutes-couleurs/5.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": "Bracelet jonc de 20 cm, fermé par un aimant soutenu par un fil d'acier passé dans le tube formé par les perles Miyuki et Toupies. Les couleurs dynamisent ce bracelet."
   },
   {
@@ -1701,8 +1701,8 @@ const bijoux = [
       "img/bracelets/bracelets-oeil-de-chat/4.jpg",
       "img/bracelets/bracelets-oeil-de-chat/5.jpg"
     ],
-    "disponible": "non",
-    "desc": ""
+    "disponible": "oui",
+    "desc": "bracelet de perles œil de chat, perles en verre avec des reflets irisés."
   },
   {
     "id": "bracelets--briolettes-et-toupies-orange",
@@ -1987,18 +1987,6 @@ const bijoux = [
     "desc": "Tissage de perle d'après un modèle de Kétiko Paris, symboles égyptiens."
   },
   {
-    "id": "bracelets--noeuds-plats-et-perles-chocolat-orange-3",
-    "titre": "Noeuds plats et perles chocolat orange 3",
-    "categorie": "Bracelets",
-    "dossier": "Noeuds plats et perles chocolat orange 3",
-    "vignette": "img/bracelets/noeuds-plats-et-perles-chocolat-orange-3/1.jpg",
-    "photos": [
-      "img/bracelets/noeuds-plats-et-perles-chocolat-orange-3/1.jpg"
-    ],
-    "disponible": "non",
-    "desc": ""
-  },
-  {
     "id": "bracelets--petites-fleurs-noires",
     "titre": "Petites fleurs noires",
     "categorie": "Bracelets",
@@ -2023,7 +2011,7 @@ const bijoux = [
       "img/bracelets/quartz-blanc-avec-bracelet-macrame/4.jpg",
       "img/bracelets/quartz-blanc-avec-bracelet-macrame/5.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": "Quartz blanc serti de perles et inséré dans un bracelet en micro-macramé blanc et gris. Longueur 22 cm, non ajustable, Fermoir type montre"
   },
   {
@@ -2039,7 +2027,7 @@ const bijoux = [
       "img/bracelets/rosee-imperiale/4.jpg",
       "img/bracelets/rosee-imperiale/5.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": "Coeur de fleur en strass, serti de perles Miyuki et toupies Swarovski. Quelques perles de nacre rose apportent une touche apaisée. La longueur est adaptable de 17 à 22 cm.."
   },
   {
@@ -2054,18 +2042,6 @@ const bijoux = [
       "img/bracelets/sahara-by-cachanax-bleu-2/3.jpg",
       "img/bracelets/sahara-by-cachanax-bleu-2/4.jpg",
       "img/bracelets/sahara-by-cachanax-bleu-2/5.jpg"
-    ],
-    "disponible": "non",
-    "desc": ""
-  },
-  {
-    "id": "bracelets--sahara-by-cachanax-bleu-et-blanc",
-    "titre": "Sahara by Cachanax bleu et blanc",
-    "categorie": "Bracelets",
-    "dossier": "Sahara by Cachanax bleu et blanc",
-    "vignette": "img/bracelets/sahara-by-cachanax-bleu-et-blanc/1.jpg",
-    "photos": [
-      "img/bracelets/sahara-by-cachanax-bleu-et-blanc/1.jpg"
     ],
     "disponible": "non",
     "desc": ""
@@ -2175,7 +2151,7 @@ const bijoux = [
       "img/bracelets/vagues-bleues/4.jpg",
       "img/bracelets/vagues-bleues/5.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": "Bracelet en micro-macramé aux tons bleus, orné de losanges symétriques avec perles facettées et bordures perlées. Fermé par des attaches métalliques et une chaîne réglable, la longueur est ajustable de 19 cm à 24,5 cm."
   },
   {
@@ -2431,9 +2407,7 @@ const bijoux = [
     "photos": [
       "img/boucles-d-oreilles/boules-bleu/1.jpg",
       "img/boucles-d-oreilles/boules-bleu/2.jpg",
-      "img/boucles-d-oreilles/boules-bleu/3.jpg",
-      "img/boucles-d-oreilles/boules-bleu/4.jpg",
-      "img/boucles-d-oreilles/boules-bleu/5.jpg"
+      "img/boucles-d-oreilles/boules-bleu/3.jpg"
     ],
     "disponible": "oui",
     "desc": "Boule en bois recouverte par des perles bleues, montées sur des crochets d'oreille dorés."
@@ -3179,8 +3153,7 @@ const bijoux = [
     "photos": [
       "img/divers/bague-fleur/1.jpg",
       "img/divers/bague-fleur/2.jpg",
-      "img/divers/bague-fleur/3.jpg",
-      "img/divers/bague-fleur/4.jpg"
+      "img/divers/bague-fleur/3.jpg"
     ],
     "disponible": "non",
     "desc": ""
@@ -3578,7 +3551,11 @@ const bijoux = [
     "dossier": "Porte clé Rubik's cube",
     "vignette": "img/divers/porte-cle-rubik-s-cube/1.jpg",
     "photos": [
-      "img/divers/porte-cle-rubik-s-cube/1.jpg"
+      "img/divers/porte-cle-rubik-s-cube/1.jpg",
+      "img/divers/porte-cle-rubik-s-cube/2.jpg",
+      "img/divers/porte-cle-rubik-s-cube/3.jpg",
+      "img/divers/porte-cle-rubik-s-cube/4.jpg",
+      "img/divers/porte-cle-rubik-s-cube/5.jpg"
     ],
     "disponible": "non",
     "desc": ""

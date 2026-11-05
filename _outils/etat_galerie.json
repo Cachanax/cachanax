@@ -3048,6 +3048,11 @@
  "bracelets--bracelet-perles-et-macrame-marron": {
   "sources": [
    [
+    "1_Noeuds plats et perles chocolat orange 3.JPG",
+    3134743,
+    1790597879
+   ],
+   [
     "03001554.jpg",
     67870,
     1735209878
@@ -3060,11 +3065,6 @@
    [
     "Noeuds plats et perles chocolat orange 2.JPG",
     3123578,
-    1728580081
-   ],
-   [
-    "Noeuds plats et perles chocolat orange 3.JPG",
-    3134743,
     1728580081
    ],
    "auto"
@@ -4161,19 +4161,6 @@
    "img/bracelets/manchette-egyptienne/1.jpg"
   ]
  },
- "bracelets--noeuds-plats-et-perles-chocolat-orange-3": {
-  "sources": [
-   [
-    "1_Noeuds plats et perles chocolat orange 3.JPG",
-    3134743,
-    1790597879
-   ],
-   "auto"
-  ],
-  "photos": [
-   "img/bracelets/noeuds-plats-et-perles-chocolat-orange-3/1.jpg"
-  ]
- },
  "bracelets--petites-fleurs-noires": {
   "sources": [
    [
@@ -4301,19 +4288,6 @@
    "img/bracelets/sahara-by-cachanax-bleu-2/3.jpg",
    "img/bracelets/sahara-by-cachanax-bleu-2/4.jpg",
    "img/bracelets/sahara-by-cachanax-bleu-2/5.jpg"
-  ]
- },
- "bracelets--sahara-by-cachanax-bleu-et-blanc": {
-  "sources": [
-   [
-    "_SC02722.JPG",
-    5046272,
-    1728580062
-   ],
-   "auto"
-  ],
-  "photos": [
-   "img/bracelets/sahara-by-cachanax-bleu-et-blanc/1.jpg"
   ]
  },
  "bracelets--sahara-by-cachanax-noir-rouge": {
@@ -5034,9 +5008,7 @@
   "photos": [
    "img/boucles-d-oreilles/boules-bleu/1.jpg",
    "img/boucles-d-oreilles/boules-bleu/2.jpg",
-   "img/boucles-d-oreilles/boules-bleu/3.jpg",
-   "img/boucles-d-oreilles/boules-bleu/4.jpg",
-   "img/boucles-d-oreilles/boules-bleu/5.jpg"
+   "img/boucles-d-oreilles/boules-bleu/3.jpg"
   ]
  },
  "boucles-d-oreilles--chips-bleu": {
@@ -6454,8 +6426,7 @@
   "photos": [
    "img/divers/bague-fleur/1.jpg",
    "img/divers/bague-fleur/2.jpg",
-   "img/divers/bague-fleur/3.jpg",
-   "img/divers/bague-fleur/4.jpg"
+   "img/divers/bague-fleur/3.jpg"
   ]
  },
  "divers--bague-miyuki": {
@@ -7211,7 +7182,11 @@
    "auto"
   ],
   "photos": [
-   "img/divers/porte-cle-rubik-s-cube/1.jpg"
+   "img/divers/porte-cle-rubik-s-cube/1.jpg",
+   "img/divers/porte-cle-rubik-s-cube/2.jpg",
+   "img/divers/porte-cle-rubik-s-cube/3.jpg",
+   "img/divers/porte-cle-rubik-s-cube/4.jpg",
+   "img/divers/porte-cle-rubik-s-cube/5.jpg"
   ]
  },
  "divers--porte-cles-chat-marron": {
