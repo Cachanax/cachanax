@@ -112,7 +112,6 @@ const bijoux = [
     "photos": [
       "img/colliers/bulle-bleu/1.jpg",
       "img/colliers/bulle-bleu/2.jpg",
-      "img/colliers/bulle-bleu/3.jpg",
       "img/colliers/bulle-bleu/4.jpg",
       "img/colliers/bulle-bleu/5.jpg"
     ],
@@ -1908,8 +1907,7 @@ const bijoux = [
     "dossier": "Petites fleurs noires",
     "vignette": "img/bracelets/petites-fleurs-noires/vignette.jpg",
     "photos": [
-      "img/bracelets/petites-fleurs-noires/1.jpg",
-      "img/bracelets/petites-fleurs-noires/2.jpg"
+      "img/bracelets/petites-fleurs-noires/1.jpg"
     ],
     "disponible": "non",
     "desc": ""

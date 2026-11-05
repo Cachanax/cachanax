@@ -386,13 +386,13 @@
       .grille { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
     }
 
-    /* ── Photos entières, jamais rognées ── */
-    .carousel-card { background: #fff; }
+    /* ── Photos entières, jamais rognées, sur le même fond que les vignettes ── */
+    .carousel-card { background: #FAF5F2; }
     .carousel-card img, .grille-item img {
-      object-fit: contain !important; background: #fff; padding: 6px;
+      object-fit: contain !important; background: #FAF5F2;
     }
     .modal-main-photo {
-      object-fit: contain !important; background: #fff;
+      object-fit: contain !important; background: #FAF5F2;
       aspect-ratio: auto !important; height: min(70vh, 520px);
     }
 
