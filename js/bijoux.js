@@ -3544,7 +3544,7 @@ const bijoux = [
       "img/noel/bonhomme-de-neige-bonnet-bleu/4.jpg",
       "img/noel/bonhomme-de-neige-bonnet-bleu/5.jpg"
     ],
-    "disponible": "oui",
+    "disponible": "non",
     "desc": "Bonhomme de neige en 3D, petites perles tissées autour de perles en bois de différentes tailles, à accrocher dans le sapin."
   },
   {
@@ -3634,7 +3634,7 @@ const bijoux = [
       "img/noel/boule-de-noel/4.jpg",
       "img/noel/boule-de-noel/5.jpg"
     ],
-    "disponible": "oui",
+    "disponible": "non",
     "desc": "Boules de Noël tissées en perles et rembourrées pour conserver la forme, à suspendre dans le sapin"
   },
   {
@@ -3738,7 +3738,7 @@ const bijoux = [
       "img/noel/double-etoile-rose/2.jpg",
       "img/noel/double-etoile-rose/3.jpg"
     ],
-    "disponible": "oui",
+    "disponible": "non",
     "desc": "Etoile rose en tissage de perles, en 3D, à suspendre dans le sapin"
   },
   {
@@ -3963,7 +3963,7 @@ const bijoux = [
       "img/noel/grappe-d-etoiles/4.jpg",
       "img/noel/grappe-d-etoiles/5.jpg"
     ],
-    "disponible": "oui",
+    "disponible": "non",
     "desc": "Petites étoiles tissées en petites perles, en 3D, pour des cadeaux de table ou pour le sapin"
   },
   {
