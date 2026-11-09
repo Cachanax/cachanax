@@ -2265,21 +2265,6 @@ const bijoux = [
     "desc": ""
   },
   {
-    "id": "boucles-d-oreilles--bo-habits-prere-noel",
-    "titre": "Habits prère Noël",
-    "categorie": "Boucles d'oreilles",
-    "dossier": "BO habits prère Noël",
-    "vignette": "img/boucles-d-oreilles/bo-habits-prere-noel/1.jpg",
-    "photos": [
-      "img/boucles-d-oreilles/bo-habits-prere-noel/1.jpg",
-      "img/boucles-d-oreilles/bo-habits-prere-noel/2.jpg",
-      "img/boucles-d-oreilles/bo-habits-prere-noel/3.jpg",
-      "img/boucles-d-oreilles/bo-habits-prere-noel/4.jpg"
-    ],
-    "disponible": "non",
-    "desc": ""
-  },
-  {
     "id": "boucles-d-oreilles--bo-lanterne-mauve",
     "titre": "Lanterne mauve",
     "categorie": "Boucles d'oreilles",
@@ -2311,21 +2296,6 @@ const bijoux = [
     "desc": ""
   },
   {
-    "id": "boucles-d-oreilles--bo-pingouin-echarpe-rouge",
-    "titre": "Pingouin écharpe rouge",
-    "categorie": "Boucles d'oreilles",
-    "dossier": "BO pingouin écharpe rouge",
-    "vignette": "img/boucles-d-oreilles/bo-pingouin-echarpe-rouge/1.jpg",
-    "photos": [
-      "img/boucles-d-oreilles/bo-pingouin-echarpe-rouge/1.jpg",
-      "img/boucles-d-oreilles/bo-pingouin-echarpe-rouge/2.jpg",
-      "img/boucles-d-oreilles/bo-pingouin-echarpe-rouge/3.jpg",
-      "img/boucles-d-oreilles/bo-pingouin-echarpe-rouge/4.jpg"
-    ],
-    "disponible": "non",
-    "desc": ""
-  },
-  {
     "id": "boucles-d-oreilles--bo-printemps",
     "titre": "Printemps",
     "categorie": "Boucles d'oreilles",
@@ -2350,37 +2320,6 @@ const bijoux = [
     ],
     "disponible": "oui",
     "desc": "Triangle de perles Miyuki orné de toupies Swarovski pour un éclat de lumière."
-  },
-  {
-    "id": "boucles-d-oreilles--bonhomme-de-neige",
-    "titre": "Bonhomme de neige",
-    "categorie": "Boucles d'oreilles",
-    "dossier": "Bonhomme de neige",
-    "vignette": "img/boucles-d-oreilles/bonhomme-de-neige/1.jpg",
-    "photos": [
-      "img/boucles-d-oreilles/bonhomme-de-neige/1.jpg",
-      "img/boucles-d-oreilles/bonhomme-de-neige/2.jpg",
-      "img/boucles-d-oreilles/bonhomme-de-neige/3.jpg",
-      "img/boucles-d-oreilles/bonhomme-de-neige/4.jpg"
-    ],
-    "disponible": "non",
-    "desc": ""
-  },
-  {
-    "id": "boucles-d-oreilles--boucles-d-oreilles-pingouin",
-    "titre": "Boucles d'oreilles pingouin",
-    "categorie": "Boucles d'oreilles",
-    "dossier": "Boucles d'oreilles pingouin",
-    "vignette": "img/boucles-d-oreilles/boucles-d-oreilles-pingouin/1.jpg",
-    "photos": [
-      "img/boucles-d-oreilles/boucles-d-oreilles-pingouin/1.jpg",
-      "img/boucles-d-oreilles/boucles-d-oreilles-pingouin/2.jpg",
-      "img/boucles-d-oreilles/boucles-d-oreilles-pingouin/3.jpg",
-      "img/boucles-d-oreilles/boucles-d-oreilles-pingouin/4.jpg",
-      "img/boucles-d-oreilles/boucles-d-oreilles-pingouin/5.jpg"
-    ],
-    "disponible": "non",
-    "desc": ""
   },
   {
     "id": "boucles-d-oreilles--boule-de-fleurs",
@@ -2447,20 +2386,6 @@ const bijoux = [
     "vignette": "img/boucles-d-oreilles/clochettes-vertes/1.jpg",
     "photos": [
       "img/boucles-d-oreilles/clochettes-vertes/1.jpg"
-    ],
-    "disponible": "non",
-    "desc": ""
-  },
-  {
-    "id": "boucles-d-oreilles--couronne-de-noel",
-    "titre": "Couronne de Noël",
-    "categorie": "Boucles d'oreilles",
-    "dossier": "Couronne de Noël",
-    "vignette": "img/boucles-d-oreilles/couronne-de-noel/1.jpg",
-    "photos": [
-      "img/boucles-d-oreilles/couronne-de-noel/1.jpg",
-      "img/boucles-d-oreilles/couronne-de-noel/2.jpg",
-      "img/boucles-d-oreilles/couronne-de-noel/3.jpg"
     ],
     "disponible": "non",
     "desc": ""
@@ -2757,22 +2682,6 @@ const bijoux = [
     "desc": ""
   },
   {
-    "id": "boucles-d-oreilles--mr-et-mme-noel",
-    "titre": "Mr et Mme Noël",
-    "categorie": "Boucles d'oreilles",
-    "dossier": "Mr et Mme Noël",
-    "vignette": "img/boucles-d-oreilles/mr-et-mme-noel/1.jpg",
-    "photos": [
-      "img/boucles-d-oreilles/mr-et-mme-noel/1.jpg",
-      "img/boucles-d-oreilles/mr-et-mme-noel/2.jpg",
-      "img/boucles-d-oreilles/mr-et-mme-noel/3.jpg",
-      "img/boucles-d-oreilles/mr-et-mme-noel/4.jpg",
-      "img/boucles-d-oreilles/mr-et-mme-noel/5.jpg"
-    ],
-    "disponible": "oui",
-    "desc": "Personnages en perles tissées, avec franges de perles."
-  },
-  {
     "id": "boucles-d-oreilles--nuage-bleu",
     "titre": "Nuage bleu",
     "categorie": "Boucles d'oreilles",
@@ -2829,65 +2738,6 @@ const bijoux = [
     ],
     "disponible": "oui",
     "desc": "Fleur en perles duo et rocaille, couleur saumon et cristal"
-  },
-  {
-    "id": "boucles-d-oreilles--sapin",
-    "titre": "Sapin",
-    "categorie": "Boucles d'oreilles",
-    "dossier": "Sapin",
-    "vignette": "img/boucles-d-oreilles/sapin/1.jpg",
-    "photos": [
-      "img/boucles-d-oreilles/sapin/1.jpg",
-      "img/boucles-d-oreilles/sapin/2.jpg"
-    ],
-    "disponible": "non",
-    "desc": ""
-  },
-  {
-    "id": "boucles-d-oreilles--sapin-et-cadeau",
-    "titre": "Sapin et Cadeau",
-    "categorie": "Boucles d'oreilles",
-    "dossier": "Sapin et Cadeau",
-    "vignette": "img/boucles-d-oreilles/sapin-et-cadeau/1.jpg",
-    "photos": [
-      "img/boucles-d-oreilles/sapin-et-cadeau/1.jpg",
-      "img/boucles-d-oreilles/sapin-et-cadeau/2.jpg",
-      "img/boucles-d-oreilles/sapin-et-cadeau/3.jpg",
-      "img/boucles-d-oreilles/sapin-et-cadeau/4.jpg",
-      "img/boucles-d-oreilles/sapin-et-cadeau/5.jpg"
-    ],
-    "disponible": "non",
-    "desc": "Cadeau et sapin en relief, sur des crochets dorés."
-  },
-  {
-    "id": "boucles-d-oreilles--sapin-joyeux",
-    "titre": "Sapin joyeux",
-    "categorie": "Boucles d'oreilles",
-    "dossier": "Sapin joyeux",
-    "vignette": "img/boucles-d-oreilles/sapin-joyeux/1.jpg",
-    "photos": [
-      "img/boucles-d-oreilles/sapin-joyeux/1.jpg",
-      "img/boucles-d-oreilles/sapin-joyeux/2.jpg",
-      "img/boucles-d-oreilles/sapin-joyeux/3.jpg",
-      "img/boucles-d-oreilles/sapin-joyeux/4.jpg"
-    ],
-    "disponible": "oui",
-    "desc": "Ce petit sapin en tissage de perles vous rendra instantanément le sourire."
-  },
-  {
-    "id": "boucles-d-oreilles--sapin-van-gogh",
-    "titre": "Sapin Van Gogh",
-    "categorie": "Boucles d'oreilles",
-    "dossier": "Sapin Van Gogh",
-    "vignette": "img/boucles-d-oreilles/sapin-van-gogh/1.jpg",
-    "photos": [
-      "img/boucles-d-oreilles/sapin-van-gogh/1.jpg",
-      "img/boucles-d-oreilles/sapin-van-gogh/2.jpg",
-      "img/boucles-d-oreilles/sapin-van-gogh/3.jpg",
-      "img/boucles-d-oreilles/sapin-van-gogh/4.jpg"
-    ],
-    "disponible": "oui",
-    "desc": "idéal pour une tenue de noël raffinée, ce sapin aux couleurs du ciel du célèbre tableau de Vincent van Gogh Les tournesols."
   },
   {
     "id": "boucles-d-oreilles--strass-rose",
@@ -3634,5 +3484,561 @@ const bijoux = [
     ],
     "disponible": "non",
     "desc": "Pierre Larimar (4x3x1 cm) habillée de perles Miyuki"
+  },
+  {
+    "id": "noel--bo-habits-pere-noel",
+    "titre": "Habits père Noël",
+    "categorie": "Noël",
+    "dossier": "BO habits Père Noël",
+    "vignette": "img/noel/bo-habits-pere-noel/1.jpg",
+    "photos": [
+      "img/noel/bo-habits-pere-noel/1.jpg",
+      "img/noel/bo-habits-pere-noel/2.jpg",
+      "img/noel/bo-habits-pere-noel/3.jpg",
+      "img/noel/bo-habits-pere-noel/4.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Mr Noël a sorti son costume, pendu en boucles d'oreille"
+  },
+  {
+    "id": "noel--bo-pingouin-echarpe-rouge",
+    "titre": "Pingouin écharpe rouge",
+    "categorie": "Noël",
+    "dossier": "BO pingouin écharpe rouge",
+    "vignette": "img/noel/bo-pingouin-echarpe-rouge/1.jpg",
+    "photos": [
+      "img/noel/bo-pingouin-echarpe-rouge/1.jpg",
+      "img/noel/bo-pingouin-echarpe-rouge/2.jpg",
+      "img/noel/bo-pingouin-echarpe-rouge/3.jpg",
+      "img/noel/bo-pingouin-echarpe-rouge/4.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Pingouin 3D avec petite écharpe et bonnet rouge"
+  },
+  {
+    "id": "noel--bonhomme-de-neige",
+    "titre": "Bonhomme de neige",
+    "categorie": "Noël",
+    "dossier": "Bonhomme de neige",
+    "vignette": "img/noel/bonhomme-de-neige/1.jpg",
+    "photos": [
+      "img/noel/bonhomme-de-neige/1.jpg",
+      "img/noel/bonhomme-de-neige/2.jpg",
+      "img/noel/bonhomme-de-neige/3.jpg",
+      "img/noel/bonhomme-de-neige/4.jpg",
+      "img/noel/bonhomme-de-neige/5.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Boucles avec bonhomme de neige plat"
+  },
+  {
+    "id": "noel--bonhomme-de-neige-bonnet-bleu",
+    "titre": "Bonhomme de neige bonnet bleu",
+    "categorie": "Noël",
+    "dossier": "Bonhomme de neige bonnet bleu",
+    "vignette": "img/noel/bonhomme-de-neige-bonnet-bleu/1.jpg",
+    "photos": [
+      "img/noel/bonhomme-de-neige-bonnet-bleu/1.jpg",
+      "img/noel/bonhomme-de-neige-bonnet-bleu/2.jpg",
+      "img/noel/bonhomme-de-neige-bonnet-bleu/3.jpg",
+      "img/noel/bonhomme-de-neige-bonnet-bleu/4.jpg",
+      "img/noel/bonhomme-de-neige-bonnet-bleu/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Bonhomme de neige en 3D, petites perles tissées autour de perles en bois de différentes tailles, à accrocher dans le sapin."
+  },
+  {
+    "id": "noel--bonhomme-de-neige-bonnet-rouge",
+    "titre": "Bonhomme de neige bonnet rouge",
+    "categorie": "Noël",
+    "dossier": "Bonhomme de neige bonnet rouge",
+    "vignette": "img/noel/bonhomme-de-neige-bonnet-rouge/1.jpg",
+    "photos": [
+      "img/noel/bonhomme-de-neige-bonnet-rouge/1.jpg",
+      "img/noel/bonhomme-de-neige-bonnet-rouge/2.jpg",
+      "img/noel/bonhomme-de-neige-bonnet-rouge/3.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Bonhomme de neige en 3D, petites perles tissées autour de perles en bois de différentes tailles, à accrocher dans le sapin."
+  },
+  {
+    "id": "noel--bonhomme-pain-d-epices",
+    "titre": "Bonhomme pain d'épices",
+    "categorie": "Noël",
+    "dossier": "Bonhomme pain d'épices",
+    "vignette": "img/noel/bonhomme-pain-d-epices/1.jpg",
+    "photos": [
+      "img/noel/bonhomme-pain-d-epices/1.jpg",
+      "img/noel/bonhomme-pain-d-epices/2.jpg",
+      "img/noel/bonhomme-pain-d-epices/3.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Petit sujet décoratif, tissé en petites perles à plat."
+  },
+  {
+    "id": "noel--botte-bonhomme-de-neige",
+    "titre": "Botte bonhomme de neige",
+    "categorie": "Noël",
+    "dossier": "Botte bonhomme de neige",
+    "vignette": "img/noel/botte-bonhomme-de-neige/1.jpg",
+    "photos": [
+      "img/noel/botte-bonhomme-de-neige/1.jpg",
+      "img/noel/botte-bonhomme-de-neige/2.jpg",
+      "img/noel/botte-bonhomme-de-neige/3.jpg",
+      "img/noel/botte-bonhomme-de-neige/4.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Petite botte 3 D à l'effigie de Mr ou Mme Neige"
+  },
+  {
+    "id": "noel--botte-pere-noel",
+    "titre": "Botte Père Noël",
+    "categorie": "Noël",
+    "dossier": "Botte Père Noël",
+    "vignette": "img/noel/botte-pere-noel/1.jpg",
+    "photos": [
+      "img/noel/botte-pere-noel/1.jpg",
+      "img/noel/botte-pere-noel/2.jpg",
+      "img/noel/botte-pere-noel/3.jpg",
+      "img/noel/botte-pere-noel/4.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Petite botte 3 D à l'effigie du Père Noël"
+  },
+  {
+    "id": "noel--boucles-d-oreilles-pingouin",
+    "titre": "Boucles d'oreilles pingouin",
+    "categorie": "Noël",
+    "dossier": "Boucles d'oreilles pingouin",
+    "vignette": "img/noel/boucles-d-oreilles-pingouin/1.jpg",
+    "photos": [
+      "img/noel/boucles-d-oreilles-pingouin/1.jpg",
+      "img/noel/boucles-d-oreilles-pingouin/2.jpg",
+      "img/noel/boucles-d-oreilles-pingouin/3.jpg",
+      "img/noel/boucles-d-oreilles-pingouin/4.jpg",
+      "img/noel/boucles-d-oreilles-pingouin/5.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Petit pingouin en 3D"
+  },
+  {
+    "id": "noel--boule-de-noel",
+    "titre": "Boule de Noël",
+    "categorie": "Noël",
+    "dossier": "Boule de Noël",
+    "vignette": "img/noel/boule-de-noel/1.jpg",
+    "photos": [
+      "img/noel/boule-de-noel/1.jpg",
+      "img/noel/boule-de-noel/2.jpg",
+      "img/noel/boule-de-noel/3.jpg",
+      "img/noel/boule-de-noel/4.jpg",
+      "img/noel/boule-de-noel/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Boules de Noël tissées en perles et rembourrées pour conserver la forme, à suspendre dans le sapin"
+  },
+  {
+    "id": "noel--boule-pirate",
+    "titre": "Boule pirate",
+    "categorie": "Noël",
+    "dossier": "Boule pirate",
+    "vignette": "img/noel/boule-pirate/1.jpg",
+    "photos": [
+      "img/noel/boule-pirate/1.jpg",
+      "img/noel/boule-pirate/2.jpg",
+      "img/noel/boule-pirate/3.jpg",
+      "img/noel/boule-pirate/4.jpg",
+      "img/noel/boule-pirate/5.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Boule réalisée sur commande, reprenant le modèle d'un drapeau pîrate"
+  },
+  {
+    "id": "noel--boule-pere-noel",
+    "titre": "Boule père noël",
+    "categorie": "Noël",
+    "dossier": "Boule père noël",
+    "vignette": "img/noel/boule-pere-noel/1.jpg",
+    "photos": [
+      "img/noel/boule-pere-noel/1.jpg",
+      "img/noel/boule-pere-noel/2.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Boule à l'effigie du père Noël, réalisée sur commande uniquement"
+  },
+  {
+    "id": "noel--boule-rose-et-mauve",
+    "titre": "Boule rose et mauve",
+    "categorie": "Noël",
+    "dossier": "Boule rose et mauve",
+    "vignette": "img/noel/boule-rose-et-mauve/1.jpg",
+    "photos": [
+      "img/noel/boule-rose-et-mauve/1.jpg",
+      "img/noel/boule-rose-et-mauve/2.jpg",
+      "img/noel/boule-rose-et-mauve/3.jpg",
+      "img/noel/boule-rose-et-mauve/4.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Boule de Noël tissée en petites perles galvanisées pour un effet brillant."
+  },
+  {
+    "id": "noel--boule-village-sous-la-neige",
+    "titre": "Boule village sous la neige",
+    "categorie": "Noël",
+    "dossier": "Boule village sous la neige",
+    "vignette": "img/noel/boule-village-sous-la-neige/1.jpg",
+    "photos": [
+      "img/noel/boule-village-sous-la-neige/1.jpg",
+      "img/noel/boule-village-sous-la-neige/2.jpg",
+      "img/noel/boule-village-sous-la-neige/3.jpg",
+      "img/noel/boule-village-sous-la-neige/4.jpg",
+      "img/noel/boule-village-sous-la-neige/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Boule de Noël représentant un village sous la neige, tissée en petites perles et rembourrée pour garder la forme, à suspendre au sapin."
+  },
+  {
+    "id": "noel--camion-livraison-sapin",
+    "titre": "Camion livraison sapin",
+    "categorie": "Noël",
+    "dossier": "Camion livraison sapin",
+    "vignette": "img/noel/camion-livraison-sapin/1.jpg",
+    "photos": [
+      "img/noel/camion-livraison-sapin/1.jpg",
+      "img/noel/camion-livraison-sapin/2.jpg",
+      "img/noel/camion-livraison-sapin/3.jpg",
+      "img/noel/camion-livraison-sapin/4.jpg",
+      "img/noel/camion-livraison-sapin/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Camion entièrement tissé en perles, avec son sapin à livrer."
+  },
+  {
+    "id": "noel--couronne-de-noel",
+    "titre": "Couronne de Noël",
+    "categorie": "Noël",
+    "dossier": "Couronne de Noël",
+    "vignette": "img/noel/couronne-de-noel/1.jpg",
+    "photos": [
+      "img/noel/couronne-de-noel/1.jpg",
+      "img/noel/couronne-de-noel/2.jpg",
+      "img/noel/couronne-de-noel/3.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Boucle d'oreilles avec une couronne de Noël tissée en perles, motif à plat."
+  },
+  {
+    "id": "noel--double-etoile-rose",
+    "titre": "Double étoile rose",
+    "categorie": "Noël",
+    "dossier": "Double étoile rose",
+    "vignette": "img/noel/double-etoile-rose/1.jpg",
+    "photos": [
+      "img/noel/double-etoile-rose/1.jpg",
+      "img/noel/double-etoile-rose/2.jpg",
+      "img/noel/double-etoile-rose/3.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Etoile rose en tissage de perles, en 3D, à suspendre dans le sapin"
+  },
+  {
+    "id": "noel--etoile-bonhommes-de-neige",
+    "titre": "Etoile bonhommes de neige",
+    "categorie": "Noël",
+    "dossier": "Etoile bonhommes de neige",
+    "vignette": "img/noel/etoile-bonhommes-de-neige/1.jpg",
+    "photos": [
+      "img/noel/etoile-bonhommes-de-neige/1.jpg",
+      "img/noel/etoile-bonhommes-de-neige/2.jpg",
+      "img/noel/etoile-bonhommes-de-neige/3.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Motif de bonhomme de neige tissé en forme d'étoile en 3D."
+  },
+  {
+    "id": "noel--etoile-boules-de-noel",
+    "titre": "Etoile boules de Noël",
+    "categorie": "Noël",
+    "dossier": "Etoile boules de Noël",
+    "vignette": "img/noel/etoile-boules-de-noel/1.jpg",
+    "photos": [
+      "img/noel/etoile-boules-de-noel/1.jpg",
+      "img/noel/etoile-boules-de-noel/2.jpg",
+      "img/noel/etoile-boules-de-noel/3.jpg",
+      "img/noel/etoile-boules-de-noel/4.jpg",
+      "img/noel/etoile-boules-de-noel/5.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Motif de boules de Noël sur une étoile tissée en perle en 3D, à suspendre dans le sapin."
+  },
+  {
+    "id": "noel--etoile-fleur-de-noel",
+    "titre": "Etoile fleur de Noël",
+    "categorie": "Noël",
+    "dossier": "Etoile fleur de Noël",
+    "vignette": "img/noel/etoile-fleur-de-noel/1.jpg",
+    "photos": [
+      "img/noel/etoile-fleur-de-noel/1.jpg",
+      "img/noel/etoile-fleur-de-noel/2.jpg",
+      "img/noel/etoile-fleur-de-noel/3.jpg",
+      "img/noel/etoile-fleur-de-noel/4.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Etoile aux couleurs des fleurs de noël, tissée en perle en 3D, à suspendre dans le sapin."
+  },
+  {
+    "id": "noel--etoile-fleur-noel",
+    "titre": "Etoile Fleur Noël",
+    "categorie": "Noël",
+    "dossier": "Etoile Fleur Noël",
+    "vignette": "img/noel/etoile-fleur-noel/1.jpg",
+    "photos": [
+      "img/noel/etoile-fleur-noel/1.jpg",
+      "img/noel/etoile-fleur-noel/2.jpg",
+      "img/noel/etoile-fleur-noel/3.jpg",
+      "img/noel/etoile-fleur-noel/4.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Etoile aux couleurs des fleurs de noël, tissée en perle en 3D, à suspendre dans le sapin."
+  },
+  {
+    "id": "noel--etoile-naissance-2022",
+    "titre": "Etoile naissance 2022",
+    "categorie": "Noël",
+    "dossier": "Etoile naissance 2022",
+    "vignette": "img/noel/etoile-naissance-2022/1.jpg",
+    "photos": [
+      "img/noel/etoile-naissance-2022/1.jpg",
+      "img/noel/etoile-naissance-2022/2.jpg",
+      "img/noel/etoile-naissance-2022/3.jpg",
+      "img/noel/etoile-naissance-2022/4.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Etoile tissée en perle, pouvant être personnalisée sur demande, peut être faite dans n'importe quelle couleur pour un cadeau de naissance ou pour faire plaisir dans le sapin."
+  },
+  {
+    "id": "noel--etoile-noel-avec-ecriture",
+    "titre": "Etoile Noël avec écriture",
+    "categorie": "Noël",
+    "dossier": "Etoile Noël avec écriture",
+    "vignette": "img/noel/etoile-noel-avec-ecriture/1.jpg",
+    "photos": [
+      "img/noel/etoile-noel-avec-ecriture/1.jpg",
+      "img/noel/etoile-noel-avec-ecriture/2.jpg",
+      "img/noel/etoile-noel-avec-ecriture/3.jpg",
+      "img/noel/etoile-noel-avec-ecriture/4.jpg",
+      "img/noel/etoile-noel-avec-ecriture/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Etoile affichant NOEL pour suspendre au sapin, différents coloris."
+  },
+  {
+    "id": "noel--etoile-orange-et-anis",
+    "titre": "Etoile orange et anis",
+    "categorie": "Noël",
+    "dossier": "Etoile orange et anis",
+    "vignette": "img/noel/etoile-orange-et-anis/1.jpg",
+    "photos": [
+      "img/noel/etoile-orange-et-anis/1.jpg",
+      "img/noel/etoile-orange-et-anis/2.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Etoile tissée en perles, en 3D, dans des couleurs vives pour égayer le sapin."
+  },
+  {
+    "id": "noel--etoile-panda",
+    "titre": "Etoile panda",
+    "categorie": "Noël",
+    "dossier": "Etoile panda",
+    "vignette": "img/noel/etoile-panda/1.jpg",
+    "photos": [
+      "img/noel/etoile-panda/1.jpg",
+      "img/noel/etoile-panda/2.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Cette étoile en 3D, tissée en petites perles, offre une originalité avec les petites oreilles du panda en relief."
+  },
+  {
+    "id": "noel--etoile-prenom",
+    "titre": "Etoile prénom",
+    "categorie": "Noël",
+    "dossier": "Etoile prénom",
+    "vignette": "img/noel/etoile-prenom/1.jpg",
+    "photos": [
+      "img/noel/etoile-prenom/1.jpg",
+      "img/noel/etoile-prenom/2.jpg",
+      "img/noel/etoile-prenom/3.jpg",
+      "img/noel/etoile-prenom/4.jpg",
+      "img/noel/etoile-prenom/5.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Ces étoiles ont été personnalisées pour des naissances, toutes les couleurs et les prénoms sont possibles."
+  },
+  {
+    "id": "noel--etoile-rouge-et-verte",
+    "titre": "Etoile rouge et verte",
+    "categorie": "Noël",
+    "dossier": "Etoile rouge et verte",
+    "vignette": "img/noel/etoile-rouge-et-verte/1.jpg",
+    "photos": [
+      "img/noel/etoile-rouge-et-verte/1.jpg",
+      "img/noel/etoile-rouge-et-verte/2.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Etoile 3D recto verso tissée avec différentes formes de perles pour donner un éclat supplémentaire."
+  },
+  {
+    "id": "noel--etoile-verte",
+    "titre": "Etoiles verte",
+    "categorie": "Noël",
+    "dossier": "Etoile verte",
+    "vignette": "img/noel/etoile-verte/1.jpg",
+    "photos": [
+      "img/noel/etoile-verte/1.jpg",
+      "img/noel/etoile-verte/2.jpg",
+      "img/noel/etoile-verte/3.jpg",
+      "img/noel/etoile-verte/4.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Etoile tissée en petites perles, en 3D, à suspendre dans le sapin"
+  },
+  {
+    "id": "noel--etoiles",
+    "titre": "Etoiles",
+    "categorie": "Noël",
+    "dossier": "Etoiles",
+    "vignette": "img/noel/etoiles/1.jpg",
+    "photos": [
+      "img/noel/etoiles/1.jpg",
+      "img/noel/etoiles/2.jpg",
+      "img/noel/etoiles/3.jpg",
+      "img/noel/etoiles/4.jpg",
+      "img/noel/etoiles/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Différents modèles de petites étoiles tissées en perles, en 3D, à suspendre dans le sapin. Disponible sur commande aux couleurs de votre choix."
+  },
+  {
+    "id": "noel--etoiles-bleues",
+    "titre": "Etoiles bleues",
+    "categorie": "Noël",
+    "dossier": "Etoiles bleues",
+    "vignette": "img/noel/etoiles-bleues/1.jpg",
+    "photos": [
+      "img/noel/etoiles-bleues/1.jpg",
+      "img/noel/etoiles-bleues/2.jpg",
+      "img/noel/etoiles-bleues/3.jpg",
+      "img/noel/etoiles-bleues/4.jpg",
+      "img/noel/etoiles-bleues/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Etoile tissée en petites perles, en 3D, à suspendre dans le sapin"
+  },
+  {
+    "id": "noel--etoiles-rayees",
+    "titre": "Etoiles rayées",
+    "categorie": "Noël",
+    "dossier": "Etoiles rayées",
+    "vignette": "img/noel/etoiles-rayees/1.jpg",
+    "photos": [
+      "img/noel/etoiles-rayees/1.jpg",
+      "img/noel/etoiles-rayees/2.jpg",
+      "img/noel/etoiles-rayees/3.jpg",
+      "img/noel/etoiles-rayees/4.jpg",
+      "img/noel/etoiles-rayees/5.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Etoile tissée en petites perles, en 3D, à suspendre dans le sapin"
+  },
+  {
+    "id": "noel--grappe-d-etoiles",
+    "titre": "Grappe d'étoiles",
+    "categorie": "Noël",
+    "dossier": "Grappe d'étoiles",
+    "vignette": "img/noel/grappe-d-etoiles/1.jpg",
+    "photos": [
+      "img/noel/grappe-d-etoiles/1.jpg",
+      "img/noel/grappe-d-etoiles/2.jpg",
+      "img/noel/grappe-d-etoiles/3.jpg",
+      "img/noel/grappe-d-etoiles/4.jpg",
+      "img/noel/grappe-d-etoiles/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Petites étoiles tissées en petites perles, en 3D, pour des cadeaux de table ou pour le sapin"
+  },
+  {
+    "id": "noel--mr-et-mme-noel",
+    "titre": "Mr et Mme Noël",
+    "categorie": "Noël",
+    "dossier": "Mr et Mme Noël",
+    "vignette": "img/noel/mr-et-mme-noel/1.jpg",
+    "photos": [
+      "img/noel/mr-et-mme-noel/1.jpg",
+      "img/noel/mr-et-mme-noel/2.jpg",
+      "img/noel/mr-et-mme-noel/3.jpg",
+      "img/noel/mr-et-mme-noel/4.jpg",
+      "img/noel/mr-et-mme-noel/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Personnages en perles tissées, avec franges de perles."
+  },
+  {
+    "id": "noel--sapin",
+    "titre": "Sapin",
+    "categorie": "Noël",
+    "dossier": "Sapin",
+    "vignette": "img/noel/sapin/1.jpg",
+    "photos": [
+      "img/noel/sapin/1.jpg",
+      "img/noel/sapin/2.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Boucles d'oreille décoratives, en petites perles tissées sur une forme de sapin."
+  },
+  {
+    "id": "noel--sapin-et-cadeau",
+    "titre": "Sapin et Cadeau",
+    "categorie": "Noël",
+    "dossier": "Sapin et Cadeau",
+    "vignette": "img/noel/sapin-et-cadeau/1.jpg",
+    "photos": [
+      "img/noel/sapin-et-cadeau/1.jpg",
+      "img/noel/sapin-et-cadeau/2.jpg",
+      "img/noel/sapin-et-cadeau/3.jpg",
+      "img/noel/sapin-et-cadeau/4.jpg",
+      "img/noel/sapin-et-cadeau/5.jpg"
+    ],
+    "disponible": "non",
+    "desc": "Cadeau et sapin en relief, sur des crochets dorés."
+  },
+  {
+    "id": "noel--sapin-joyeux",
+    "titre": "Sapin joyeux",
+    "categorie": "Noël",
+    "dossier": "Sapin joyeux",
+    "vignette": "img/noel/sapin-joyeux/1.jpg",
+    "photos": [
+      "img/noel/sapin-joyeux/1.jpg",
+      "img/noel/sapin-joyeux/2.jpg",
+      "img/noel/sapin-joyeux/3.jpg",
+      "img/noel/sapin-joyeux/4.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Ce petit sapin en tissage de perles vous rendra instantanément le sourire."
+  },
+  {
+    "id": "noel--sapin-van-gogh",
+    "titre": "Sapin Van Gogh",
+    "categorie": "Noël",
+    "dossier": "Sapin Van Gogh",
+    "vignette": "img/noel/sapin-van-gogh/1.jpg",
+    "photos": [
+      "img/noel/sapin-van-gogh/1.jpg",
+      "img/noel/sapin-van-gogh/2.jpg",
+      "img/noel/sapin-van-gogh/3.jpg",
+      "img/noel/sapin-van-gogh/4.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "idéal pour une tenue de noël raffinée, ce sapin aux couleurs du ciel du célèbre tableau de Vincent van Gogh Les tournesols."
   }
 ];
