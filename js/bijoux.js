@@ -2047,6 +2047,22 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "bracelets--sahara-by-cachanax-bleu-et-marron",
+    "titre": "Sahara by Cachanax bleu et marron",
+    "categorie": "Bracelets",
+    "dossier": "Sahara by Cachanax bleu et marron",
+    "vignette": "img/bracelets/sahara-by-cachanax-bleu-et-marron/1.jpg",
+    "photos": [
+      "img/bracelets/sahara-by-cachanax-bleu-et-marron/1.jpg",
+      "img/bracelets/sahara-by-cachanax-bleu-et-marron/2.jpg",
+      "img/bracelets/sahara-by-cachanax-bleu-et-marron/3.jpg",
+      "img/bracelets/sahara-by-cachanax-bleu-et-marron/4.jpg",
+      "img/bracelets/sahara-by-cachanax-bleu-et-marron/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Bracelet en micro-macramé, avec 2 strass marron pour donner de l'éclat, entourés de perles dont de véritables turquoises. Adapté pour un petit poignet, de 17 cm à 19 cm."
+  },
+  {
     "id": "bracelets--sahara-by-cachanax-noir-rouge",
     "titre": "Sahara by Cachanax noir rouge",
     "categorie": "Bracelets",
@@ -3022,6 +3038,22 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "divers--berlingot-a-tresor",
+    "titre": "Berlingot à trésor",
+    "categorie": "Divers",
+    "dossier": "Berlingot à trésor",
+    "vignette": "img/divers/berlingot-a-tresor/1.jpg",
+    "photos": [
+      "img/divers/berlingot-a-tresor/1.jpg",
+      "img/divers/berlingot-a-tresor/2.jpg",
+      "img/divers/berlingot-a-tresor/3.jpg",
+      "img/divers/berlingot-a-tresor/4.jpg",
+      "img/divers/berlingot-a-tresor/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Tissage de perles plié pour former un berlingot, doublé de tissu et avec une fermeture éclair pour le fermer. Il peut contenir des écouteurs, ou tout autre petit objet à protéger dans un sac."
+  },
+  {
     "id": "divers--biche-fleurie",
     "titre": "Biche fleurie",
     "categorie": "Divers",
@@ -3064,6 +3096,22 @@ const bijoux = [
     ],
     "disponible": "non",
     "desc": ""
+  },
+  {
+    "id": "divers--boule-smiley",
+    "titre": "Boule Smiley",
+    "categorie": "Divers",
+    "dossier": "Boule Smiley",
+    "vignette": "img/divers/boule-smiley/1.jpg",
+    "photos": [
+      "img/divers/boule-smiley/1.jpg",
+      "img/divers/boule-smiley/2.jpg",
+      "img/divers/boule-smiley/3.jpg",
+      "img/divers/boule-smiley/4.jpg",
+      "img/divers/boule-smiley/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Boule en bois recouverte de perles représentant 1 visage joyeux ou un visage amoureux avec des lunettes de soleil, selon le côté affiché. Cette boule peut être suspendue comme un marqueur d'humeur , mais elle vous fera toujours sourire."
   },
   {
     "id": "divers--broche-papillon",
@@ -3426,6 +3474,22 @@ const bijoux = [
     "desc": "Chat Recto verso, en 3D."
   },
   {
+    "id": "divers--porte-cles-smiley",
+    "titre": "Porte clés Smiley",
+    "categorie": "Divers",
+    "dossier": "Porte clés Smiley",
+    "vignette": "img/divers/porte-cles-smiley/1.jpg",
+    "photos": [
+      "img/divers/porte-cles-smiley/1.jpg",
+      "img/divers/porte-cles-smiley/2.jpg",
+      "img/divers/porte-cles-smiley/3.jpg",
+      "img/divers/porte-cles-smiley/4.jpg",
+      "img/divers/porte-cles-smiley/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Boule en bois recouverte de perles représentant 1 visage triste ou un visage souriant avec des lunettes de soleil, selon le côté affiché. Monté en porte-clés, il peut aussi devenir un bijou de sac."
+  },
+  {
     "id": "divers--reines-des-abeilles",
     "titre": "Reines des abeilles",
     "categorie": "Divers",
@@ -3682,6 +3746,22 @@ const bijoux = [
     "desc": "Boule de Noël tissée en petites perles galvanisées pour un effet brillant."
   },
   {
+    "id": "noel--boule-vert-et-blanc",
+    "titre": "Boule vert et blanc",
+    "categorie": "Noël",
+    "dossier": "Boule vert et blanc",
+    "vignette": "img/noel/boule-vert-et-blanc/1.jpg",
+    "photos": [
+      "img/noel/boule-vert-et-blanc/1.jpg",
+      "img/noel/boule-vert-et-blanc/2.jpg",
+      "img/noel/boule-vert-et-blanc/3.jpg",
+      "img/noel/boule-vert-et-blanc/4.jpg",
+      "img/noel/boule-vert-et-blanc/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Boule de Noël tissée en petites perles et perles Swarovski pour un effet brillant."
+  },
+  {
     "id": "noel--boule-village-sous-la-neige",
     "titre": "Boule village sous la neige",
     "categorie": "Noël",
@@ -3840,7 +3920,10 @@ const bijoux = [
     "vignette": "img/noel/etoile-orange-et-anis/1.jpg",
     "photos": [
       "img/noel/etoile-orange-et-anis/1.jpg",
-      "img/noel/etoile-orange-et-anis/2.jpg"
+      "img/noel/etoile-orange-et-anis/2.jpg",
+      "img/noel/etoile-orange-et-anis/3.jpg",
+      "img/noel/etoile-orange-et-anis/4.jpg",
+      "img/noel/etoile-orange-et-anis/5.jpg"
     ],
     "disponible": "oui",
     "desc": "Etoile tissée en perles, en 3D, dans des couleurs vives pour égayer le sapin."
@@ -3853,7 +3936,10 @@ const bijoux = [
     "vignette": "img/noel/etoile-panda/1.jpg",
     "photos": [
       "img/noel/etoile-panda/1.jpg",
-      "img/noel/etoile-panda/2.jpg"
+      "img/noel/etoile-panda/2.jpg",
+      "img/noel/etoile-panda/3.jpg",
+      "img/noel/etoile-panda/4.jpg",
+      "img/noel/etoile-panda/5.jpg"
     ],
     "disponible": "oui",
     "desc": "Cette étoile en 3D, tissée en petites perles, offre une originalité avec les petites oreilles du panda en relief."
@@ -3981,6 +4067,22 @@ const bijoux = [
     ],
     "disponible": "oui",
     "desc": "Personnages en perles tissées, avec franges de perles."
+  },
+  {
+    "id": "noel--ourson-noel",
+    "titre": "Ourson Noël",
+    "categorie": "Noël",
+    "dossier": "Ourson Noël",
+    "vignette": "img/noel/ourson-noel/1.jpg",
+    "photos": [
+      "img/noel/ourson-noel/1.jpg",
+      "img/noel/ourson-noel/2.jpg",
+      "img/noel/ourson-noel/3.jpg",
+      "img/noel/ourson-noel/4.jpg",
+      "img/noel/ourson-noel/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Ourson tissé en perles, en 3D, habillé en père noël. Il s'agit d'un objet décoratif, qui peut être suspendu dans le sapin ou juste posé. Les bras et les jambes sont articulés."
   },
   {
     "id": "noel--sapin",
