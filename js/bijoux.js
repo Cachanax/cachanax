@@ -2418,7 +2418,7 @@ const bijoux = [
       "img/boucles-d-oreilles/creoles-rose-et-argent/3.jpg"
     ],
     "disponible": "oui",
-    "desc": "Créole recouvertes de perles de rocailles rose et argent"
+    "desc": "Créoles recouvertes de perles de rocailles rose et argent"
   },
   {
     "id": "boucles-d-oreilles--cone-blanc-et-marron-orange",
@@ -2769,7 +2769,7 @@ const bijoux = [
       "img/boucles-d-oreilles/strass-rose/5.jpg"
     ],
     "disponible": "oui",
-    "desc": "Strass rose enchassé dans un tissage de perles calibrées, entre la fleur et le personnage, chacun peut imaginer le sujet qu'il veut."
+    "desc": "Strass rose enchâssé dans un tissage de perles calibrées, entre la fleur et le personnage, chacun peut imaginer le sujet qu'il veut."
   },
   {
     "id": "boucles-d-oreilles--torsade-bleu",

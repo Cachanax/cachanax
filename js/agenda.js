@@ -29,7 +29,7 @@ const expositions = [
     fin: "",                     // dernier jour (laissez "" si un seul jour)
     nom: "Marché de Noël",
     lieu: "Lentilly (69), Ecole Jeanne d'Arc",
-    horaires: "10h – 18h",       // facultatif
+    horaires: "11h30 – 17h",       // facultatif
     infos: ""                    // facultatif : stand, thème…
   },
   {

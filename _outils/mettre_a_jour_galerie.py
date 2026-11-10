@@ -287,16 +287,31 @@ def lire_json(chemin, defaut):
     return json.loads(lire_texte(chemin), strict=False) if chemin.exists() else defaut
 
 
+def en_carre(im):
+    """Complète la photo en carré avec la couleur de son fond, sans rien couper :
+    Instagram recadre tout le carrousel au format de la 1re photo."""
+    l, h = im.size
+    if l == h:
+        return im
+    c = max(l, h)
+    bords = list(im.crop((0, 0, l, 2)).getdata()) + list(im.crop((0, h - 2, l, h)).getdata()) \
+        + list(im.crop((0, 0, 2, h)).getdata()) + list(im.crop((l - 2, 0, l, h)).getdata())
+    fond = tuple(sorted(px[i] for px in bords)[len(bords) // 2] for i in range(3))
+    carre = Image.new("RGB", (c, c), fond)
+    carre.paste(im, ((c - l) // 2, (c - h) // 2))
+    return carre
+
+
 def photos_publication(sources, cible, retouche):
     """Photos d'une pièce à publier : toutes traitées de la même façon,
-    couleurs et lumière corrigées, sans passe-partout, cadrage d'origine."""
+    couleurs et lumière corrigées, sans passe-partout, complétées en carré."""
     if TEST:
         return
     with tempfile.TemporaryDirectory() as temp:
         temp = Path(temp)
         for i, src in enumerate(sources, 1):
             with Image.open(src) as im:
-                sortie = retouche.autre_photo(im, TAILLE_MAX)
+                sortie = en_carre(retouche.autre_photo(im, TAILLE_MAX))
             sortie.save(temp / f"{i}.jpg", "JPEG", quality=QUALITE, optimize=True, progressive=True)
         cible.mkdir(parents=True, exist_ok=True)
         for f in sorted(temp.iterdir()):
@@ -352,7 +367,7 @@ def preparer_publications(bijoux, retouche):
                 if not sources:
                     ecartees.append(f"{nom} (aucune photo)")
                     continue
-                emp = empreinte(sources, "publication")
+                emp = empreinte(sources, "publication-carre")
                 if (ancienne.get("empreinte") == emp
                         and all((PUBLICATIONS / p).exists() for p in ancienne["photos"])):
                     photos = ancienne["photos"]
