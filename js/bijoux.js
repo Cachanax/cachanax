@@ -2489,7 +2489,7 @@ const bijoux = [
       "img/boucles-d-oreilles/entrelacs/4.jpg"
     ],
     "disponible": "oui",
-    "desc": "Tissages de perles de racailles entrelacés autour d'une perle ronde noire."
+    "desc": "Tissages de perles de rocailles entrelacés autour d'une perle ronde noire."
   },
   {
     "id": "boucles-d-oreilles--etoile-filante",
@@ -3711,7 +3711,7 @@ const bijoux = [
       "img/noel/camion-livraison-sapin/5.jpg"
     ],
     "disponible": "oui",
-    "desc": "Camion entièrement tissé en perles, avec son sapin à livrer."
+    "desc": "Objet décoratif, camion en 3D entièrement tissé en perles, avec son sapin à livrer."
   },
   {
     "id": "noel--couronne-de-noel",
@@ -3889,7 +3889,7 @@ const bijoux = [
   },
   {
     "id": "noel--etoile-verte",
-    "titre": "Etoiles verte",
+    "titre": "Etoile verte",
     "categorie": "Noël",
     "dossier": "Etoile verte",
     "vignette": "img/noel/etoile-verte/1.jpg",
@@ -4039,6 +4039,6 @@ const bijoux = [
       "img/noel/sapin-van-gogh/4.jpg"
     ],
     "disponible": "oui",
-    "desc": "idéal pour une tenue de noël raffinée, ce sapin aux couleurs du ciel du célèbre tableau de Vincent van Gogh Les tournesols."
+    "desc": "idéal pour une tenue de noël raffinée, ce sapin aux couleurs du ciel du célèbre tableau de Vincent van Gogh La Nuit étoilée."
   }
 ];

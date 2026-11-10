@@ -288,7 +288,8 @@ def lire_json(chemin, defaut):
 
 
 def photos_publication(sources, cible, retouche):
-    """Photos d'une pièce hors site : couleurs et lumière corrigées, sans passe-partout."""
+    """Photos d'une pièce à publier : toutes traitées de la même façon,
+    couleurs et lumière corrigées, sans passe-partout, cadrage d'origine."""
     if TEST:
         return
     with tempfile.TemporaryDirectory() as temp:
@@ -345,9 +346,9 @@ def preparer_publications(bijoux, retouche):
                 ecartees.append(f"{nom} (disponible: non)")
                 continue
             ancienne = avant.get(ident, {})
-            emp = None
-            if hors_site:
-                sources = photos_source(d)
+            # Toutes les pièces : photos de publication traitées de la même façon
+            sources = photos_source(d)
+            if True:
                 if not sources:
                     ecartees.append(f"{nom} (aucune photo)")
                     continue
@@ -357,16 +358,12 @@ def preparer_publications(bijoux, retouche):
                     photos = ancienne["photos"]
                 else:
                     try:
+                        print(f"  photos de publication : {nom}", flush=True)
                         photos_publication(sources, PHOTOS_PUBLI / ident, retouche)
                     except Exception as e:
                         ecartees.append(f"{nom} (échec des photos : {e})")
                         continue
                     photos = [f"photos/{ident}/{i}.jpg" for i in range(1, len(sources) + 1)]
-            elif ident in en_ligne:
-                photos = [SITE_WEB + p for p in en_ligne[ident]["photos"]]
-            else:
-                ecartees.append(f"{nom} (pas en ligne sur le site)")
-                continue
             pieces.append({
                 "id": ident,
                 "tag": tag,
@@ -375,7 +372,7 @@ def preparer_publications(bijoux, retouche):
                 "titre": infos.get("titre") or titre_par_defaut(d.name),
                 "description": infos.get("description", ""),
                 "photos": photos,
-                "source": "local" if hors_site else "site",
+                "source": "local",
                 "empreinte": emp,
                 "tague_le": ancienne.get("tague_le") or datetime.fromtimestamp(
                     fiche.stat().st_mtime).isoformat(timespec="seconds"),
