@@ -50,8 +50,6 @@ PHOTOS = DEPOT.parent.parent / "Photos"                   # ...\Cachanax\Photos
 CATEGORIES = ["Colliers", "Bracelets", "Boucles d'oreilles", "Parures", "Divers", "Noël"]
 # Dossiers de Photos jamais publiés
 EXCLUES = ["Expos", "Montres"]
-# Catégories dont les nouvelles fiches sont créées avec « disponible: oui »
-DISPONIBLES_PAR_DEFAUT = ["Noël"]
 
 MAX_PHOTOS = 5          # photos par bijou
 TAILLE_MAX = 1200       # plus grand côté, en pixels
@@ -143,6 +141,29 @@ def lire_fiche(chemin):
 def choix_vignette(infos):
     choix = slug(infos.get("vignette", "auto"))
     return choix if choix in CHOIX_VIGNETTE else "auto"
+
+
+FICHES_COMPLETEES = []
+
+
+def completer_fiche(chemin):
+    """Ajoute « publier: non » aux fiches qui n'ont pas encore cette ligne,
+    juste avant « description: ». Le reste de la fiche n'est pas touché."""
+    texte = lire_texte(chemin)
+    if re.search(r"^\s*publier\s*:", texte, flags=re.I | re.M):
+        return
+    lignes = texte.splitlines()
+    pos = next((i for i, l in enumerate(lignes) if re.match(r"\s*description\s*:", l, flags=re.I)),
+               len(lignes))
+    lignes.insert(pos, "publier: non")
+    aide = "# publier : nouveau, noel ou non (réseaux sociaux)"
+    if aide not in lignes:
+        com = [i for i, l in enumerate(lignes[:pos]) if l.startswith("#")]
+        if com:
+            lignes.insert(com[-1] + 1, aide)
+    if not TEST:
+        avec_reprises(chemin.write_text, "\n".join(lignes) + "\n", "utf-8")
+    FICHES_COMPLETEES.append(chemin)
 
 
 def ecrire_fiche(chemin, titre, disponible="non", vedette="non", afficher="oui", description=""):
@@ -306,6 +327,7 @@ def preparer_publications(bijoux, retouche):
                     ecrire_fiche_hors_site(fiche, titre_par_defaut(d.name))
                     fiches += 1
                 continue
+            completer_fiche(fiche)
             infos = lire_fiche(fiche)
             nom = f"{cat.name} / {d.name}"
             valeur = slug(infos.get("publier", "non"))
@@ -447,16 +469,15 @@ def main():
                 else:
                     # Au premier lancement, une pièce absente du site actuel reste masquée
                     afficher = "non" if premier_lancement else "oui"
-                    dispo = "oui" if cat in DISPONIBLES_PAR_DEFAUT else "non"
-                    ecrire_fiche(fiche, titre_par_defaut(d.name), disponible=dispo, afficher=afficher)
+                    ecrire_fiche(fiche, titre_par_defaut(d.name), afficher=afficher)
                     nouvelles_fiches.append((f"{cat} / {d.name}", afficher))
                 infos = ({"titre": vieux.get("titre"), "disponible": vieux.get("disponible"),
                           "afficher": "oui", "description": vieux.get("desc", "")}
                          if vieux else
                          {"titre": titre_par_defaut(d.name),
-                          "disponible": dispo,
                           "afficher": "non" if premier_lancement else "oui"})
             else:
+                completer_fiche(fiche)
                 infos = lire_fiche(fiche)
 
             if not oui(infos.get("afficher", "oui")):
@@ -572,6 +593,8 @@ def main():
         for nom, aff in nouvelles_fiches:
             print(f"   - {nom}" + ("   (masqué : mettez « afficher: oui » pour le publier)"
                                    if aff == "non" else ""))
+    if FICHES_COMPLETEES:
+        print(f"\nLigne « publier: non » ajoutée à {len(set(FICHES_COMPLETEES))} fiche(s) infos.txt")
     if masques:
         print(f"\nMasqués (afficher: non) : {len(masques)}")
     if sans_photo:
