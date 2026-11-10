@@ -1916,20 +1916,6 @@ const bijoux = [
     "desc": "Bracelet en perles Miyuki et toupies Swarovski. Le tissage est collé sur une manchette en Rhodium de 18 x 3 cm, adaptable tout poignet."
   },
   {
-    "id": "bracelets--manchette-hippie",
-    "titre": "Manchette Hippie",
-    "categorie": "Bracelets",
-    "dossier": "Manchette Hippie",
-    "vignette": "img/bracelets/manchette-hippie/1.jpg",
-    "photos": [
-      "img/bracelets/manchette-hippie/1.jpg",
-      "img/bracelets/manchette-hippie/2.jpg",
-      "img/bracelets/manchette-hippie/3.jpg"
-    ],
-    "disponible": "non",
-    "desc": "Bracelet en perles Miyuki et toupies Swarovski. Le tissage est collé sur une manchette en Rhodium de 18 x 3 cm, adaptable tout poignet."
-  },
-  {
     "id": "bracelets--manchette-jaune-vert-et-mauve",
     "titre": "Manchette jaune, vert et mauve",
     "categorie": "Bracelets",

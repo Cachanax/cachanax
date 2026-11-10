@@ -3870,6 +3870,11 @@
     1790597878
    ],
    [
+    "4_Manchette jaune, vert et mauve.jpg",
+    769035,
+    1790597878
+   ],
+   [
     "20200725_180115.jpg",
     2329960,
     1735213354
@@ -3877,11 +3882,6 @@
    [
     "20200901_182030.jpg",
     2842461,
-    1735289973
-   ],
-   [
-    "20200901_182057.jpg",
-    2831077,
     1735289973
    ],
    "auto"
@@ -4030,31 +4030,6 @@
    "img/bracelets/manchette-fleurs-anis-et-azur/4.jpg"
   ]
  },
- "bracelets--manchette-hippie": {
-  "sources": [
-   [
-    "1_Manchette jaune, vert et mauve.jpg",
-    858771,
-    1790581021
-   ],
-   [
-    "2_Manchette jaune, vert et mauve.jpg",
-    973342,
-    1790581022
-   ],
-   [
-    "Hippie [b72ff9].jpg",
-    888256,
-    1790580954
-   ],
-   "auto"
-  ],
-  "photos": [
-   "img/bracelets/manchette-hippie/1.jpg",
-   "img/bracelets/manchette-hippie/2.jpg",
-   "img/bracelets/manchette-hippie/3.jpg"
-  ]
- },
  "bracelets--manchette-jaune-vert-et-mauve": {
   "sources": [
    [
@@ -4073,14 +4048,14 @@
     1790597878
    ],
    [
-    "4_Manchette jaune, vert et mauve.jpg",
-    769035,
-    1790597878
-   ],
-   [
     "5_Manchette jaune, vert et mauve.jpg",
     858771,
     1790597878
+   ],
+   [
+    "20200213_082720.jpg",
+    3116750,
+    1735212370
    ],
    "auto"
   ],
