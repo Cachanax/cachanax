@@ -2556,6 +2556,22 @@ const bijoux = [
     "desc": "Petite fleur en perles sur crochet argenté. Modèle réalisable en atelier."
   },
   {
+    "id": "boucles-d-oreilles--fleur-helice-rose",
+    "titre": "Fleur hélice rose",
+    "categorie": "Boucles d'oreilles",
+    "dossier": "Fleur hélice rose",
+    "vignette": "img/boucles-d-oreilles/fleur-helice-rose/1.jpg",
+    "photos": [
+      "img/boucles-d-oreilles/fleur-helice-rose/1.jpg",
+      "img/boucles-d-oreilles/fleur-helice-rose/2.jpg",
+      "img/boucles-d-oreilles/fleur-helice-rose/3.jpg",
+      "img/boucles-d-oreilles/fleur-helice-rose/4.jpg",
+      "img/boucles-d-oreilles/fleur-helice-rose/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Fleur en perles."
+  },
+  {
     "id": "boucles-d-oreilles--fleur-marron",
     "titre": "Fleur marron",
     "categorie": "Boucles d'oreilles",
@@ -4069,6 +4085,21 @@ const bijoux = [
     ],
     "disponible": "oui",
     "desc": "Ourson tissé en perles, en 3D, habillé en père noël. Il s'agit d'un objet décoratif, qui peut être suspendu dans le sapin ou juste posé. Les bras et les jambes sont articulés."
+  },
+  {
+    "id": "noel--pendentif-flocon",
+    "titre": "Pendentif flocon",
+    "categorie": "Noël",
+    "dossier": "Pendentif flocon",
+    "vignette": "img/noel/pendentif-flocon/1.jpg",
+    "photos": [
+      "img/noel/pendentif-flocon/1.jpg",
+      "img/noel/pendentif-flocon/2.jpg",
+      "img/noel/pendentif-flocon/3.jpg",
+      "img/noel/pendentif-flocon/4.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Pendentif à suspendre en décoration de Noël, dans le sapin ou selon votre goût."
   },
   {
     "id": "noel--sapin",
