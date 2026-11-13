@@ -1646,6 +1646,37 @@
    "img/colliers/macrame-sacaron-feuilles-vert/5.jpg"
   ]
  },
+ "colliers--macrame-sacaron-feuilles-violet": {
+  "sources": [
+   [
+    "1.jpg",
+    2260046,
+    1794583975
+   ],
+   [
+    "20261113_161133.jpg",
+    700144,
+    1794583894
+   ],
+   [
+    "20261113_161146.jpg",
+    493599,
+    1794583908
+   ],
+   [
+    "20261113_161316.jpg",
+    610015,
+    1794583948
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/colliers/macrame-sacaron-feuilles-violet/1.jpg",
+   "img/colliers/macrame-sacaron-feuilles-violet/2.jpg",
+   "img/colliers/macrame-sacaron-feuilles-violet/3.jpg",
+   "img/colliers/macrame-sacaron-feuilles-violet/4.jpg"
+  ]
+ },
  "colliers--macrame-sacaron-jaune": {
   "sources": [
    [
@@ -2325,6 +2356,31 @@
    "img/colliers/soleil-couchant/3.jpg",
    "img/colliers/soleil-couchant/4.jpg",
    "img/colliers/soleil-couchant/5.jpg"
+  ]
+ },
+ "colliers--sourire-raffine": {
+  "sources": [
+   [
+    "20261113_161511.jpg",
+    2089645,
+    1794584490
+   ],
+   [
+    "20261113_161642.jpg",
+    1506910,
+    1794584505
+   ],
+   [
+    "20261113_161707.jpg",
+    217761,
+    1794584520
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/colliers/sourire-raffine/1.jpg",
+   "img/colliers/sourire-raffine/2.jpg",
+   "img/colliers/sourire-raffine/3.jpg"
   ]
  },
  "colliers--strass-en-habit-bleu": {
@@ -5734,6 +5790,43 @@
    "img/boucles-d-oreilles/torsade-doree/1.jpg"
   ]
  },
+ "boucles-d-oreilles--tubes-bleu": {
+  "sources": [
+   [
+    "20260227_164448.jpg",
+    626010,
+    1794581198
+   ],
+   [
+    "20260227_164511.jpg",
+    861102,
+    1794581219
+   ],
+   [
+    "20261113_152632.jpg",
+    74890,
+    1794581242
+   ],
+   [
+    "20261113_152735.jpg",
+    183295,
+    1794581274
+   ],
+   [
+    "20261113_152804.jpg",
+    71824,
+    1794581293
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/boucles-d-oreilles/tubes-bleu/1.jpg",
+   "img/boucles-d-oreilles/tubes-bleu/2.jpg",
+   "img/boucles-d-oreilles/tubes-bleu/3.jpg",
+   "img/boucles-d-oreilles/tubes-bleu/4.jpg",
+   "img/boucles-d-oreilles/tubes-bleu/5.jpg"
+  ]
+ },
  "parures--arc-en-ciel": {
   "sources": [
    [
@@ -6073,6 +6166,216 @@
    "img/parures/toupies-rose-orange/1.jpg",
    "img/parures/toupies-rose-orange/2.jpg",
    "img/parures/toupies-rose-orange/3.jpg"
+  ]
+ },
+ "montres--baroque-argent": {
+  "sources": [
+   [
+    "1_SAM_0168.JPG",
+    3160570,
+    1790581083
+   ],
+   [
+    "Couronne fleurie 2.jpg",
+    3210728,
+    1790588749
+   ],
+   [
+    "DSC03147.JPG",
+    1786350,
+    1728590070
+   ],
+   [
+    "DSC03148.JPG",
+    2866644,
+    1728590070
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/montres/baroque-argent/1.jpg",
+   "img/montres/baroque-argent/2.jpg",
+   "img/montres/baroque-argent/3.jpg",
+   "img/montres/baroque-argent/4.jpg"
+  ]
+ },
+ "montres--bracelet-bleu-et-blanc": {
+  "sources": [
+   [
+    "Sylv1.jpg",
+    502230,
+    1790588793
+   ],
+   [
+    "Sylv2 (1).jpg",
+    552265,
+    1790588797
+   ],
+   [
+    "Sylv2.jpg",
+    2511569,
+    1790588790
+   ],
+   [
+    "Sylv3.jpg",
+    2442247,
+    1790588785
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/montres/bracelet-bleu-et-blanc/1.jpg",
+   "img/montres/bracelet-bleu-et-blanc/2.jpg",
+   "img/montres/bracelet-bleu-et-blanc/3.jpg",
+   "img/montres/bracelet-bleu-et-blanc/4.jpg"
+  ]
+ },
+ "montres--carre-couleurs": {
+  "sources": [
+   [
+    "1_IMG_20181125_155827.jpg",
+    3311201,
+    1790580997
+   ],
+   [
+    "Carré coloré 2.jpg",
+    3146024,
+    1790588721
+   ],
+   [
+    "DSC03153.JPG",
+    1313580,
+    1728590070
+   ],
+   [
+    "DSC03154.JPG",
+    1949592,
+    1728590070
+   ],
+   [
+    "DSC03156.JPG",
+    1741058,
+    1728590070
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/montres/carre-couleurs/1.jpg",
+   "img/montres/carre-couleurs/2.jpg",
+   "img/montres/carre-couleurs/3.jpg",
+   "img/montres/carre-couleurs/4.jpg",
+   "img/montres/carre-couleurs/5.jpg"
+  ]
+ },
+ "montres--fleur": {
+  "sources": [
+   [
+    "1.jpg",
+    1234518,
+    1732907916
+   ],
+   [
+    "2.jpg",
+    824264,
+    1732907916
+   ],
+   [
+    "3.jpg",
+    385853,
+    1790581121
+   ],
+   [
+    "4.JPG",
+    1098325,
+    1728590068
+   ],
+   [
+    "5.jpg",
+    857134,
+    1790581121
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/montres/fleur/1.jpg",
+   "img/montres/fleur/2.jpg",
+   "img/montres/fleur/3.jpg",
+   "img/montres/fleur/4.jpg",
+   "img/montres/fleur/5.jpg"
+  ]
+ },
+ "montres--montre-et-toupies": {
+  "sources": [
+   [
+    "SAM_2938.JPG",
+    1803446,
+    1728579294
+   ],
+   [
+    "SAM_2939.JPG",
+    1849761,
+    1728579292
+   ],
+   [
+    "SAM_2940.JPG",
+    1774889,
+    1728579293
+   ],
+   [
+    "SAM_2941.JPG",
+    1853366,
+    1728579292
+   ],
+   [
+    "SAM_2942.JPG",
+    1900230,
+    1728579292
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/montres/montre-et-toupies/1.jpg",
+   "img/montres/montre-et-toupies/2.jpg",
+   "img/montres/montre-et-toupies/3.jpg",
+   "img/montres/montre-et-toupies/4.jpg",
+   "img/montres/montre-et-toupies/5.jpg"
+  ]
+ },
+ "montres--montre-rose": {
+  "sources": [
+   [
+    "1_20260102_164942(1).jpg",
+    2114542,
+    1790581025
+   ],
+   [
+    "2_20260102_164827.jpg",
+    3109263,
+    1790581026
+   ],
+   [
+    "3.jpg",
+    4157758,
+    1767472650
+   ],
+   [
+    "3_20260102_165101.jpg",
+    2100708,
+    1790581027
+   ],
+   [
+    "4_20260102_165030.jpg",
+    2278083,
+    1790581029
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/montres/montre-rose/1.jpg",
+   "img/montres/montre-rose/2.jpg",
+   "img/montres/montre-rose/3.jpg",
+   "img/montres/montre-rose/4.jpg",
+   "img/montres/montre-rose/5.jpg"
   ]
  },
  "divers--ange-swarovski-bleu": {

@@ -79,7 +79,7 @@ const bijoux = [
       "img/colliers/boucles-de-printemps/3.jpg",
       "img/colliers/boucles-de-printemps/4.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": ""
   },
   {
@@ -791,6 +791,21 @@ const bijoux = [
     "desc": "Collier en micro-macramé accompagné d'un pendentif unique réalisé par Sacaron. Ce coliier est entièrement réalisé en micro-macramé."
   },
   {
+    "id": "colliers--macrame-sacaron-feuilles-violet",
+    "titre": "Macramé Sacaron feuilles violet",
+    "categorie": "Colliers",
+    "dossier": "Macramé Sacaron feuilles violet",
+    "vignette": "img/colliers/macrame-sacaron-feuilles-violet/1.jpg",
+    "photos": [
+      "img/colliers/macrame-sacaron-feuilles-violet/1.jpg",
+      "img/colliers/macrame-sacaron-feuilles-violet/2.jpg",
+      "img/colliers/macrame-sacaron-feuilles-violet/3.jpg",
+      "img/colliers/macrame-sacaron-feuilles-violet/4.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Collier en micro-macramé accompagné d'un pendentif unique réalisé par Sacaron. Ce coliier est entièrement réalisé en micro-macramé, le fermoir est aimanté. Le collier fait 40 cm de diamètre."
+  },
+  {
     "id": "colliers--macrame-sacaron-jaune",
     "titre": "Macramé Sacaron jaune",
     "categorie": "Colliers",
@@ -1109,6 +1124,20 @@ const bijoux = [
     ],
     "disponible": "oui",
     "desc": "Collier orange en micro-macramé, perles Polaris et ivoire végétal. D'une longueur de 41,5 cm, non ajustable, avec un fermoir aimanté."
+  },
+  {
+    "id": "colliers--sourire-raffine",
+    "titre": "Sourire raffiné",
+    "categorie": "Colliers",
+    "dossier": "Sourire raffiné",
+    "vignette": "img/colliers/sourire-raffine/1.jpg",
+    "photos": [
+      "img/colliers/sourire-raffine/1.jpg",
+      "img/colliers/sourire-raffine/2.jpg",
+      "img/colliers/sourire-raffine/3.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Quelques perles Miyuki tissées ensemble, avec une finition brillante, donne un bijou simple et raffinée, qui égaiera vos tenues. Une allonge sur la chaine en acier inoxydable permet une longueur adaptable de 41 à 48 ccm."
   },
   {
     "id": "colliers--strass-en-habit-bleu",
@@ -1928,7 +1957,7 @@ const bijoux = [
       "img/bracelets/manchette-jaune-vert-et-mauve/4.jpg",
       "img/bracelets/manchette-jaune-vert-et-mauve/5.jpg"
     ],
-    "disponible": "oui",
+    "disponible": "non",
     "desc": "Bracelet en perles Miyuki. Le tissage est collé sur une manchette en Rhodium de 18 x 3 cm, adaptable tout poignet."
   },
   {
@@ -1941,7 +1970,7 @@ const bijoux = [
       "img/bracelets/manchette-mauve-bleu-et-moutarde/1.jpg",
       "img/bracelets/manchette-mauve-bleu-et-moutarde/2.jpg"
     ],
-    "disponible": "oui",
+    "disponible": "non",
     "desc": "Bracelet en perles Miyuki. Le tissage est collé sur une manchette en Rhodium de 18 x 3 cm, adaptable tout poignet."
   },
   {
@@ -2416,7 +2445,7 @@ const bijoux = [
       "img/boucles-d-oreilles/cone-blanc-et-marron-orange/1.jpg",
       "img/boucles-d-oreilles/cone-blanc-et-marron-orange/2.jpg"
     ],
-    "disponible": "oui",
+    "disponible": "non",
     "desc": "Crochets d'oreilles doré, supportant des boucles en perles. Ce modèle est réalisable en atelier."
   },
   {
@@ -2799,6 +2828,22 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "boucles-d-oreilles--tubes-bleu",
+    "titre": "Tubes bleu",
+    "categorie": "Boucles d'oreilles",
+    "dossier": "Tubes bleu",
+    "vignette": "img/boucles-d-oreilles/tubes-bleu/1.jpg",
+    "photos": [
+      "img/boucles-d-oreilles/tubes-bleu/1.jpg",
+      "img/boucles-d-oreilles/tubes-bleu/2.jpg",
+      "img/boucles-d-oreilles/tubes-bleu/3.jpg",
+      "img/boucles-d-oreilles/tubes-bleu/4.jpg",
+      "img/boucles-d-oreilles/tubes-bleu/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Boucles d'oreilles en forme de tube, tissage de perles Miyuki de 3 cm de long. Le tube formé par les perles est fermé de chaque côté par une perle ronde et monté sur une tige accroché sur des boucles en acier inoxydable. Des variations de couleurs sont possibles sur demande.\nCe modèle est réalisable en atelier."
+  },
+  {
     "id": "parures--arc-en-ciel",
     "titre": "Arc en ciel",
     "categorie": "Parures",
@@ -2980,6 +3025,100 @@ const bijoux = [
     ],
     "disponible": "non",
     "desc": ""
+  },
+  {
+    "id": "montres--baroque-argent",
+    "titre": "Baroque argent",
+    "categorie": "Montres",
+    "dossier": "Baroque argent",
+    "vignette": "img/montres/baroque-argent/1.jpg",
+    "photos": [
+      "img/montres/baroque-argent/1.jpg",
+      "img/montres/baroque-argent/2.jpg",
+      "img/montres/baroque-argent/3.jpg",
+      "img/montres/baroque-argent/4.jpg"
+    ],
+    "disponible": "non",
+    "desc": ""
+  },
+  {
+    "id": "montres--bracelet-bleu-et-blanc",
+    "titre": "Bracelet bleu et blanc",
+    "categorie": "Montres",
+    "dossier": "Bracelet bleu et blanc",
+    "vignette": "img/montres/bracelet-bleu-et-blanc/1.jpg",
+    "photos": [
+      "img/montres/bracelet-bleu-et-blanc/1.jpg",
+      "img/montres/bracelet-bleu-et-blanc/2.jpg",
+      "img/montres/bracelet-bleu-et-blanc/3.jpg",
+      "img/montres/bracelet-bleu-et-blanc/4.jpg"
+    ],
+    "disponible": "non",
+    "desc": ""
+  },
+  {
+    "id": "montres--carre-couleurs",
+    "titre": "Carré couleurs",
+    "categorie": "Montres",
+    "dossier": "Carré couleurs",
+    "vignette": "img/montres/carre-couleurs/1.jpg",
+    "photos": [
+      "img/montres/carre-couleurs/1.jpg",
+      "img/montres/carre-couleurs/2.jpg",
+      "img/montres/carre-couleurs/3.jpg",
+      "img/montres/carre-couleurs/4.jpg",
+      "img/montres/carre-couleurs/5.jpg"
+    ],
+    "disponible": "non",
+    "desc": ""
+  },
+  {
+    "id": "montres--fleur",
+    "titre": "fleur",
+    "categorie": "Montres",
+    "dossier": "fleur",
+    "vignette": "img/montres/fleur/1.jpg",
+    "photos": [
+      "img/montres/fleur/1.jpg",
+      "img/montres/fleur/2.jpg",
+      "img/montres/fleur/3.jpg",
+      "img/montres/fleur/4.jpg",
+      "img/montres/fleur/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Montre à pile, dans un support en bois décoré de fleurs, avec un bracelet en micro-macramé auto fermant en tirant les liens, 21 cm de diamètre sans serrage, 17 cm une fois serré complètement, soit une longueur adaptable de 17 à 21 cm."
+  },
+  {
+    "id": "montres--montre-et-toupies",
+    "titre": "montre et toupies",
+    "categorie": "Montres",
+    "dossier": "montre et toupies",
+    "vignette": "img/montres/montre-et-toupies/1.jpg",
+    "photos": [
+      "img/montres/montre-et-toupies/1.jpg",
+      "img/montres/montre-et-toupies/2.jpg",
+      "img/montres/montre-et-toupies/3.jpg",
+      "img/montres/montre-et-toupies/4.jpg",
+      "img/montres/montre-et-toupies/5.jpg"
+    ],
+    "disponible": "non",
+    "desc": ""
+  },
+  {
+    "id": "montres--montre-rose",
+    "titre": "montre rose",
+    "categorie": "Montres",
+    "dossier": "Montre Rose",
+    "vignette": "img/montres/montre-rose/1.jpg",
+    "photos": [
+      "img/montres/montre-rose/1.jpg",
+      "img/montres/montre-rose/2.jpg",
+      "img/montres/montre-rose/3.jpg",
+      "img/montres/montre-rose/4.jpg",
+      "img/montres/montre-rose/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Montre à pile en forme de cœur,avec un fond orné de roses. Le bracelet en perles et micro-macramé fait ressortir la douceur du motif. \nLe fermoir de montre termine ce bracelet d'un total de 21 cm, non ajustable."
   },
   {
     "id": "divers--ange-swarovski-bleu",

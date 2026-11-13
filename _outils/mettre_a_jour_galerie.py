@@ -47,9 +47,9 @@ DEPOT = Path(__file__).resolve().parent.parent           # ...\GitHub\Cachanax
 PHOTOS = DEPOT.parent.parent / "Photos"                   # ...\Cachanax\Photos
 
 # Catégories affichées, dans l'ordre des boutons de filtre
-CATEGORIES = ["Colliers", "Bracelets", "Boucles d'oreilles", "Parures", "Divers", "Noël"]
+CATEGORIES = ["Colliers", "Bracelets", "Boucles d'oreilles", "Parures", "Montres", "Divers", "Noël"]
 # Dossiers de Photos jamais publiés
-EXCLUES = ["Expos", "Montres"]
+EXCLUES = ["Expos"]
 
 MAX_PHOTOS = 5          # photos par bijou
 TAILLE_MAX = 1200       # plus grand côté, en pixels
@@ -143,27 +143,34 @@ def choix_vignette(infos):
     return choix if choix in CHOIX_VIGNETTE else "auto"
 
 
-FICHES_COMPLETEES = []
+FICHES_COMPLETEES = {}
+AIDE_PRIX = "# prix : prix de vente en euros (ex. 25 ou 12,50)"
+LIGNES_A_COMPLETER = [
+    ("publier", "non", "# publier : nouveau, noel ou non (réseaux sociaux)"),
+    ("prix", "", AIDE_PRIX),
+]
 
 
 def completer_fiche(chemin):
-    """Ajoute « publier: non » aux fiches qui n'ont pas encore cette ligne,
+    """Ajoute les lignes « publier: non » et « prix: » aux fiches qui ne les ont pas encore,
     juste avant « description: ». Le reste de la fiche n'est pas touché."""
     texte = lire_texte(chemin)
-    if re.search(r"^\s*publier\s*:", texte, flags=re.I | re.M):
-        return
     lignes = texte.splitlines()
-    pos = next((i for i, l in enumerate(lignes) if re.match(r"\s*description\s*:", l, flags=re.I)),
-               len(lignes))
-    lignes.insert(pos, "publier: non")
-    aide = "# publier : nouveau, noel ou non (réseaux sociaux)"
-    if aide not in lignes:
-        com = [i for i, l in enumerate(lignes[:pos]) if l.startswith("#")]
-        if com:
-            lignes.insert(com[-1] + 1, aide)
+    ajouts = [(cle, valeur, aide) for cle, valeur, aide in LIGNES_A_COMPLETER
+              if not re.search(rf"^\s*{cle}\s*:", texte, flags=re.I | re.M)]
+    if not ajouts:
+        return
+    for cle, valeur, aide in ajouts:
+        pos = next((i for i, l in enumerate(lignes) if re.match(r"\s*description\s*:", l, flags=re.I)),
+                   len(lignes))
+        lignes.insert(pos, f"{cle}: {valeur}".rstrip())
+        if aide not in lignes:
+            com = [i for i, l in enumerate(lignes[:pos]) if l.startswith("#")]
+            if com:
+                lignes.insert(com[-1] + 1, aide)
+        FICHES_COMPLETEES.setdefault(cle, set()).add(chemin)
     if not TEST:
         avec_reprises(chemin.write_text, "\n".join(lignes) + "\n", "utf-8")
-    FICHES_COMPLETEES.append(chemin)
 
 
 def ecrire_fiche(chemin, titre, disponible="non", vedette="non", afficher="oui", description=""):
@@ -175,6 +182,7 @@ def ecrire_fiche(chemin, titre, disponible="non", vedette="non", afficher="oui",
         "# vignette : auto, detoure, corrige ou origine\n"
         "#   auto = détourée si le résultat est fiable, sinon photo corrigée dans le cadre\n"
         "# publier : nouveau, noel ou non (réseaux sociaux)\n"
+        f"{AIDE_PRIX}\n"
         "# La description s'écrit sous la ligne « description: »\n"
         "\n"
         f"titre: {titre}\n"
@@ -183,6 +191,7 @@ def ecrire_fiche(chemin, titre, disponible="non", vedette="non", afficher="oui",
         f"afficher: {afficher}\n"
         "vignette: auto\n"
         "publier: non\n"
+        "prix:\n"
         "description:\n"
         f"{description}\n"
     )
@@ -195,11 +204,13 @@ def ecrire_fiche_hors_site(chemin, titre):
         "# Fiche de la pièce pour Instagram et Facebook (elle n'apparaît pas sur le site)\n"
         "# publier : noel, nouveau ou non\n"
         "# disponible : non pour l'écarter des publications\n"
+        f"{AIDE_PRIX}\n"
         "# La description s'écrit sous la ligne « description: »\n"
         "\n"
         f"titre: {titre}\n"
         "disponible: oui\n"
         "publier: non\n"
+        "prix:\n"
         "description:\n"
     )
     if not TEST:
@@ -605,8 +616,8 @@ def main():
         for nom, aff in nouvelles_fiches:
             print(f"   - {nom}" + ("   (masqué : mettez « afficher: oui » pour le publier)"
                                    if aff == "non" else ""))
-    if FICHES_COMPLETEES:
-        print(f"\nLigne « publier: non » ajoutée à {len(set(FICHES_COMPLETEES))} fiche(s) infos.txt")
+    for cle, fiches in FICHES_COMPLETEES.items():
+        print(f"\nLigne « {cle}: » ajoutée à {len(fiches)} fiche(s) infos.txt")
     if masques:
         print(f"\nMasqués (afficher: non) : {len(masques)}")
     if sans_photo:
