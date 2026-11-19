@@ -49,6 +49,14 @@ const expositions = [
     infos: ""                    // facultatif : stand, thème…
   },
   {
+    date: "2026-12-18",          // premier jour
+    fin: "",                     // dernier jour (laissez "" si un seul jour)
+    nom: "Marché de Noël",
+    lieu: "La Giraudière (69), parking de la Giraudière",
+    horaires: "à partir de 16h", // facultatif
+    infos: "En extérieur, en soirée"  // facultatif : stand, thème…
+  },
+  {
     date: "2026-12-20",          // premier jour
     fin: "",                     // dernier jour (laissez "" si un seul jour)
     nom: "Marché de Noël",

@@ -2414,6 +2414,43 @@
    "img/colliers/strass-en-habit-bleu/4.jpg"
   ]
  },
+ "colliers--strass-et-mandala": {
+  "sources": [
+   [
+    "1.jpg",
+    1487730,
+    1795078747
+   ],
+   [
+    "2.jpg",
+    1542374,
+    1795078784
+   ],
+   [
+    "3.jpg",
+    1096957,
+    1795078799
+   ],
+   [
+    "4.jpg",
+    1093302,
+    1795078822
+   ],
+   [
+    "5.jpg",
+    1853291,
+    1795078721
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/colliers/strass-et-mandala/1.jpg",
+   "img/colliers/strass-et-mandala/2.jpg",
+   "img/colliers/strass-et-mandala/3.jpg",
+   "img/colliers/strass-et-mandala/4.jpg",
+   "img/colliers/strass-et-mandala/5.jpg"
+  ]
+ },
  "colliers--strass-a-l-anis": {
   "sources": [
    [
@@ -2998,14 +3035,38 @@
  "bracelets--bracelet-fleur-amethyste": {
   "sources": [
    [
-    "IMG20230508171753.jpg",
-    1961409,
-    1732908154
+    "1.jpg",
+    1198009,
+    1795018340
+   ],
+   [
+    "2.jpg",
+    1029240,
+    1795018418
+   ],
+   [
+    "3.jpg",
+    1399539,
+    1795018379
+   ],
+   [
+    "4.jpg",
+    1573660,
+    1795018396
+   ],
+   [
+    "20261118_164208.jpg",
+    1532670,
+    1795018357
    ],
    "auto"
   ],
   "photos": [
-   "img/bracelets/bracelet-fleur-amethyste/1.jpg"
+   "img/bracelets/bracelet-fleur-amethyste/1.jpg",
+   "img/bracelets/bracelet-fleur-amethyste/2.jpg",
+   "img/bracelets/bracelet-fleur-amethyste/3.jpg",
+   "img/bracelets/bracelet-fleur-amethyste/4.jpg",
+   "img/bracelets/bracelet-fleur-amethyste/5.jpg"
   ]
  },
  "bracelets--bracelet-halloween": {
@@ -6475,19 +6536,31 @@
   "sources": [
    [
     "20210213_113754.jpg",
-    2208957,
-    1735290736
+    167677,
+    1795015380
    ],
    [
-    "20240503_111005.jpg",
-    1726947,
-    1732907937
+    "20261118_164051.jpg",
+    319385,
+    1795018112
+   ],
+   [
+    "20261118_164110.jpg",
+    230567,
+    1795018091
+   ],
+   [
+    "20261118_164122.jpg",
+    149474,
+    1795018157
    ],
    "auto"
   ],
   "photos": [
    "img/divers/bague-miyuki/1.jpg",
-   "img/divers/bague-miyuki/2.jpg"
+   "img/divers/bague-miyuki/2.jpg",
+   "img/divers/bague-miyuki/3.jpg",
+   "img/divers/bague-miyuki/4.jpg"
   ]
  },
  "divers--berlingot-a-tresor": {
@@ -7077,29 +7150,29 @@
  "divers--maison-des-abeilles": {
   "sources": [
    [
-    "1_Maison des abeilles.jpg",
-    1619537,
-    1790590745
-   ],
-   [
-    "2_Maison des abeilles.jpg",
-    1688117,
-    1790590745
-   ],
-   [
-    "3_Maison des abeilles.jpg",
-    1073471,
-    1790590745
-   ],
-   [
-    "4_Maison des abeilles.jpg",
+    "1.jpg",
     1852181,
     1790590746
    ],
    [
+    "2.jpg",
+    1688117,
+    1790590745
+   ],
+   [
+    "3.jpg",
+    1073471,
+    1790590745
+   ],
+   [
+    "4.jpg",
+    862344,
+    1795013438
+   ],
+   [
     "5_Maison des abeilles.jpg",
-    1679825,
-    1790590746
+    1099621,
+    1795013456
    ],
    "auto"
   ],
@@ -7149,6 +7222,43 @@
    "img/divers/matriochka-3d-rouge/2.jpg"
   ]
  },
+ "divers--oeuf-brillant": {
+  "sources": [
+   [
+    "20261118_164422.jpg",
+    689209,
+    1795079397
+   ],
+   [
+    "20261118_164451.jpg",
+    288825,
+    1795079416
+   ],
+   [
+    "20261118_164510.jpg",
+    307576,
+    1795079433
+   ],
+   [
+    "20261118_164520.jpg",
+    758430,
+    1795079447
+   ],
+   [
+    "20261118_164536.jpg",
+    657730,
+    1795079466
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/divers/oeuf-brillant/1.jpg",
+   "img/divers/oeuf-brillant/2.jpg",
+   "img/divers/oeuf-brillant/3.jpg",
+   "img/divers/oeuf-brillant/4.jpg",
+   "img/divers/oeuf-brillant/5.jpg"
+  ]
+ },
  "divers--oeuf-de-dragon": {
   "sources": [
    [
@@ -7178,6 +7288,43 @@
    "img/divers/oeuf-de-dragon/2.jpg",
    "img/divers/oeuf-de-dragon/3.jpg",
    "img/divers/oeuf-de-dragon/4.jpg"
+  ]
+ },
+ "divers--oeuf-fleurs-de-saison": {
+  "sources": [
+   [
+    "1.jpg",
+    602605,
+    1795079685
+   ],
+   [
+    "2.jpg",
+    579955,
+    1795079714
+   ],
+   [
+    "3.jpg",
+    1038976,
+    1795079728
+   ],
+   [
+    "4.jpg",
+    699007,
+    1795079750
+   ],
+   [
+    "5.jpg",
+    1651003,
+    1795079697
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/divers/oeuf-fleurs-de-saison/1.jpg",
+   "img/divers/oeuf-fleurs-de-saison/2.jpg",
+   "img/divers/oeuf-fleurs-de-saison/3.jpg",
+   "img/divers/oeuf-fleurs-de-saison/4.jpg",
+   "img/divers/oeuf-fleurs-de-saison/5.jpg"
   ]
  },
  "divers--ours": {
@@ -7819,6 +7966,80 @@
    "img/noel/boule-de-noel/5.jpg"
   ]
  },
+ "noel--boule-graphique": {
+  "sources": [
+   [
+    "20201114_104557.jpg",
+    2240025,
+    1735290537
+   ],
+   [
+    "20201114_104605.jpg",
+    2390412,
+    1735290532
+   ],
+   [
+    "20201114_104801.jpg",
+    2255425,
+    1735290532
+   ],
+   [
+    "20221123_194019.jpg",
+    2986610,
+    1735399132
+   ],
+   [
+    "20221123_194033.jpg",
+    2900929,
+    1735399135
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/noel/boule-graphique/1.jpg",
+   "img/noel/boule-graphique/2.jpg",
+   "img/noel/boule-graphique/3.jpg",
+   "img/noel/boule-graphique/4.jpg",
+   "img/noel/boule-graphique/5.jpg"
+  ]
+ },
+ "noel--boule-patchwok": {
+  "sources": [
+   [
+    "1.jpg",
+    1471790,
+    1795013783
+   ],
+   [
+    "2.jpg",
+    1285298,
+    1795013810
+   ],
+   [
+    "3.jpg",
+    1579640,
+    1795013831
+   ],
+   [
+    "4.jpg",
+    1638720,
+    1795013854
+   ],
+   [
+    "5.jpg",
+    839272,
+    1795013947
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/noel/boule-patchwok/1.jpg",
+   "img/noel/boule-patchwok/2.jpg",
+   "img/noel/boule-patchwok/3.jpg",
+   "img/noel/boule-patchwok/4.jpg",
+   "img/noel/boule-patchwok/5.jpg"
+  ]
+ },
  "noel--boule-pirate": {
   "sources": [
    [
@@ -8042,6 +8263,37 @@
    "img/noel/couronne-de-noel/3.jpg"
   ]
  },
+ "noel--cube-deco": {
+  "sources": [
+   [
+    "20231014_132012.jpg",
+    768980,
+    1795014896
+   ],
+   [
+    "20231119_173609.jpg",
+    699796,
+    1795014916
+   ],
+   [
+    "20231119_173634.jpg",
+    920280,
+    1795014932
+   ],
+   [
+    "20231119_173714.jpg",
+    659099,
+    1795014957
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/noel/cube-deco/1.jpg",
+   "img/noel/cube-deco/2.jpg",
+   "img/noel/cube-deco/3.jpg",
+   "img/noel/cube-deco/4.jpg"
+  ]
+ },
  "noel--double-etoile-rose": {
   "sources": [
    [
@@ -8065,6 +8317,37 @@
    "img/noel/double-etoile-rose/1.jpg",
    "img/noel/double-etoile-rose/2.jpg",
    "img/noel/double-etoile-rose/3.jpg"
+  ]
+ },
+ "noel--etoile-6-branches": {
+  "sources": [
+   [
+    "20250821_215514.jpg",
+    2174723,
+    1767466623
+   ],
+   [
+    "20261118_164251.jpg",
+    1250917,
+    1795018756
+   ],
+   [
+    "20261118_164303.jpg",
+    1680802,
+    1795018775
+   ],
+   [
+    "20261118_164331.jpg",
+    1007823,
+    1795018799
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/noel/etoile-6-branches/1.jpg",
+   "img/noel/etoile-6-branches/2.jpg",
+   "img/noel/etoile-6-branches/3.jpg",
+   "img/noel/etoile-6-branches/4.jpg"
   ]
  },
  "noel--etoile-bonhommes-de-neige": {
@@ -8428,24 +8711,24 @@
     1735212045
    ],
    [
-    "20241002_222346.jpg",
-    2399195,
-    1732907623
+    "20211117_182535.jpg",
+    3185653,
+    1735395332
    ],
    [
-    "Petite étoile bleu et blanc.jpg",
-    1298273,
-    1790865292
+    "20211230_104828.jpg",
+    2483836,
+    1735395897
    ],
    [
-    "Petite étoile Bleu, blanc et or.jpg",
-    1351006,
-    1790865292
+    "20221123_192001.jpg",
+    3862649,
+    1735399135
    ],
    [
-    "Petite étoile coeurs bleu et blanc.jpg",
-    982530,
-    1790865293
+    "20221123_192357.jpg",
+    2128420,
+    1735399130
    ],
    "auto"
   ],
@@ -8566,6 +8849,43 @@
    "img/noel/grappe-d-etoiles/3.jpg",
    "img/noel/grappe-d-etoiles/4.jpg",
    "img/noel/grappe-d-etoiles/5.jpg"
+  ]
+ },
+ "noel--mini-chaussettes-de-noel": {
+  "sources": [
+   [
+    "20240827_073124.jpg",
+    2144906,
+    1724740284
+   ],
+   [
+    "20261119_102005.jpg",
+    4126349,
+    1795080407
+   ],
+   [
+    "20261119_102015.jpg",
+    3556238,
+    1795080407
+   ],
+   [
+    "20261119_102028.jpg",
+    3651495,
+    1795080407
+   ],
+   [
+    "20261119_102033.jpg",
+    3688259,
+    1795080407
+   ],
+   "auto"
+  ],
+  "photos": [
+   "img/noel/mini-chaussettes-de-noel/1.jpg",
+   "img/noel/mini-chaussettes-de-noel/2.jpg",
+   "img/noel/mini-chaussettes-de-noel/3.jpg",
+   "img/noel/mini-chaussettes-de-noel/4.jpg",
+   "img/noel/mini-chaussettes-de-noel/5.jpg"
   ]
  },
  "noel--mr-et-mme-noel": {

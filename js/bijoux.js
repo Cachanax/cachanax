@@ -1155,6 +1155,22 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "colliers--strass-et-mandala",
+    "titre": "Strass et mandala",
+    "categorie": "Colliers",
+    "dossier": "Strass et mandala",
+    "vignette": "img/colliers/strass-et-mandala/1.jpg",
+    "photos": [
+      "img/colliers/strass-et-mandala/1.jpg",
+      "img/colliers/strass-et-mandala/2.jpg",
+      "img/colliers/strass-et-mandala/3.jpg",
+      "img/colliers/strass-et-mandala/4.jpg",
+      "img/colliers/strass-et-mandala/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Tissage de perles circulaire, pour former un motif équilibré autour d'un strass rose."
+  },
+  {
     "id": "colliers--strass-a-l-anis",
     "titre": "Strass à l'anis",
     "categorie": "Colliers",
@@ -1425,10 +1441,14 @@ const bijoux = [
     "dossier": "Bracelet fleur améthyste",
     "vignette": "img/bracelets/bracelet-fleur-amethyste/1.jpg",
     "photos": [
-      "img/bracelets/bracelet-fleur-amethyste/1.jpg"
+      "img/bracelets/bracelet-fleur-amethyste/1.jpg",
+      "img/bracelets/bracelet-fleur-amethyste/2.jpg",
+      "img/bracelets/bracelet-fleur-amethyste/3.jpg",
+      "img/bracelets/bracelet-fleur-amethyste/4.jpg",
+      "img/bracelets/bracelet-fleur-amethyste/5.jpg"
     ],
-    "disponible": "non",
-    "desc": ""
+    "disponible": "oui",
+    "desc": "Une belle améthyste, mise en valeur par un tissage de petites perles (tissage huichol). ce mode de tissage donne du relief aux pétales de la fleur. Un bracelet en micro-macramé complète cette pièce."
   },
   {
     "id": "bracelets--bracelet-halloween",
@@ -3173,10 +3193,12 @@ const bijoux = [
     "vignette": "img/divers/bague-miyuki/1.jpg",
     "photos": [
       "img/divers/bague-miyuki/1.jpg",
-      "img/divers/bague-miyuki/2.jpg"
+      "img/divers/bague-miyuki/2.jpg",
+      "img/divers/bague-miyuki/3.jpg",
+      "img/divers/bague-miyuki/4.jpg"
     ],
-    "disponible": "non",
-    "desc": ""
+    "disponible": "oui",
+    "desc": "Bague tissée en petites perles. Cette bague peut être refaite à votre taille et vos couleurs sur commande."
   },
   {
     "id": "divers--berlingot-a-tresor",
@@ -3235,7 +3257,7 @@ const bijoux = [
       "img/divers/boite-triangle-bleu-et-marron/4.jpg",
       "img/divers/boite-triangle-bleu-et-marron/5.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": ""
   },
   {
@@ -3290,7 +3312,7 @@ const bijoux = [
       "img/divers/chat-porte-cle/2.jpg",
       "img/divers/chat-porte-cle/3.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": ""
   },
   {
@@ -3424,7 +3446,7 @@ const bijoux = [
       "img/divers/gnome/3.jpg",
       "img/divers/gnome/4.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": ""
   },
   {
@@ -3485,7 +3507,7 @@ const bijoux = [
       "img/divers/maison-des-abeilles/4.jpg",
       "img/divers/maison-des-abeilles/5.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": ""
   },
   {
@@ -3515,6 +3537,22 @@ const bijoux = [
     "desc": ""
   },
   {
+    "id": "divers--oeuf-brillant",
+    "titre": "Oeuf brillant",
+    "categorie": "Divers",
+    "dossier": "Oeuf brillant",
+    "vignette": "img/divers/oeuf-brillant/1.jpg",
+    "photos": [
+      "img/divers/oeuf-brillant/1.jpg",
+      "img/divers/oeuf-brillant/2.jpg",
+      "img/divers/oeuf-brillant/3.jpg",
+      "img/divers/oeuf-brillant/4.jpg",
+      "img/divers/oeuf-brillant/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "tissage de perles en 3D pour former un œuf. Il est garni de petites fleurs de verres lui donnant de l'éclat, qui reflètent la lumière."
+  },
+  {
     "id": "divers--oeuf-de-dragon",
     "titre": "Oeuf de dragon",
     "categorie": "Divers",
@@ -3528,6 +3566,22 @@ const bijoux = [
     ],
     "disponible": "non",
     "desc": ""
+  },
+  {
+    "id": "divers--oeuf-fleurs-de-saison",
+    "titre": "Oeuf fleurs de saison",
+    "categorie": "Divers",
+    "dossier": "Oeuf fleurs de saison",
+    "vignette": "img/divers/oeuf-fleurs-de-saison/1.jpg",
+    "photos": [
+      "img/divers/oeuf-fleurs-de-saison/1.jpg",
+      "img/divers/oeuf-fleurs-de-saison/2.jpg",
+      "img/divers/oeuf-fleurs-de-saison/3.jpg",
+      "img/divers/oeuf-fleurs-de-saison/4.jpg",
+      "img/divers/oeuf-fleurs-de-saison/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Cet oeuf, tissé en perles, représente les fleurs sur chaque saison.."
   },
   {
     "id": "divers--ours",
@@ -3643,7 +3697,7 @@ const bijoux = [
       "img/divers/reines-des-abeilles/4.jpg",
       "img/divers/reines-des-abeilles/5.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": ""
   },
   {
@@ -3657,7 +3711,7 @@ const bijoux = [
       "img/divers/robe-de-danse/2.jpg",
       "img/divers/robe-de-danse/3.jpg"
     ],
-    "disponible": "non",
+    "disponible": "oui",
     "desc": ""
   },
   {
@@ -3843,6 +3897,38 @@ const bijoux = [
     "desc": "Boules de Noël tissées en perles et rembourrées pour conserver la forme, à suspendre dans le sapin"
   },
   {
+    "id": "noel--boule-graphique",
+    "titre": "Boule graphique",
+    "categorie": "Noël",
+    "dossier": "Boule graphique",
+    "vignette": "img/noel/boule-graphique/1.jpg",
+    "photos": [
+      "img/noel/boule-graphique/1.jpg",
+      "img/noel/boule-graphique/2.jpg",
+      "img/noel/boule-graphique/3.jpg",
+      "img/noel/boule-graphique/4.jpg",
+      "img/noel/boule-graphique/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": ""
+  },
+  {
+    "id": "noel--boule-patchwok",
+    "titre": "Boule patchwork",
+    "categorie": "Noël",
+    "dossier": "Boule patchwok",
+    "vignette": "img/noel/boule-patchwok/1.jpg",
+    "photos": [
+      "img/noel/boule-patchwok/1.jpg",
+      "img/noel/boule-patchwok/2.jpg",
+      "img/noel/boule-patchwok/3.jpg",
+      "img/noel/boule-patchwok/4.jpg",
+      "img/noel/boule-patchwok/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Boules de Noël tissées en perles et rembourrée pour conserver la forme, à suspendre dans le sapin. Le tissage utilisé ne permet pas de garder la forme ronde, l'arrondi est irrégulier."
+  },
+  {
     "id": "noel--boule-pirate",
     "titre": "Boule pirate",
     "categorie": "Noël",
@@ -3949,6 +4035,21 @@ const bijoux = [
     "desc": "Boucle d'oreilles avec une couronne de Noël tissée en perles, motif à plat."
   },
   {
+    "id": "noel--cube-deco",
+    "titre": "Cube déco",
+    "categorie": "Noël",
+    "dossier": "Cube déco",
+    "vignette": "img/noel/cube-deco/1.jpg",
+    "photos": [
+      "img/noel/cube-deco/1.jpg",
+      "img/noel/cube-deco/2.jpg",
+      "img/noel/cube-deco/3.jpg",
+      "img/noel/cube-deco/4.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Cube en perles, assorties de perles de verres pour donner de l'éclat, à suspendre dans le sapin pour décorer."
+  },
+  {
     "id": "noel--double-etoile-rose",
     "titre": "Double étoile rose",
     "categorie": "Noël",
@@ -3961,6 +4062,21 @@ const bijoux = [
     ],
     "disponible": "non",
     "desc": "Etoile rose en tissage de perles, en 3D, à suspendre dans le sapin"
+  },
+  {
+    "id": "noel--etoile-6-branches",
+    "titre": "Etoile 6 branches",
+    "categorie": "Noël",
+    "dossier": "Etoile 6 branches",
+    "vignette": "img/noel/etoile-6-branches/1.jpg",
+    "photos": [
+      "img/noel/etoile-6-branches/1.jpg",
+      "img/noel/etoile-6-branches/2.jpg",
+      "img/noel/etoile-6-branches/3.jpg",
+      "img/noel/etoile-6-branches/4.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "Autour d'un strass qui reflète les lumières, chaque branche de l'étoile est délicatement tissée avec des perles de différentes tailles, de couleurs acidulées."
   },
   {
     "id": "noel--etoile-bonhommes-de-neige",
@@ -4192,6 +4308,22 @@ const bijoux = [
     ],
     "disponible": "non",
     "desc": "Petites étoiles tissées en petites perles, en 3D, pour des cadeaux de table ou pour le sapin"
+  },
+  {
+    "id": "noel--mini-chaussettes-de-noel",
+    "titre": "Mini chaussettes de Noël",
+    "categorie": "Noël",
+    "dossier": "Mini chaussettes de Noël",
+    "vignette": "img/noel/mini-chaussettes-de-noel/1.jpg",
+    "photos": [
+      "img/noel/mini-chaussettes-de-noel/1.jpg",
+      "img/noel/mini-chaussettes-de-noel/2.jpg",
+      "img/noel/mini-chaussettes-de-noel/3.jpg",
+      "img/noel/mini-chaussettes-de-noel/4.jpg",
+      "img/noel/mini-chaussettes-de-noel/5.jpg"
+    ],
+    "disponible": "oui",
+    "desc": "petites chaussettes reprenant divers sujets sur le thème de Noël"
   },
   {
     "id": "noel--mr-et-mme-noel",
